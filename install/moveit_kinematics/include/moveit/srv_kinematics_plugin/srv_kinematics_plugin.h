@@ -1,0 +1,1 @@
+/home/a/ws_nhk/src/moveit2/moveit_kinematics/srv_kinematics_plugin/include/moveit/srv_kinematics_plugin/srv_kinematics_plugin.h

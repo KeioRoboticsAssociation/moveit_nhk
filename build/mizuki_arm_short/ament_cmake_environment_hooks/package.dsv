@@ -1,0 +1,4 @@
+source;share/mizuki_arm_short/local_setup.bash
+source;share/mizuki_arm_short/local_setup.dsv
+source;share/mizuki_arm_short/local_setup.sh
+source;share/mizuki_arm_short/local_setup.zsh

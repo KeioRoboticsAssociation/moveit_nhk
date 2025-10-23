@@ -1,0 +1,75 @@
+[0.037s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/srdfdom -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/srdfdom
+[0.221s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.222s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.222s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.222s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.222s] -- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[0.604s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.612s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.632s] -- Configuring done
+[0.644s] -- Generating done
+[0.649s] -- Build files have been written to: /home/a/ws_nhk/build/srdfdom
+[0.658s] Invoked command in '/home/a/ws_nhk/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/srdfdom -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/srdfdom
+[0.659s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/srdfdom -- -j22 -l22
+[0.696s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.696s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.697s] [35m[1mConsolidate compiler generated dependencies of target srdfdom[0m
+[0.706s] [ 18%] Built target gtest
+[0.708s] [ 36%] Built target gtest_main
+[0.709s] [ 63%] Built target srdfdom
+[0.718s] [ 63%] Built target ament_cmake_python_copy_srdfdom
+[0.720s] [35m[1mConsolidate compiler generated dependencies of target test_cpp_C[0m
+[0.721s] [35m[1mConsolidate compiler generated dependencies of target test_cpp_nl_NL.UTF-8[0m
+[0.729s] [ 81%] Built target test_cpp_C
+[0.736s] [100%] Built target test_cpp_nl_NL.UTF-8
+[0.885s] running egg_info
+[0.885s] writing srdfdom.egg-info/PKG-INFO
+[0.885s] writing dependency_links to srdfdom.egg-info/dependency_links.txt
+[0.885s] writing top-level names to srdfdom.egg-info/top_level.txt
+[0.887s] reading manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.887s] writing manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.907s] [100%] Built target ament_cmake_python_build_srdfdom_egg
+[0.917s] Invoked command in '/home/a/ws_nhk/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/srdfdom -- -j22 -l22
+[0.919s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/srdfdom
+[0.925s] -- Install configuration: "Release"
+[0.925s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/lib/libsrdfdom.so.2.0.8
+[0.925s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/lib/libsrdfdom.so
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/include/srdfdom
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/include/srdfdom/srdfdom
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/include/srdfdom/srdfdom/srdf_writer.h
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/include/srdfdom/srdfdom/model.h
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/include/srdfdom/srdfdom/visibility_control.h
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/lib/srdfdom/display_srdf
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/pythonpath.sh
+[0.926s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/pythonpath.dsv
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info
+[0.926s] -- Installing: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/top_level.txt
+[0.926s] -- Installing: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/SOURCES.txt
+[0.926s] -- Installing: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/PKG-INFO
+[0.926s] -- Installing: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom-2.0.8-py3.10.egg-info/dependency_links.txt
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom/srdf.py
+[0.926s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom/__init__.py
+[0.948s] Listing '/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages/srdfdom'...
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/library_path.sh
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/library_path.dsv
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/ament_index/resource_index/package_run_dependencies/srdfdom
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/ament_index/resource_index/parent_prefix_path/srdfdom
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/ament_prefix_path.sh
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/ament_prefix_path.dsv
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/path.sh
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/environment/path.dsv
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/local_setup.bash
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/local_setup.sh
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/local_setup.zsh
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/local_setup.dsv
+[0.951s] -- Installing: /home/a/ws_nhk/install/srdfdom/share/srdfdom/package.dsv
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/ament_index/resource_index/packages/srdfdom
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/srdfdomTargetsExport.cmake
+[0.951s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/srdfdomTargetsExport-release.cmake
+[0.952s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/ament_cmake_export_targets-extras.cmake
+[0.952s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.952s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/srdfdomConfig.cmake
+[0.952s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/cmake/srdfdomConfig-version.cmake
+[0.952s] -- Up-to-date: /home/a/ws_nhk/install/srdfdom/share/srdfdom/package.xml
+[0.954s] Invoked command in '/home/a/ws_nhk/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/srdfdom

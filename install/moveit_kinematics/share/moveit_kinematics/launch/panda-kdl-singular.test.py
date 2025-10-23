@@ -1,0 +1,1 @@
+/home/a/ws_nhk/src/moveit2/moveit_kinematics/test/launch/panda-kdl-singular.test.py

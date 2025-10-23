@@ -1,0 +1,75 @@
+[0.199s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_short': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/mizuki_arm_short-20251020T100849Z-1-001/mizuki_arm_short -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/mizuki_arm_short
+[0.258s] -- The C compiler identification is GNU 11.4.0
+[0.298s] -- The CXX compiler identification is GNU 11.4.0
+[0.303s] -- Detecting C compiler ABI info
+[0.372s] -- Detecting C compiler ABI info - done
+[0.379s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.379s] -- Detecting C compile features
+[0.380s] -- Detecting C compile features - done
+[0.383s] -- Detecting CXX compiler ABI info
+[0.457s] -- Detecting CXX compiler ABI info - done
+[0.462s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.463s] -- Detecting CXX compile features
+[0.463s] -- Detecting CXX compile features - done
+[0.470s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.627s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.760s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.817s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.825s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.834s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.846s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.863s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.912s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.917s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.013s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.037s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.071s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.083s] -- Looking for pthread.h
+[1.149s] -- Looking for pthread.h - found
+[1.149s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.214s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.215s] -- Found Threads: TRUE  
+[1.269s] -- Found rviz2: 11.2.20 (/opt/ros/humble/share/rviz2/cmake)
+[1.272s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.304s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.305s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.305s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.480s] -- Configuring done
+[1.483s] -- Generating done
+[1.484s] -- Build files have been written to: /home/a/ws_nhk/build/mizuki_arm_short
+[1.491s] Invoked command in '/home/a/ws_nhk/build/mizuki_arm_short' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/mizuki_arm_short-20251020T100849Z-1-001/mizuki_arm_short -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/mizuki_arm_short
+[1.492s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_short': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/mizuki_arm_short -- -j22 -l22
+[1.522s] Invoked command in '/home/a/ws_nhk/build/mizuki_arm_short' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/mizuki_arm_short -- -j22 -l22
+[1.525s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_short': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/mizuki_arm_short
+[1.531s] -- Install configuration: ""
+[1.531s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/launch
+[1.531s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/launch/gazebo.launch
+[1.531s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/launch/display.launch
+[1.531s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/urdf
+[1.531s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/urdf/arm_v20(2).SLDASM.csv
+[1.532s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/urdf/arm_v20(2).SLDASM.urdf
+[1.532s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes
+[1.532s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/hand_link.STL
+[1.533s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/forearm_root_Link.STL
+[1.533s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/base_link.STL
+[1.534s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/2nd_Link.STL
+[1.534s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/forearm_tip_link.STL
+[1.535s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/wrist_link.STL
+[1.536s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/meshes/3rd_Link.STL
+[1.536s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/textures
+[1.536s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/ament_index/resource_index/package_run_dependencies/mizuki_arm_short
+[1.536s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/ament_index/resource_index/parent_prefix_path/mizuki_arm_short
+[1.536s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/environment/ament_prefix_path.sh
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/environment/ament_prefix_path.dsv
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/environment/path.sh
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/environment/path.dsv
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/local_setup.bash
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/local_setup.sh
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/local_setup.zsh
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/local_setup.dsv
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/package.dsv
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/ament_index/resource_index/packages/mizuki_arm_short
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/cmake/mizuki_arm_shortConfig.cmake
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/cmake/mizuki_arm_shortConfig-version.cmake
+[1.537s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_short/share/mizuki_arm_short/package.xml
+[1.540s] Invoked command in '/home/a/ws_nhk/build/mizuki_arm_short' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/mizuki_arm_short

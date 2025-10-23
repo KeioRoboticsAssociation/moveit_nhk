@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mizuki_arm_with_dt35">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import mizuki_arm_with_dt35 urdf file -->
+    <xacro:include filename="$(find mizuki_arm_short)/urdf/arm_v20(2).SLDASM.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="mizuki_arm_with_dt35.ros2_control.xacro" />
+
+
+    <xacro:mizuki_arm_with_dt35_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

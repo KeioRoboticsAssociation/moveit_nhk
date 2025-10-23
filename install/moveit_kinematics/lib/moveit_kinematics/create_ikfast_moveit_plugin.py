@@ -1,0 +1,1 @@
+/home/a/ws_nhk/src/moveit2/moveit_kinematics/ikfast_kinematics_plugin/scripts/create_ikfast_moveit_plugin.py

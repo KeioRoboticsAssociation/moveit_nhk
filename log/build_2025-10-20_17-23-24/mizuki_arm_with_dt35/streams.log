@@ -1,0 +1,37 @@
+[0.198s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_with_dt35': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/mizuki_arm_with_dt35 -- -j22 -l22
+[0.311s] Invoked command in '/home/a/ws_nhk/build/mizuki_arm_with_dt35' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/mizuki_arm_with_dt35 -- -j22 -l22
+[0.312s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_with_dt35': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/mizuki_arm_with_dt35
+[0.335s] -- Install configuration: "Release"
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/urdf
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/urdf/MizukiArm_withDT35.csv
+[0.336s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/urdf/mizuki_arm_with_dt35.urdf
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/urdf/hozon
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/hand_link.STL
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/forearm_root_Link.STL
+[0.336s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/base_link.STL
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/2nd_Link.STL
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/forearm_tip_link.STL
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/wrist_link.STL
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/meshes/3rd_Link.STL
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/launch
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/launch/gazebo.launch
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/launch/display.launch
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/config
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/config/joint_names_MizukiArm_withDT35.yaml
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/ament_index/resource_index/package_run_dependencies/mizuki_arm_with_dt35
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/ament_index/resource_index/parent_prefix_path/mizuki_arm_with_dt35
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/environment/ament_prefix_path.sh
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/environment/ament_prefix_path.dsv
+[0.337s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/environment/path.sh
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/environment/path.dsv
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/local_setup.bash
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/local_setup.sh
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/local_setup.zsh
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/local_setup.dsv
+[0.338s] -- Installing: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/package.dsv
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/ament_index/resource_index/packages/mizuki_arm_with_dt35
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/cmake/mizuki_arm_with_dt35Config.cmake
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/cmake/mizuki_arm_with_dt35Config-version.cmake
+[0.338s] -- Up-to-date: /home/a/ws_nhk/install/mizuki_arm_with_dt35/share/mizuki_arm_with_dt35/package.xml
+[0.350s] Invoked command in '/home/a/ws_nhk/build/mizuki_arm_with_dt35' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/mizuki_arm_with_dt35
