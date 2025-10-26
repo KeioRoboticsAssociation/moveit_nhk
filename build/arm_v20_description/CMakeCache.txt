@@ -302,15 +302,6 @@ ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
 ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
 
 //Value Computed by CMake
-arm_v20_BINARY_DIR:STATIC=/home/a/ws_nhk/build/arm_v20_description
-
-//Value Computed by CMake
-arm_v20_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-arm_v20_SOURCE_DIR:STATIC=/home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description
-
-//Value Computed by CMake
 arm_v20_description_BINARY_DIR:STATIC=/home/a/ws_nhk/build/arm_v20_description
 
 //Value Computed by CMake

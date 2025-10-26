@@ -1,13 +1,13 @@
 default_velocity_scaling_factor: 0.1
 default_acceleration_scaling_factor: 0.1
 joint_limits:
-  "Revolute 1":
+  joint_1:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
     max_acceleration: 2.0
     has_position_limits: false
-  "Revolute 2":
+  joint_2:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
@@ -15,7 +15,7 @@ joint_limits:
     has_position_limits: true
     min_position: -1.570796
     max_position: 1.570796
-  "Revolute 3":
+  joint_3:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
@@ -23,13 +23,13 @@ joint_limits:
     has_position_limits: true
     min_position: -1.570796
     max_position: 1.570796
-  "Revolute 4":
+  joint_4:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
     max_acceleration: 2.0
     has_position_limits: false
-  "Revolute 5":
+  joint_5:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true
@@ -37,7 +37,7 @@ joint_limits:
     has_position_limits: true
     min_position: -1.570796
     max_position: 1.570796
-  "Revolute 6":
+  joint_6:
     has_velocity_limits: true
     max_velocity: 1.0
     has_acceleration_limits: true

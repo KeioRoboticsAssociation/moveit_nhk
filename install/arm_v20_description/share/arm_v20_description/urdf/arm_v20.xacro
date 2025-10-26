@@ -150,14 +150,14 @@
   </collision>
 </link>
 
-<joint name="Revolute 1" type="continuous">
+<joint name="joint_1" type="continuous">
   <origin xyz="0.0 0.0 0.0525" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link1_1"/>
   <axis xyz="-0.0 -0.0 1.0"/>
 </joint>
 
-<joint name="Revolute 2" type="revolute">
+<joint name="joint_2" type="revolute">
   <origin xyz="2.1e-05 0.024521 0.071063" rpy="0 0 0"/>
   <parent link="link1_1"/>
   <child link="link2_1"/>
@@ -165,7 +165,7 @@
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 3" type="revolute">
+<joint name="joint_3" type="revolute">
   <origin xyz="0.03475 -0.0122 0.14175" rpy="0 0 0"/>
   <parent link="link2_1"/>
   <child link="link3_1"/>
@@ -173,14 +173,14 @@
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 4" type="continuous">
+<joint name="joint_4" type="continuous">
   <origin xyz="0.1354 -0.0125 0.0" rpy="0 0 0"/>
   <parent link="link3_1"/>
   <child link="link4_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Revolute 5" type="revolute">
+<joint name="joint_5" type="revolute">
   <origin xyz="0.0786 -0.0189 0.0" rpy="0 0 0"/>
   <parent link="link4_1"/>
   <child link="link5_1"/>
@@ -188,7 +188,7 @@
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
-<joint name="Revolute 6" type="continuous">
+<joint name="joint_6" type="continuous">
   <origin xyz="0.065 0.0189 0.0" rpy="0 0 0"/>
   <parent link="link5_1"/>
   <child link="endeffector_1"/>

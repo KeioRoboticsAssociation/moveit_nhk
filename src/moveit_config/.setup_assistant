@@ -1,9 +1,9 @@
 moveit_setup_assistant_config:
   urdf:
-    package: mizukiArm_withDT35_3
-    relative_path: urdf/MizukiArm_withDT35_3.urdf
+    package: arm_v20_description
+    relative_path: urdf/arm_v20.xacro
   srdf:
-    relative_path: config/MizukiArm_withDT35_3.srdf
+    relative_path: config/arm_v20.srdf
   package_settings:
     author_name: kiratosakata
     author_email: kiratosakata@keio.jp

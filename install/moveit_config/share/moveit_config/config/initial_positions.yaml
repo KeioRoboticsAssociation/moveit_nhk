@@ -1,9 +1,9 @@
 # arm_v20 の fake system 初期姿勢
 
 initial_positions:
-  "Revolute 1": 0.0
-  "Revolute 2": 0.0
-  "Revolute 3": 0.0
-  "Revolute 4": 0.0
-  "Revolute 5": 0.0
-  "Revolute 6": 0.0
+  joint_1: 0.0
+  joint_2: 0.0
+  joint_3: 0.0
+  joint_4: 0.0
+  joint_5: 0.0
+  joint_6: 0.0
