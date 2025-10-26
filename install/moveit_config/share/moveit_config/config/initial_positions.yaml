@@ -1,9 +1,9 @@
-# arm_v20 の fake system 初期姿勢
+# Default initial positions for arm_v20's ros2_control fake system
 
 initial_positions:
-  joint_1: 0.0
-  joint_2: 0.0
-  joint_3: 0.0
-  joint_4: 0.0
-  joint_5: 0.0
-  joint_6: 0.0
+  Revolute 1: 0
+  Revolute 2: 0
+  Revolute 3: 0
+  Revolute 4: 0
+  Revolute 5: 1.57
+  Revolute 6: 0

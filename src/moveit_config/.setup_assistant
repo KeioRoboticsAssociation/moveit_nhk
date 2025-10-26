@@ -1,19 +1,25 @@
 moveit_setup_assistant_config:
   urdf:
     package: arm_v20_description
-    relative_path: urdf/arm_v20.xacro
+    relative_path: urdf/arm_v20.urdf
   srdf:
     relative_path: config/arm_v20.srdf
   package_settings:
     author_name: kiratosakata
     author_email: kiratosakata@keio.jp
-    generated_timestamp: 1761234034
+    generated_timestamp: 1761485217
   control_xacro:
     command:
-    - position
+      - position
     state:
-    - position
-    - velocity
+      - position
+      - velocity
   modified_urdf:
     xacros:
-    - control_xacro
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

@@ -188,11 +188,12 @@
   <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
 </joint>
 
-<joint name="joint_6" type="continuous">
+<joint name="joint_6" type="revolute">
   <origin xyz="0.065 0.0189 0.0" rpy="0 0 0"/>
   <parent link="link5_1"/>
   <child link="endeffector_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="3.14159265" lower="-3.14159265" effort="100" velocity="100"/>
 </joint>
 
 </robot>

@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm_v20">
-  <xacro:arg name="initial_positions_file" default="initial_positions.yaml"/>
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
-  <!-- 実機URDFの読み込み -->
-  <xacro:include filename="$(find arm_v20_description)/urdf/arm_v20.xacro"/>
+    <!-- Import arm_v20 urdf file -->
+    <xacro:include filename="$(find arm_v20_description)/urdf/arm_v20.urdf" />
 
-  <!-- ros2_control 用の設定を取り込み -->
-  <xacro:include filename="arm_v20.ros2_control.xacro"/>
+    <!-- Import control_xacro -->
+    <xacro:include filename="arm_v20.ros2_control.xacro" />
 
-  <xacro:arm_v20_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+    <xacro:arm_v20_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
 </robot>

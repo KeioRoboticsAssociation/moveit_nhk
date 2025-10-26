@@ -27,6 +27,7 @@
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/ros2_controllers.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/joint_limits.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/moveit_controllers.yaml
+/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/sensors_3d.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/arm_v20.ros2_control.xacro
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/moveit.rviz
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/arm_v20.srdf
