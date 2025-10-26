@@ -1,0 +1,2 @@
+Invoking command in '/home/a/ws_nhk/build/mizukiArm_withDT35_3': /usr/bin/cmake /home/a/ws_nhk/src/mizukiArm_withDT35_3 -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/mizukiArm_withDT35_3
+Invoked command in '/home/a/ws_nhk/build/mizukiArm_withDT35_3' returned '1': /usr/bin/cmake /home/a/ws_nhk/src/mizukiArm_withDT35_3 -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/mizukiArm_withDT35_3

@@ -21,14 +21,14 @@
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/launch/move_group.launch.py
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/launch/static_virtual_joint_tfs.launch.py
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/launch/setup_assistant.launch.py
-/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/arm_v20(2).SLDASM.srdf
+/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/MizukiArm_withDT35_3.srdf
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/pilz_cartesian_limits.yaml
-/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/arm_v20(2).SLDASM.ros2_control.xacro
+/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/MizukiArm_withDT35_3.ros2_control.xacro
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/kinematics.yaml
+/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/MizukiArm_withDT35_3.urdf.xacro
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/ros2_controllers.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/joint_limits.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/moveit_controllers.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/moveit.rviz
-/home/a/ws_nhk/install/moveit_config/share/moveit_config/config/arm_v20(2).SLDASM.urdf.xacro
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/config/initial_positions.yaml
 /home/a/ws_nhk/install/moveit_config/share/moveit_config/.setup_assistant

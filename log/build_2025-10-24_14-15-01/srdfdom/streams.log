@@ -1,0 +1,16 @@
+[0.024s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/srdfdom -- -j22 -l22
+[0.218s] [ 18%] Built target gtest
+[0.219s] [ 36%] Built target gtest_main
+[0.219s] [ 63%] Built target srdfdom
+[0.219s] [ 63%] Built target ament_cmake_python_copy_srdfdom
+[0.219s] [100%] Built target test_cpp_C
+[0.219s] [100%] Built target test_cpp_nl_NL.UTF-8
+[0.276s] running egg_info
+[0.276s] writing srdfdom.egg-info/PKG-INFO
+[0.276s] writing dependency_links to srdfdom.egg-info/dependency_links.txt
+[0.276s] writing top-level names to srdfdom.egg-info/top_level.txt
+[0.278s] reading manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.278s] writing manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.287s] [100%] Built target ament_cmake_python_build_srdfdom_egg
+[0.354s] Invoked command in '/home/a/ws_nhk/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/srdfdom -- -j22 -l22
+[0.354s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/srdfdom

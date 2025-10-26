@@ -1,0 +1,1 @@
+[0.230s] Invoking command in '/home/a/ws_nhk/build/mizuki_arm_short': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/mizuki_arm_short -- -j22 -l22

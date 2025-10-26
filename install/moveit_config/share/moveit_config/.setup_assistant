@@ -1,25 +1,19 @@
 moveit_setup_assistant_config:
   urdf:
-    package: mizuki_arm_short
-    relative_path: urdf/arm_v20(2).SLDASM.urdf
+    package: mizukiArm_withDT35_3
+    relative_path: urdf/MizukiArm_withDT35_3.urdf
   srdf:
-    relative_path: config/arm_v20(2).SLDASM.srdf
+    relative_path: config/MizukiArm_withDT35_3.srdf
   package_settings:
     author_name: kiratosakata
     author_email: kiratosakata@keio.jp
     generated_timestamp: 1761234034
   control_xacro:
     command:
-      - position
+    - position
     state:
-      - position
-      - velocity
+    - position
+    - velocity
   modified_urdf:
     xacros:
-      - control_xacro
-  control_xacro:
-    command:
-      - position
-    state:
-      - position
-      - velocity
+    - control_xacro

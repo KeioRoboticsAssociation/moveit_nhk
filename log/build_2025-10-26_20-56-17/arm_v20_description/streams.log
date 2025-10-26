@@ -1,0 +1,55 @@
+[0.216s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.357s] -- The CXX compiler identification is GNU 11.4.0
+[0.365s] -- Detecting C compiler ABI info
+[0.415s] -- Detecting C compiler ABI info - done
+[0.422s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.423s] -- Detecting C compile features
+[0.423s] -- Detecting C compile features - done
+[0.427s] -- Detecting CXX compiler ABI info
+[0.500s] -- Detecting CXX compiler ABI info - done
+[0.501s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.501s] -- Detecting CXX compile features
+[0.501s] -- Detecting CXX compile features - done
+[0.501s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.621s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.704s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.796s] -- Configuring done
+[0.797s] -- Generating done
+[0.798s] -- Build files have been written to: /home/a/ws_nhk/build/arm_v20_description
+[0.957s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description
+[0.957s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/arm_v20_description -- -j22 -l22
+[1.013s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/arm_v20_description -- -j22 -l22
+[1.015s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/arm_v20_description
+[1.031s] -- Install configuration: ""
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link5_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/base_link.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link1_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link4_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/endeffector_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link2_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link3_1.stl
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.trans
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/materials.xacro
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.xacro
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.urdf
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/launch
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/launch/robot_description.launch.py
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/package_run_dependencies/arm_v20_description
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/parent_prefix_path/arm_v20_description
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/ament_prefix_path.sh
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/ament_prefix_path.dsv
+[1.031s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/path.sh
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/path.dsv
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.bash
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.sh
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.zsh
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.dsv
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/package.dsv
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/packages/arm_v20_description
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/cmake/arm_v20_descriptionConfig.cmake
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/cmake/arm_v20_descriptionConfig-version.cmake
+[1.032s] -- Installing: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/package.xml
+[1.032s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/arm_v20_description

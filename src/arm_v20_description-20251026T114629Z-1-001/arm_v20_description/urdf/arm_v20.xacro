@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<robot name="arm_v20" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find arm_v20_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find arm_v20_description)/urdf/arm_v20.trans" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.022278248739678576 2.202100536240091e-05 0.024368049710172035" rpy="0 0 0"/>
+    <mass value="4.587257651065842"/>
+    <inertia ixx="0.011004" iyy="0.018642" izz="0.023201" ixy="2.1e-05" iyz="-3e-06" ixz="-0.001934"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="9.624761041591018e-05 0.0004766171386192786 0.04186909675865289" rpy="0 0 0"/>
+    <mass value="0.9838737385924954"/>
+    <inertia ixx="0.000872" iyy="0.000818" izz="0.000427" ixy="0.0" iyz="-8e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.0525" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.0525" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="0.010133653025085067 -0.030787540537666767 0.10364955203955004" rpy="0 0 0"/>
+    <mass value="1.224302434218257"/>
+    <inertia ixx="0.003371" iyy="0.003402" izz="0.000694" ixy="6.3e-05" iyz="0.000295" ixz="-0.000481"/>
+  </inertial>
+  <visual>
+    <origin xyz="-2.1e-05 -0.024521 -0.123563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-2.1e-05 -0.024521 -0.123563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="0.0767579948374143 -0.020345095492947766 -1.1714610781421442e-08" rpy="0 0 0"/>
+    <mass value="0.7543922108135824"/>
+    <inertia ixx="0.000301" iyy="0.001471" izz="0.001623" ixy="-0.000236" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.034771 -0.012321 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.034771 -0.012321 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="0.0407741110945509 -0.004894497498326476 -4.247916734145818e-06" rpy="0 0 0"/>
+    <mass value="1.0144724963260483"/>
+    <inertia ixx="0.000321" iyy="0.000784" izz="0.000827" ixy="-0.000103" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.170171 0.000179 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.170171 0.000179 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="0.04474344188385446 0.018892728314517836 -0.0113461510891818" rpy="0 0 0"/>
+    <mass value="0.4401808093617498"/>
+    <inertia ixx="0.000133" iyy="0.00014" izz="0.000129" ixy="0.0" iyz="0.0" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.248771 0.019079 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.248771 0.019079 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="endeffector_1">
+  <inertial>
+    <origin xyz="0.08904032725072031 1.462168207331106e-05 0.00266069074925096" rpy="0 0 0"/>
+    <mass value="2.250858835490703"/>
+    <inertia ixx="0.002403" iyy="0.00715" izz="0.006731" ixy="-3e-06" iyz="-2e-06" ixz="0.000385"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.313771 0.000179 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.313771 0.000179 -0.265313" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm_v20_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.0 0.0525" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="2.1e-05 0.024521 0.071063" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.03475 -0.0122 0.14175" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.1354 -0.0125 0.0" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="0.0786 -0.0189 0.0" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.065 0.0189 0.0" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="endeffector_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+</robot>

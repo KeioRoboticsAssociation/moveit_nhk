@@ -1,0 +1,1 @@
+Invoking command in '/home/a/ws_nhk/build/moveit_resources_prbt_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_resources_prbt_support -- -j22 -l22

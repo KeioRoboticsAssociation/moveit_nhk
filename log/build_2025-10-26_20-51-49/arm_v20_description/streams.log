@@ -1,0 +1,82 @@
+[0.227s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description
+[0.244s] [33mCMake Warning (dev) at CMakeLists.txt:5:
+[0.244s]   Syntax Warning in cmake code at column 19
+[0.244s] 
+[0.244s]   Argument not separated from preceding token by whitespace.
+[0.244s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.244s] [0m
+[0.246s] [0mCMake Error: Could not find cmake module file: CMakeDetermine(Compiler.cmake[0m
+[0.246s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.246s] Missing variable is:
+[0.246s] CMAKE_(_COMPILER_ENV_VAR[0m
+[0.246s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.247s] Missing variable is:
+[0.247s] CMAKE_(_COMPILER[0m
+[0.247s] [0mCMake Error: Could not find cmake module file: /home/a/ws_nhk/build/arm_v20_description/CMakeFiles/3.22.1/CMake(Compiler.cmake[0m
+[0.247s] [0mCMake Error: Could not find cmake module file: CMakeDetermine2Compiler.cmake[0m
+[0.247s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.247s] Missing variable is:
+[0.247s] CMAKE_2_COMPILER_ENV_VAR[0m
+[0.247s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.247s] Missing variable is:
+[0.247s] CMAKE_2_COMPILER[0m
+[0.247s] [0mCMake Error: Could not find cmake module file: /home/a/ws_nhk/build/arm_v20_description/CMakeFiles/3.22.1/CMake2Compiler.cmake[0m
+[0.247s] [0mCMake Error: Could not find cmake module file: CMakeDetermine)Compiler.cmake[0m
+[0.247s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.248s] Missing variable is:
+[0.248s] CMAKE_)_COMPILER_ENV_VAR[0m
+[0.250s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.250s] Missing variable is:
+[0.250s] CMAKE_)_COMPILER[0m
+[0.250s] [0mCMake Error: Could not find cmake module file: /home/a/ws_nhk/build/arm_v20_description/CMakeFiles/3.22.1/CMake)Compiler.cmake[0m
+[0.250s] [0mCMake Error: Could not find cmake module file: CMakeDetermine_descriptionCompiler.cmake[0m
+[0.250s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.250s] Missing variable is:
+[0.250s] CMAKE__description_COMPILER_ENV_VAR[0m
+[0.250s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.250s] Missing variable is:
+[0.250s] CMAKE__description_COMPILER[0m
+[0.250s] [0mCMake Error: Could not find cmake module file: /home/a/ws_nhk/build/arm_v20_description/CMakeFiles/3.22.1/CMake_descriptionCompiler.cmake[0m
+[0.251s] -- Configuring incomplete, errors occurred!
+[0.251s] See also "/home/a/ws_nhk/build/arm_v20_description/CMakeFiles/CMakeOutput.log".
+[0.251s] [31mCMake Error at CMakeLists.txt:5 (project):
+[0.251s]   No CMAKE_(_COMPILER could be found.
+[0.251s] 
+[0.251s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.251s]   CMAKE_(_COMPILER to the full path to the compiler, or to the compiler name
+[0.251s]   if it is in the PATH.
+[0.251s] 
+[0.251s] [0m
+[0.251s] [0mCMake Error: Could not find cmake module file: CMake(Information.cmake[0m
+[0.251s] [31mCMake Error at CMakeLists.txt:5 (project):
+[0.251s]   No CMAKE_2_COMPILER could be found.
+[0.252s] 
+[0.252s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.252s]   CMAKE_2_COMPILER to the full path to the compiler, or to the compiler name
+[0.252s]   if it is in the PATH.
+[0.252s] 
+[0.253s] [0m
+[0.253s] [0mCMake Error: Could not find cmake module file: CMake2Information.cmake[0m
+[0.253s] [31mCMake Error at CMakeLists.txt:5 (project):
+[0.253s]   No CMAKE_)_COMPILER could be found.
+[0.253s] 
+[0.253s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.253s]   CMAKE_)_COMPILER to the full path to the compiler, or to the compiler name
+[0.254s]   if it is in the PATH.
+[0.254s] 
+[0.254s] [0m
+[0.254s] [0mCMake Error: Could not find cmake module file: CMake)Information.cmake[0m
+[0.254s] [31mCMake Error at CMakeLists.txt:5 (project):
+[0.255s]   No CMAKE__description_COMPILER could be found.
+[0.255s] 
+[0.255s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.256s]   CMAKE__description_COMPILER to the full path to the compiler, or to the
+[0.256s]   compiler name if it is in the PATH.
+[0.256s] 
+[0.256s] [0m
+[0.256s] [0mCMake Error: Could not find cmake module file: CMake_descriptionInformation.cmake[0m
+[0.256s] [0mCMake Error: CMAKE_(_COMPILER not set, after EnableLanguage[0m
+[0.256s] [0mCMake Error: CMAKE_2_COMPILER not set, after EnableLanguage[0m
+[0.256s] [0mCMake Error: CMAKE_)_COMPILER not set, after EnableLanguage[0m
+[0.256s] [0mCMake Error: CMAKE__description_COMPILER not set, after EnableLanguage[0m
+[0.275s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '1': /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description

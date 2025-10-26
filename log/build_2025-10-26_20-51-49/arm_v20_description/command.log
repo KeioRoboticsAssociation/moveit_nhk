@@ -1,0 +1,2 @@
+Invoking command in '/home/a/ws_nhk/build/arm_v20_description': /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description
+Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '1': /usr/bin/cmake /home/a/ws_nhk/src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/arm_v20_description

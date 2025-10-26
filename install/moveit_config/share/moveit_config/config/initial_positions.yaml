@@ -1,4 +1,4 @@
-# Default initial positions for arm_v20(2).SLDASM's ros2_control fake system
+# Default initial positions for MizukiArm_withDT35_3's ros2_control fake system
 
 initial_positions:
   elbow_joint: 0

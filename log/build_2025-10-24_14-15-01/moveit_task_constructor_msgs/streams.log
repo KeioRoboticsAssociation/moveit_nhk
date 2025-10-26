@@ -1,0 +1,23 @@
+[0.200s] Invoking command in '/home/a/ws_nhk/build/moveit_task_constructor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_task_constructor_msgs -- -j22 -l22
+[0.268s] [  0%] Built target moveit_task_constructor_msgs__cpp
+[0.269s] [ 12%] Built target moveit_task_constructor_msgs__rosidl_generator_c
+[0.270s] [ 12%] Built target ament_cmake_python_copy_moveit_task_constructor_msgs
+[0.276s] [ 24%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c
+[0.276s] [ 36%] Built target moveit_task_constructor_msgs__rosidl_typesupport_cpp
+[0.276s] [ 48%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c
+[0.276s] [ 60%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_cpp
+[0.276s] [ 72%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c
+[0.276s] [ 83%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_cpp
+[0.279s] [ 83%] Built target moveit_task_constructor_msgs
+[0.297s] [ 84%] Built target moveit_task_constructor_msgs__py
+[0.319s] [ 95%] Built target moveit_task_constructor_msgs__rosidl_generator_py
+[0.338s] [ 97%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c__pyext
+[0.338s] [ 98%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c__pyext
+[0.340s] [100%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.415s] running egg_info
+[0.416s] writing moveit_task_constructor_msgs.egg-info/PKG-INFO
+[0.416s] writing dependency_links to moveit_task_constructor_msgs.egg-info/dependency_links.txt
+[0.416s] writing top-level names to moveit_task_constructor_msgs.egg-info/top_level.txt
+[0.418s] reading manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[0.418s] writing manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[0.438s] [100%] Built target ament_cmake_python_build_moveit_task_constructor_msgs_egg
