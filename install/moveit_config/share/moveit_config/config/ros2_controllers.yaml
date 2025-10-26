@@ -13,11 +13,12 @@ controller_manager:
 arm_controller:
   ros__parameters:
     joints:
-      - shoulder_pitch
-      - elbow_joint
-      - forearm_root_joint
-      - forearm_tip_joint
-      - wrist_joint
+      - "Revolute 1"
+      - "Revolute 2"
+      - "Revolute 3"
+      - "Revolute 4"
+      - "Revolute 5"
+      - "Revolute 6"
     command_interfaces:
       - position
     state_interfaces:

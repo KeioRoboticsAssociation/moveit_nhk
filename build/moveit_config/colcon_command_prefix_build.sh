@@ -1,6 +1,6 @@
 # generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/package.sh"
 . "/home/a/ws_nhk/install/launch_param_builder/share/launch_param_builder/package.sh"
-. "/home/a/ws_nhk/install/mizukiArm_withDT35_3/share/mizukiArm_withDT35_3/package.sh"
 . "/home/a/ws_nhk/install/moveit_common/share/moveit_common/package.sh"
 . "/home/a/ws_nhk/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/package.sh"
 . "/home/a/ws_nhk/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.sh"

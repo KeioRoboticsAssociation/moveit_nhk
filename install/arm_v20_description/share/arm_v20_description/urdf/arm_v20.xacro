@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<robot name="arm_v20(2)" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="arm_v20" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find arm_v20(2)_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find arm_v20(2)_description)/urdf/arm_v20(2).trans" />
+<xacro:include filename="$(find arm_v20_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find arm_v20_description)/urdf/arm_v20.trans" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.022278248739678576 2.202100536240091e-05 0.024368049710172035" rpy="0 0 0"/>
@@ -12,14 +12,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -33,14 +33,14 @@
   <visual>
     <origin xyz="-0.0 0.0 -0.0525" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="opaque202209238"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.0 -0.0525" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -54,14 +54,14 @@
   <visual>
     <origin xyz="-2.1e-05 -0.024521 -0.123563" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="opaque202209238"/>
   </visual>
   <collision>
     <origin xyz="-2.1e-05 -0.024521 -0.123563" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -75,14 +75,14 @@
   <visual>
     <origin xyz="-0.034771 -0.012321 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
     <origin xyz="-0.034771 -0.012321 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -96,14 +96,14 @@
   <visual>
     <origin xyz="-0.170171 0.000179 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
     <origin xyz="-0.170171 0.000179 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -117,14 +117,14 @@
   <visual>
     <origin xyz="-0.248771 0.019079 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
     <origin xyz="-0.248771 0.019079 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -138,14 +138,14 @@
   <visual>
     <origin xyz="-0.313771 0.000179 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
     <origin xyz="-0.313771 0.000179 -0.265313" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://arm_v20(2)_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://arm_v20_description/meshes/endeffector_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>

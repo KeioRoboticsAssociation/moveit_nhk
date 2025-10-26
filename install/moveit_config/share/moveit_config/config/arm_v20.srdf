@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="arm_v20">
+  <group name="arm">
+    <chain base_link="base_link" tip_link="endeffector_1"/>
+  </group>
+  <virtual_joint name="world" type="fixed" parent_frame="world" child_link="base_link"/>
+</robot>

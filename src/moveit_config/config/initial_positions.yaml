@@ -1,8 +1,9 @@
-# Default initial positions for MizukiArm_withDT35_3's ros2_control fake system
+# arm_v20 の fake system 初期姿勢
 
 initial_positions:
-  elbow_joint: 0
-  forearm_root_joint: 0
-  forearm_tip_joint: 0
-  shoulder_pitch: 0
-  wrist_joint: 0
+  "Revolute 1": 0.0
+  "Revolute 2": 0.0
+  "Revolute 3": 0.0
+  "Revolute 4": 0.0
+  "Revolute 5": 0.0
+  "Revolute 6": 0.0
