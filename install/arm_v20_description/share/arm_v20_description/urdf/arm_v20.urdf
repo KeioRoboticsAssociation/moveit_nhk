@@ -240,11 +240,11 @@
     <axis xyz="1.0 -0.0 -0.0"/>
   </joint>
   <joint name="Revolute 5" type="revolute">
-    <origin rpy="0 0 0" xyz="0.0786 -0.0189 0.0"/>
+    <origin rpy="0 1.57 0" xyz="0.0786 -0.0189 0.0"/>
     <parent link="link4_1"/>
     <child link="link5_1"/>
     <axis xyz="0.0 1.0 -0.0"/>
-    <limit effort="100" lower="-1.570796" upper="3.141592" velocity="100"/>
+    <limit effort="100" lower="-3.141592" upper="1.570796" velocity="100"/>
   </joint>
   <joint name="Revolute 6" type="continuous">
     <origin rpy="0 0 0" xyz="0.065 0.0189 0.0"/>

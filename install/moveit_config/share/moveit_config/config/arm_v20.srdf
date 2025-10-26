@@ -24,7 +24,7 @@
         <joint name="Revolute 2" value="0"/>
         <joint name="Revolute 3" value="0"/>
         <joint name="Revolute 4" value="0"/>
-        <joint name="Revolute 5" value="1.5707"/>
+        <joint name="Revolute 5" value="0"/>
         <joint name="Revolute 6" value="0"/>
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
