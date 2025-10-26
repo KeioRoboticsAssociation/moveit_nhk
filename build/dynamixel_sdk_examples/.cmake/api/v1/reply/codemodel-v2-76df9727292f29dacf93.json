@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-692f1f0f2122feba8bbb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dynamixel_sdk_examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamixel_sdk_examples_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamixel_sdk_examples_uninstall-89e6c440d229b45e5523.json",
+					"name" : "dynamixel_sdk_examples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_current_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_current_node-20ecdec0a347e3fa5971.json",
+					"name" : "pub_current_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_current_pos_v1_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_current_pos_v1_node-77df387b4df4a0db629b.json",
+					"name" : "pub_current_pos_v1_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_current_pos_v2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_current_pos_v2_node-f47d42f0cc566cf0f938.json",
+					"name" : "pub_current_pos_v2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_position_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_position_node-daf09a40a8db177d8eac.json",
+					"name" : "pub_position_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub_velocity_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub_velocity_node-3c0f8522ae727cdd42a3.json",
+					"name" : "pub_velocity_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_current_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_current_node-c9e0e4e3739d1610e299.json",
+					"name" : "read_write_current_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_current_pos_v1_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_current_pos_v1_node-ac6ecad05ddc2bd0188f.json",
+					"name" : "read_write_current_pos_v1_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_current_pos_v2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_current_pos_v2_node-888e6933300f93a26531.json",
+					"name" : "read_write_current_pos_v2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_position_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_position_node-e9efb1adbae8414a72a7.json",
+					"name" : "read_write_position_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_write_velocity_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_write_velocity_node-4bd8454302e6d12de1d6.json",
+					"name" : "read_write_velocity_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-38f036d2ee82dec80395.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/a/ws_nhk/build/dynamixel_sdk_examples",
+		"source" : "/home/a/ws_nhk/src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
