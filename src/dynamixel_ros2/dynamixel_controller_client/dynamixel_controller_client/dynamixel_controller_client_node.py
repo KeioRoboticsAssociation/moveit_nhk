@@ -6,7 +6,7 @@ from sensor_msgs.msg import JointState
 from dynamixel_controller.msg import DynamixelController, DynamixelResponse, DynamixelCommand  # C++ノードで定義したメッセージをインポート
 
 class DynamixelControllerClient(Node):
-    ids = [0,1,2,3,4,5,6]
+    ids = [0,1,2,3,4,5,7]
     def __init__(self):
         super().__init__('dynamixel_controller_client')
         
@@ -53,14 +53,13 @@ class DynamixelControllerClient(Node):
 
         # 各モーターの目標位置
         target_positions = {
-            0: 2928 + int(self.joint_positions.get("left_Revolute_1", 0.0) * 2048 / 3.141592),   # joint0 (TTL,XM540)   
-            1: 2090 + int(self.joint_positions.get("left_Revolute_2", 0.0) * 2048 / 3.141592),   # joint1 (TTL,XM540)
-            2: 3020 + int(self.joint_positions.get("left_Revolute_3", 0.0) * 2048 / 3.141592),   # joint2 (TTL, XM540)
-            3: 3584 + int(self.joint_positions.get("left_Revolute_4", 0.0) * 2048 / 3.141592),   # joint3 (RS485, XL430)
-            4: 1024 - int(self.joint_positions.get("left_Revolute_5", 0.0) * 2048 / 3.141592),   # joint4 (RS485, XL430)
-            5: 1024 + int(self.joint_positions.get("left_Revolute_6", 0.0) * 2048 / 3.141592),   # joint5 (RS485, XL430)
-            6: 2048 - int(self.joint_positions.get("left_Slider_1", 0.0) / 0.024 * 748),   # joint6 (RS485, XL430)
-            7: 2090 - int(self.joint_positions.get("left_Revolute_2", 0.0) * 2048 / 3.141592),   # joint7 (TTL,XM540)
+            0: 1912 + int(self.joint_positions.get("Revolute 1", 0.0) * 2048 / 3.141592),   # joint0 (TTL,XM540)   
+            1: -int(self.joint_positions.get("Revolute 2", 0.0) * 2048 / 3.141592),   # joint1 (TTL,XM540)
+            2: 3072 + int(self.joint_positions.get("Revolute 3", 0.0) * 2048 / 3.141592),   # joint2 (TTL, XM540)
+            3: 1536 + int(self.joint_positions.get("Revolute 4", 0.0) * 2048 / 3.141592),   # joint3 (RS485, XL430)
+            4: 3072 + int(self.joint_positions.get("Revolute 5", 0.0) * 2048 / 3.141592),   # joint4 (RS485, XL430)
+            5: 2048 + int(self.joint_positions.get("Revolute 6", 0.0) * 2048 / 3.141592),   # joint5 (RS485, XL430)
+            7: int(self.joint_positions.get("Revolute 2", 0.0) * 2048 / 3.141592),
         }
         
         # 各モーターの位置データを4バイトずつ結合（Extended Position Control用）
