@@ -127,6 +127,37 @@ BT::NodeStatus onRunning() override
 }
 ```
 
+## Groot2でビジュアライズ
+
+### Groot2のインストール
+
+```bash
+sudo apt install -y ros-humble-groot2
+```
+
+または公式サイトからダウンロード:
+https://www.behaviortree.dev/groot/
+
+### XMLファイルを開く
+
+```bash
+groot2
+```
+
+Groot2のGUIで:
+1. File → Load Tree
+2. `/home/a/ws_nhk/src/nhk_bt/config/remote_control_sequence.xml` を選択
+
+または直接指定:
+
+```bash
+groot2 /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/config/remote_control_sequence.xml
+```
+
+### リアルタイムモニタリング
+
+実行中のBTを監視する場合は、ノードでZMQパブリッシャーを有効にする必要があります。
+
 ## デバッグ
 
 詳細なログを表示:
@@ -136,6 +167,21 @@ ros2 launch nhk_bt remote_control_bt.launch.py --ros-args --log-level debug
 ```
 
 ## トラブルシューティング
+
+### Groot2で木構造が表示されない
+
+1. **TreeNodesModelが含まれているか確認**
+   - XMLファイルに`<TreeNodesModel>`セクションが必要
+   - 本パッケージのXMLには既に含まれています
+
+2. **XMLの文法エラー確認**
+   ```bash
+   xmllint --noout /home/a/ws_nhk/src/nhk_bt/config/remote_control_sequence.xml
+   ```
+
+3. **Groot2のバージョン確認**
+   - BehaviorTree.CPP v4形式に対応したGroot2が必要
+   - `BTCPP_format="4"`を使用
 
 ### Joyトピックが来ない
 
@@ -151,6 +197,7 @@ ls /dev/input/js*
 
 - `bt_xml_path`パラメータが正しいか確認
 - XMLファイルの文法エラーをチェック
+- インストール後のパスを確認: `share/nhk_bt/config/remote_control_sequence.xml`
 
 ## 依存パッケージ
 

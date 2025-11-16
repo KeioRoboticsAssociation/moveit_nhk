@@ -1,5 +1,38 @@
 <?xml version="1.0"?>
 <root BTCPP_format="4">
+  <!-- カスタムノードの定義（Groot2で表示するために必要） -->
+  <TreeNodesModel>
+    <Condition ID="WaitForCircleButton">
+      <description>丸ボタンが押されるまで待機</description>
+    </Condition>
+
+    <Condition ID="IsCrossButtonPressed">
+      <description>×ボタンが押されたかチェック</description>
+    </Condition>
+
+    <Action ID="ResetSequenceState">
+      <description>シーケンス状態を初期化</description>
+    </Action>
+
+    <Action ID="Step1">
+      <input_port name="target_position" default="0.0">目標位置</input_port>
+      <input_port name="step_name" default="Step1">ステップ名</input_port>
+      <description>シーケンスステップ1</description>
+    </Action>
+
+    <Action ID="Step2">
+      <input_port name="target_position" default="0.0">目標位置</input_port>
+      <input_port name="step_name" default="Step2">ステップ名</input_port>
+      <description>シーケンスステップ2</description>
+    </Action>
+
+    <Action ID="Step3">
+      <input_port name="target_position" default="0.0">目標位置</input_port>
+      <input_port name="step_name" default="Step3">ステップ名</input_port>
+      <description>シーケンスステップ3</description>
+    </Action>
+  </TreeNodesModel>
+
   <BehaviorTree ID="RemoteControlSequence">
     <!-- 永続ループ: リモコン入力を継続的に処理 -->
     <Repeat num_cycles="-1">
