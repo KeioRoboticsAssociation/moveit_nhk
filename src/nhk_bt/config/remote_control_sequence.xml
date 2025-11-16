@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="RemoteControlSequence">
+    <!-- 永続ループ: リモコン入力を継続的に処理 -->
+    <Repeat num_cycles="-1">
+      <Sequence name="MainSequence">
+
+        <!-- ステップ1: 丸ボタン待機 -->
+        <Condition ID="WaitForCircleButton" name="丸ボタン待機"/>
+
+        <!-- ステップ2: ×ボタンで中断可能なシーケンス実行 -->
+        <ReactiveSequence name="InterruptibleSequence">
+
+          <!-- ×ボタンが押されていないことを継続的にチェック -->
+          <Inverter name="Not×Button">
+            <Condition ID="IsCrossButtonPressed" name="×ボタンチェック"/>
+          </Inverter>
+
+          <!-- 実際のシーケンス動作 -->
+          <Sequence name="ActualSequence">
+            <!-- シーケンス初期化 -->
+            <Action ID="ResetSequenceState" name="シーケンス初期化"/>
+
+            <!-- シーケンスステップ（必要に応じて変更） -->
+            <Action ID="Step1" name="ステップ1" target_position="0.5"/>
+            <Action ID="Step2" name="ステップ2" target_position="1.0"/>
+            <Action ID="Step3" name="ステップ3" target_position="0.0"/>
+          </Sequence>
+
+        </ReactiveSequence>
+
+      </Sequence>
+    </Repeat>
+  </BehaviorTree>
+</root>

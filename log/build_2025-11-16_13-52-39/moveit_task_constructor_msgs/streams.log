@@ -1,0 +1,23 @@
+[0.220s] Invoking command in '/home/a/ws_nhk/build/moveit_task_constructor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_task_constructor_msgs -- -j22 -l22
+[0.431s] [  0%] Built target moveit_task_constructor_msgs__cpp
+[0.432s] [  0%] Built target ament_cmake_python_copy_moveit_task_constructor_msgs
+[0.432s] [ 12%] Built target moveit_task_constructor_msgs__rosidl_generator_c
+[0.432s] [ 23%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_cpp
+[0.432s] [ 35%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_cpp
+[0.432s] [ 47%] Built target moveit_task_constructor_msgs__rosidl_typesupport_cpp
+[0.432s] [ 59%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c
+[0.432s] [ 71%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c
+[0.432s] [ 83%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c
+[0.432s] [ 83%] Built target moveit_task_constructor_msgs
+[0.432s] [ 84%] Built target moveit_task_constructor_msgs__py
+[0.433s] [ 95%] Built target moveit_task_constructor_msgs__rosidl_generator_py
+[0.434s] [ 96%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c__pyext
+[0.434s] [ 98%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.436s] [100%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c__pyext
+[0.502s] running egg_info
+[0.502s] writing moveit_task_constructor_msgs.egg-info/PKG-INFO
+[0.502s] writing dependency_links to moveit_task_constructor_msgs.egg-info/dependency_links.txt
+[0.502s] writing top-level names to moveit_task_constructor_msgs.egg-info/top_level.txt
+[0.502s] reading manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[0.502s] writing manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[0.507s] [100%] Built target ament_cmake_python_build_moveit_task_constructor_msgs_egg

@@ -1,0 +1,63 @@
+cmake_minimum_required(VERSION 3.8)
+project(nhk_bt)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# C++17が必要
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(behaviortree_cpp REQUIRED)
+
+# Include directories
+include_directories(include)
+
+# Remote Control BT Node
+add_executable(remote_control_bt_node
+  src/remote_control_bt_node.cpp
+)
+
+ament_target_dependencies(remote_control_bt_node
+  rclcpp
+  sensor_msgs
+  behaviortree_cpp
+)
+
+# Install executables
+install(TARGETS
+  remote_control_bt_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install config files
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# Install include files
+install(DIRECTORY
+  include/
+  DESTINATION include
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()
