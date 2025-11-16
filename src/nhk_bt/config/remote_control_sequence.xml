@@ -10,26 +10,52 @@
       <description>×ボタンが押されたかチェック</description>
     </Condition>
 
+    <Condition ID="IsDpadLeftPressed">
+      <description>dpad左ボタンが押されたかチェック</description>
+    </Condition>
+
+    <Condition ID="IsDpadUpPressed">
+      <description>dpad上ボタンが押されたかチェック</description>
+    </Condition>
+
+    <Condition ID="IsDpadRightPressed">
+      <description>dpad右ボタンが押されたかチェック</description>
+    </Condition>
+
+    <Condition ID="IsDpadDownPressed">
+      <description>dpad下ボタンが押されたかチェック</description>
+    </Condition>
+
     <Action ID="ResetSequenceState">
       <description>シーケンス状態を初期化</description>
     </Action>
 
-    <Action ID="Step1">
+    <Action ID="Task1">
+      <input_port name="task_name" default="Task1">タスク名</input_port>
       <input_port name="target_position" default="0.0">目標位置</input_port>
-      <input_port name="step_name" default="Step1">ステップ名</input_port>
-      <description>シーケンスステップ1</description>
+      <description>タスク1</description>
     </Action>
 
-    <Action ID="Step2">
+    <Action ID="Task2">
+      <input_port name="task_name" default="Task2">タスク名</input_port>
       <input_port name="target_position" default="0.0">目標位置</input_port>
-      <input_port name="step_name" default="Step2">ステップ名</input_port>
-      <description>シーケンスステップ2</description>
+      <description>タスク2</description>
     </Action>
 
-    <Action ID="Step3">
+    <Action ID="Task3">
+      <input_port name="task_name" default="Task3">タスク名</input_port>
       <input_port name="target_position" default="0.0">目標位置</input_port>
-      <input_port name="step_name" default="Step3">ステップ名</input_port>
-      <description>シーケンスステップ3</description>
+      <description>タスク3</description>
+    </Action>
+
+    <Action ID="Task4">
+      <input_port name="task_name" default="Task4">タスク名</input_port>
+      <input_port name="target_position" default="0.0">目標位置</input_port>
+      <description>タスク4</description>
+    </Action>
+
+    <Action ID="AlwaysRunning">
+      <description>常にRUNNINGを返す（待機用）</description>
     </Action>
   </TreeNodesModel>
 
@@ -39,26 +65,49 @@
       <Sequence name="MainSequence">
 
         <!-- ステップ1: 丸ボタン待機 -->
-        <Condition ID="WaitForCircleButton" name="丸ボタン待機"/>
+        <WaitForCircleButton name="丸ボタン待機"/>
 
-        <!-- ステップ2: ×ボタンで中断可能なシーケンス実行 -->
-        <ReactiveSequence name="InterruptibleSequence">
+        <!-- ステップ2: ×ボタンで中断可能なTask待機ループ -->
+        <ReactiveSequence name="InterruptibleTaskWait">
 
           <!-- ×ボタンが押されていないことを継続的にチェック -->
           <Inverter name="Not×Button">
-            <Condition ID="IsCrossButtonPressed" name="×ボタンチェック"/>
+            <IsCrossButtonPressed name="×ボタンチェック"/>
           </Inverter>
 
-          <!-- 実際のシーケンス動作 -->
-          <Sequence name="ActualSequence">
-            <!-- シーケンス初期化 -->
-            <Action ID="ResetSequenceState" name="シーケンス初期化"/>
+          <!-- Task待機・実行ループ -->
+          <Repeat num_cycles="-1">
+            <ReactiveFallback name="TaskSelector">
 
-            <!-- シーケンスステップ（必要に応じて変更） -->
-            <Action ID="Step1" name="ステップ1" target_position="0.5"/>
-            <Action ID="Step2" name="ステップ2" target_position="1.0"/>
-            <Action ID="Step3" name="ステップ3" target_position="0.0"/>
-          </Sequence>
+              <!-- dpad左が押されたらTask1実行 -->
+              <ReactiveSequence name="Task1Trigger">
+                <IsDpadLeftPressed name="dpad左チェック"/>
+                <Task1 name="タスク1実行" task_name="Task1" target_position="0.5"/>
+              </ReactiveSequence>
+
+              <!-- dpad上が押されたらTask2実行 -->
+              <ReactiveSequence name="Task2Trigger">
+                <IsDpadUpPressed name="dpad上チェック"/>
+                <Task2 name="タスク2実行" task_name="Task2" target_position="1.0"/>
+              </ReactiveSequence>
+
+              <!-- dpad右が押されたらTask3実行 -->
+              <ReactiveSequence name="Task3Trigger">
+                <IsDpadRightPressed name="dpad右チェック"/>
+                <Task3 name="タスク3実行" task_name="Task3" target_position="1.5"/>
+              </ReactiveSequence>
+
+              <!-- dpad下が押されたらTask4実行 -->
+              <ReactiveSequence name="Task4Trigger">
+                <IsDpadDownPressed name="dpad下チェック"/>
+                <Task4 name="タスク4実行" task_name="Task4" target_position="0.0"/>
+              </ReactiveSequence>
+
+              <!-- どのボタンも押されていない場合はRUNNINGを返す -->
+              <AlwaysRunning name="待機"/>
+
+            </ReactiveFallback>
+          </Repeat>
 
         </ReactiveSequence>
 
