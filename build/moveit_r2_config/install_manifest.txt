@@ -21,6 +21,7 @@
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/launch/move_group.launch.py
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/launch/static_virtual_joint_tfs.launch.py
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/launch/setup_assistant.launch.py
+/home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/config/ompl_planning.yaml
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/config/a_r2.srdf
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/config/pilz_cartesian_limits.yaml
 /home/a/ws_nhk/install/moveit_r2_config/share/moveit_r2_config/config/a_r2.ros2_control.xacro
