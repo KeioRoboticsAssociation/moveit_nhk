@@ -1,0 +1,29 @@
+[0.630s] Invoking command in '/home/a/ws_nhk/build/nhk_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/nhk_bt -- -j22 -l22
+[0.821s] [100%] Built target remote_control_bt_node
+[1.099s] Invoked command in '/home/a/ws_nhk/build/nhk_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/nhk_bt -- -j22 -l22
+[1.101s] Invoking command in '/home/a/ws_nhk/build/nhk_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/nhk_bt
+[1.153s] -- Install configuration: ""
+[1.153s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/lib/nhk_bt/remote_control_bt_node
+[1.153s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/config
+[1.153s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/config/remote_control_sequence.xml
+[1.153s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/launch
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/launch/remote_control_bt.launch.py
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/include
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/include/nhk_bt
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/include/nhk_bt/remote_control_nodes.hpp
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/ament_index/resource_index/package_run_dependencies/nhk_bt
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/ament_index/resource_index/parent_prefix_path/nhk_bt
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/environment/ament_prefix_path.sh
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/environment/ament_prefix_path.dsv
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/environment/path.sh
+[1.154s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/environment/path.dsv
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/local_setup.bash
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/local_setup.sh
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/local_setup.zsh
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/local_setup.dsv
+[1.155s] -- Installing: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/package.dsv
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/ament_index/resource_index/packages/nhk_bt
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/cmake/nhk_btConfig.cmake
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/cmake/nhk_btConfig-version.cmake
+[1.155s] -- Up-to-date: /home/a/ws_nhk/install/nhk_bt/share/nhk_bt/package.xml
+[1.198s] Invoked command in '/home/a/ws_nhk/build/nhk_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/nhk_bt
