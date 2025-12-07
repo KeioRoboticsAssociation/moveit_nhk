@@ -87,10 +87,29 @@ arm:
     - LazyPRMstarkConfigDefault
     - SPARSkConfigDefault
     - SPARStwokConfigDefault
-  projection_evaluator: joints(Slider 1,Revolute 2)
+  projection_evaluator: joints(Slider_1,Revolute_2)
   longest_valid_segment_fraction: 0.005
-  # Planning timeout in seconds (increase for more complex planning)
   default_planner_config: RRTConnectkConfigDefault
-  # Increase planning time for better success rate
   planning_time_limit: 10.0
+  max_solution_segment_length: 0.01
+
+hand:
+  planner_configs:
+    - RRTConnectkConfigDefault
+    - RRTkConfigDefault
+  projection_evaluator: joints(Revolute_3)
+  longest_valid_segment_fraction: 0.01
+  default_planner_config: RRTConnectkConfigDefault
+  planning_time_limit: 5.0
+
+arm_with_hand:
+  planner_configs:
+    - SBLkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTkConfigDefault
+    - PRMkConfigDefault
+  projection_evaluator: joints(Slider_1,Revolute_2,Revolute_3)
+  longest_valid_segment_fraction: 0.005
+  default_planner_config: RRTConnectkConfigDefault
+  planning_time_limit: 15.0
   max_solution_segment_length: 0.01

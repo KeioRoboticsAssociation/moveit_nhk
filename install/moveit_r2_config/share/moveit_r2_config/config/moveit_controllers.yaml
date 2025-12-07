@@ -13,6 +13,7 @@ moveit_simple_controller_manager:
     joints:
       - Slider 1
       - Revolute 2
+      - Revolute 3
       - Slider 4
       - Slider 5
   # hand_controller:
