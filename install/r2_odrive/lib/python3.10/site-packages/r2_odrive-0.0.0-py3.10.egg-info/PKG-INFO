@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: r2-odrive
+Version: 0.0.0
+Summary: ROS2 controller for ODrive motors
+Home-page: UNKNOWN
+Maintainer: a
+Maintainer-email: kiratosakata@keio.jp
+License: Apache-2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

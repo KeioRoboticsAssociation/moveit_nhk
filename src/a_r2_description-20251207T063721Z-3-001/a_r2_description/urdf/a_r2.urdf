@@ -208,7 +208,7 @@
     <parent link="link2_1"/>
     <child link="link4_1"/>
     <axis xyz="-0.0 -0.440919 0.897547"/>
-    <limit effort="100" lower="-0.6" upper="0.0" velocity="100"/>
+    <limit effort="100" lower="0.0" upper="0.6" velocity="100"/>
   </joint>
   <joint name="Slider 5" type="prismatic">
     <origin rpy="0 0 0" xyz="0.0428 -0.078504 0.112403"/>

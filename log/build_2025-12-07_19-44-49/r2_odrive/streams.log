@@ -1,0 +1,39 @@
+[0.419s] Invoking command in '/home/a/ws_nhk/src/r2_odrive': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/r2_odrive build --build-base /home/a/ws_nhk/build/r2_odrive/build install --record /home/a/ws_nhk/build/r2_odrive/install.log --single-version-externally-managed install_data
+[0.592s] running egg_info
+[0.592s] creating ../../build/r2_odrive/r2_odrive.egg-info
+[0.592s] writing ../../build/r2_odrive/r2_odrive.egg-info/PKG-INFO
+[0.593s] writing dependency_links to ../../build/r2_odrive/r2_odrive.egg-info/dependency_links.txt
+[0.593s] writing entry points to ../../build/r2_odrive/r2_odrive.egg-info/entry_points.txt
+[0.593s] writing requirements to ../../build/r2_odrive/r2_odrive.egg-info/requires.txt
+[0.593s] writing top-level names to ../../build/r2_odrive/r2_odrive.egg-info/top_level.txt
+[0.593s] writing manifest file '../../build/r2_odrive/r2_odrive.egg-info/SOURCES.txt'
+[0.594s] reading manifest file '../../build/r2_odrive/r2_odrive.egg-info/SOURCES.txt'
+[0.594s] adding license file 'LICENSE'
+[0.594s] writing manifest file '../../build/r2_odrive/r2_odrive.egg-info/SOURCES.txt'
+[0.595s] running build
+[0.596s] running build_py
+[0.596s] creating /home/a/ws_nhk/build/r2_odrive/build
+[0.596s] creating /home/a/ws_nhk/build/r2_odrive/build/lib
+[0.596s] creating /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive
+[0.596s] copying r2_odrive/odrive_controller_node.py -> /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive
+[0.596s] copying r2_odrive/__init__.py -> /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive
+[0.597s] running install
+[0.597s] running install_lib
+[0.597s] creating /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.597s] copying /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive/odrive_controller_node.py -> /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.597s] copying /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive/__init__.py -> /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.597s] byte-compiling /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive/odrive_controller_node.py to odrive_controller_node.cpython-310.pyc
+[0.597s] byte-compiling /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive/__init__.py to __init__.cpython-310.pyc
+[0.597s] running install_data
+[0.598s] copying resource/r2_odrive -> /home/a/ws_nhk/install/r2_odrive/share/ament_index/resource_index/packages
+[0.598s] copying package.xml -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive
+[0.598s] creating /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/launch
+[0.598s] copying launch/odrive_controller.launch.py -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/launch
+[0.598s] creating /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/config
+[0.598s] copying config/odrive_config.yaml -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/config
+[0.598s] running install_egg_info
+[0.599s] Copying ../../build/r2_odrive/r2_odrive.egg-info to /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive-0.0.0-py3.10.egg-info
+[0.599s] running install_scripts
+[0.613s] Installing odrive_controller_node script to /home/a/ws_nhk/install/r2_odrive/lib/r2_odrive
+[0.613s] writing list of installed files to '/home/a/ws_nhk/build/r2_odrive/install.log'
+[0.628s] Invoked command in '/home/a/ws_nhk/src/r2_odrive' returned '0': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/r2_odrive build --build-base /home/a/ws_nhk/build/r2_odrive/build install --record /home/a/ws_nhk/build/r2_odrive/install.log --single-version-externally-managed install_data

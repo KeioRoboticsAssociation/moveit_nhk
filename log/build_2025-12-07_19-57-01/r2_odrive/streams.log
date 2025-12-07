@@ -1,0 +1,35 @@
+[0.484s] Invoking command in '/home/a/ws_nhk/build/r2_odrive': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/a/ws_nhk/build/r2_odrive/build
+[0.671s] running develop
+[0.809s] Removing /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2-odrive.egg-link (link to .)
+[0.828s] Invoked command in '/home/a/ws_nhk/build/r2_odrive' returned '0': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/a/ws_nhk/build/r2_odrive/build
+[0.828s] Invoking command in '/home/a/ws_nhk/src/r2_odrive': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/r2_odrive build --build-base /home/a/ws_nhk/build/r2_odrive/build install --record /home/a/ws_nhk/build/r2_odrive/install.log --single-version-externally-managed install_data --force
+[0.991s] running egg_info
+[0.991s] writing ../../build/r2_odrive/r2_odrive.egg-info/PKG-INFO
+[0.991s] writing dependency_links to ../../build/r2_odrive/r2_odrive.egg-info/dependency_links.txt
+[0.992s] writing entry points to ../../build/r2_odrive/r2_odrive.egg-info/entry_points.txt
+[0.992s] writing requirements to ../../build/r2_odrive/r2_odrive.egg-info/requires.txt
+[0.992s] writing top-level names to ../../build/r2_odrive/r2_odrive.egg-info/top_level.txt
+[0.993s] reading manifest file '../../build/r2_odrive/r2_odrive.egg-info/SOURCES.txt'
+[0.993s] adding license file 'LICENSE'
+[0.993s] writing manifest file '../../build/r2_odrive/r2_odrive.egg-info/SOURCES.txt'
+[0.993s] running build
+[0.993s] running build_py
+[0.993s] copying r2_odrive/odrive_controller_node.py -> /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive
+[0.993s] running install
+[0.993s] running install_lib
+[0.994s] creating /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.994s] copying /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive/odrive_controller_node.py -> /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.994s] copying /home/a/ws_nhk/build/r2_odrive/build/lib/r2_odrive/__init__.py -> /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive
+[0.994s] byte-compiling /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive/odrive_controller_node.py to odrive_controller_node.cpython-310.pyc
+[0.996s] byte-compiling /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive/__init__.py to __init__.cpython-310.pyc
+[0.996s] running install_data
+[0.996s] copying resource/r2_odrive -> /home/a/ws_nhk/install/r2_odrive/share/ament_index/resource_index/packages
+[0.996s] copying package.xml -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive
+[0.996s] copying launch/odrive_controller.launch.py -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/launch
+[0.996s] copying config/odrive_config.yaml -> /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/config
+[0.996s] running install_egg_info
+[0.997s] Copying ../../build/r2_odrive/r2_odrive.egg-info to /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive-0.0.0-py3.10.egg-info
+[0.997s] running install_scripts
+[1.010s] Installing odrive_controller_node script to /home/a/ws_nhk/install/r2_odrive/lib/r2_odrive
+[1.010s] writing list of installed files to '/home/a/ws_nhk/build/r2_odrive/install.log'
+[1.023s] Invoked command in '/home/a/ws_nhk/src/r2_odrive' returned '0': PYTHONPATH=/home/a/ws_nhk/build/r2_odrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/r2_odrive build --build-base /home/a/ws_nhk/build/r2_odrive/build install --record /home/a/ws_nhk/build/r2_odrive/install.log --single-version-externally-managed install_data --force
