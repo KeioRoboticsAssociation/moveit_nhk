@@ -47,7 +47,7 @@ class ODriveControllerNode(Node):
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('odrive_status_topic', '/odrive_status')
         self.declare_parameter('joint_names', [])
-        self.declare_parameter('default_mode', 0)
+        self.declare_parameter('default_mode', 3)
 
     def _load_parameters(self) -> None:
         self.joint_state_topic = self.get_parameter('joint_state_topic').value
