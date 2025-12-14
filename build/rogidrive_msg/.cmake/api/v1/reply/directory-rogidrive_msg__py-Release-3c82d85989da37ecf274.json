@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rogidrive_msg__py",
+		"source" : "/home/a/ws_nhk/build/rogidrive_msg/rogidrive_msg__py"
+	}
+}

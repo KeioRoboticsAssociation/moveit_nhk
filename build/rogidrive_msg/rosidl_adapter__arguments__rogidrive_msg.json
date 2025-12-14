@@ -1,0 +1,7 @@
+{
+  "package_name": "rogidrive_msg",
+  "non_idl_tuples": [
+    "/home/a/ws_nhk/src/rogidrive/rogidrive_msg:msg/RogidriveMessage.msg",
+    "/home/a/ws_nhk/src/rogidrive/rogidrive_msg:msg/RogidriveMultiArray.msg"
+  ]
+}

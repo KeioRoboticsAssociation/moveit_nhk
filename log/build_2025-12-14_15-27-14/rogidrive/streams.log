@@ -1,0 +1,47 @@
+[6.032s] Invoking command in '/home/a/ws_nhk/src/rogidrive/rogidrive': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/rogidrive_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/rogidrive_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/a/ws_nhk/install/rogidrive_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/ws_nhk/build/rogidrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages:/home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rogidrive build --build-base /home/a/ws_nhk/build/rogidrive/build install --record /home/a/ws_nhk/build/rogidrive/install.log --single-version-externally-managed install_data
+[10.904s] running egg_info
+[10.924s] creating ../../../build/rogidrive/rogidrive.egg-info
+[10.933s] writing ../../../build/rogidrive/rogidrive.egg-info/PKG-INFO
+[10.938s] writing dependency_links to ../../../build/rogidrive/rogidrive.egg-info/dependency_links.txt
+[10.939s] writing entry points to ../../../build/rogidrive/rogidrive.egg-info/entry_points.txt
+[10.942s] writing requirements to ../../../build/rogidrive/rogidrive.egg-info/requires.txt
+[10.946s] writing top-level names to ../../../build/rogidrive/rogidrive.egg-info/top_level.txt
+[10.958s] writing manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+[11.015s] reading manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+[11.030s] writing manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+[11.031s] running build
+[11.032s] running build_py
+[11.042s] creating /home/a/ws_nhk/build/rogidrive/build
+[11.043s] creating /home/a/ws_nhk/build/rogidrive/build/lib
+[11.043s] creating /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+[11.044s] copying rogidrive/rogidrive_tester.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+[11.044s] copying rogidrive/__init__.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+[11.056s] copying rogidrive/rogidrive.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+[11.056s] running install
+[11.071s] running install_lib
+[11.082s] creating /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+[11.084s] copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/rogidrive_tester.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+[11.088s] copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/__init__.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+[11.096s] copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/rogidrive.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+[11.105s] byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/rogidrive_tester.py to rogidrive_tester.cpython-310.pyc
+[11.110s] byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/__init__.py to __init__.cpython-310.pyc
+[11.115s] byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/rogidrive.py to rogidrive.cpython-310.pyc
+[11.154s] running install_data
+[11.156s] creating /home/a/ws_nhk/install/rogidrive/share/ament_index
+[11.157s] creating /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index
+[11.163s] creating /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index/packages
+[11.166s] copying resource/rogidrive -> /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index/packages
+[11.168s] copying package.xml -> /home/a/ws_nhk/install/rogidrive/share/rogidrive
+[11.169s] creating /home/a/ws_nhk/install/rogidrive/share/rogidrive/launch
+[11.169s] copying launch/rogidrive.launch.py -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/launch
+[11.170s] creating /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+[11.179s] copying config/test.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+[11.179s] copying config/r1.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+[11.180s] copying config/r2.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+[11.180s] running install_egg_info
+[11.214s] Copying ../../../build/rogidrive/rogidrive.egg-info to /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive-0.0.0-py3.10.egg-info
+[11.218s] running install_scripts
+[11.656s] Installing rogidrive script to /home/a/ws_nhk/install/rogidrive/lib/rogidrive
+[11.657s] Installing rogidrive_tester script to /home/a/ws_nhk/install/rogidrive/lib/rogidrive
+[11.661s] writing list of installed files to '/home/a/ws_nhk/build/rogidrive/install.log'
+[12.167s] Invoked command in '/home/a/ws_nhk/src/rogidrive/rogidrive' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/rogidrive_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/rogidrive_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/a/ws_nhk/install/rogidrive_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/ws_nhk/build/rogidrive/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages:/home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rogidrive build --build-base /home/a/ws_nhk/build/rogidrive/build install --record /home/a/ws_nhk/build/rogidrive/install.log --single-version-externally-managed install_data

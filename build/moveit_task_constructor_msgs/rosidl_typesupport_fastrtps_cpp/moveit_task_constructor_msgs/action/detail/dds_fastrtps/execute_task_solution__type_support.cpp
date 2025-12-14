@@ -74,7 +74,7 @@ cdr_deserialize(
     cdr, ros_message.solution);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -322,7 +322,7 @@ cdr_deserialize(
     cdr, ros_message.error_code);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -548,7 +548,7 @@ cdr_deserialize(
   cdr >> ros_message.sub_no;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -812,7 +812,7 @@ cdr_deserialize(
     cdr, ros_message.goal);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -1094,7 +1094,7 @@ cdr_deserialize(
     cdr, ros_message.stamp);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -1395,7 +1395,7 @@ cdr_deserialize(
     cdr, ros_message.goal_id);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -1627,7 +1627,7 @@ cdr_deserialize(
     cdr, ros_message.result);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -1941,7 +1941,7 @@ cdr_deserialize(
     cdr, ros_message.feedback);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs

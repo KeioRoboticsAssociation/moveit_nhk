@@ -75,7 +75,7 @@ cdr_deserialize(
   cdr >> ros_message.total_compute_time;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs

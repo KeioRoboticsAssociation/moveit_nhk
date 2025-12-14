@@ -47,7 +47,7 @@ cdr_deserialize(
   cdr >> ros_message.solution_id;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs
@@ -287,7 +287,7 @@ cdr_deserialize(
     cdr, ros_message.solution);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_moveit_task_constructor_msgs

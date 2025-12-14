@@ -6,5 +6,5 @@ CXX_DEFINES = -Ddynamixel_sdk_EXPORTS
 
 CXX_INCLUDES = -I/home/a/ws_nhk/src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk/include/dynamixel_sdk
 
-CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable
 

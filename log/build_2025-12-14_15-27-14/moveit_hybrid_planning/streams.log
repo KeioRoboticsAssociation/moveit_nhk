@@ -1,0 +1,185 @@
+[0.041s] Invoking command in '/home/a/ws_nhk/build/moveit_hybrid_planning': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_planners_ompl/lib:/home/a/ws_nhk/install/moveit_kinematics/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_simple_controller_manager/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_hybrid_planning -- -j22 -l22
+[0.072s] -- Found moveit_common: 2.5.9 (/home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake)
+[0.072s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.250s] -- Found moveit_core: 2.5.9 (/home/a/ws_nhk/install/moveit_core/share/moveit_core/cmake)
+[0.267s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.308s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.334s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.336s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.343s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.373s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.409s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.411s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.531s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.589s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.611s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[0.666s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.745s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.008s] -- Found moveit_ros_planning: 2.5.9 (/home/a/ws_nhk/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[1.015s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.048s] -- Found moveit_ros_planning_interface: 2.5.9 (/home/a/ws_nhk/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[1.055s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.074s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.100s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.281s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.282s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.283s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[1.283s] -- Found launch_testing_ament_cmake: 1.0.13 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[1.284s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.316s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.316s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.316s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.323s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.357s] -- Configuring done
+[1.584s] -- Generating done
+[1.652s] -- Build files have been written to: /home/a/ws_nhk/build/moveit_hybrid_planning
+[1.720s] [35m[1mConsolidate compiler generated dependencies of target simple_sampler_plugin[0m
+[1.723s] [35m[1mConsolidate compiler generated dependencies of target forward_trajectory_plugin[0m
+[1.724s] [35m[1mConsolidate compiler generated dependencies of target moveit_hybrid_planning_manager[0m
+[1.727s] [35m[1mConsolidate compiler generated dependencies of target motion_planning_pipeline_plugin[0m
+[1.729s] [35m[1mConsolidate compiler generated dependencies of target moveit_global_planner_component[0m
+[1.735s] [35m[1mConsolidate compiler generated dependencies of target moveit_local_planner_component[0m
+[1.750s] [  5%] [32mBuilding CXX object hybrid_planning_manager/hybrid_planning_manager_component/CMakeFiles/moveit_hybrid_planning_manager.dir/src/hybrid_planning_manager.cpp.o[0m
+[1.760s] [ 10%] [32mBuilding CXX object local_planner/trajectory_operator_plugins/CMakeFiles/simple_sampler_plugin.dir/src/simple_sampler.cpp.o[0m
+[1.773s] [ 15%] [32mBuilding CXX object global_planner/global_planner_component/CMakeFiles/moveit_global_planner_component.dir/src/global_planner_component.cpp.o[0m
+[1.779s] [ 20%] [32mBuilding CXX object local_planner/local_constraint_solver_plugins/CMakeFiles/forward_trajectory_plugin.dir/src/forward_trajectory.cpp.o[0m
+[1.782s] [ 25%] [32mBuilding CXX object global_planner/global_planner_plugins/CMakeFiles/motion_planning_pipeline_plugin.dir/src/moveit_planning_pipeline.cpp.o[0m
+[1.782s] [ 30%] [32mBuilding CXX object local_planner/local_planner_component/CMakeFiles/moveit_local_planner_component.dir/src/local_planner_component.cpp.o[0m
+[56.396s] [ 35%] [32m[1mLinking CXX shared library libsimple_sampler_plugin.so[0m
+[59.009s] [ 35%] Built target simple_sampler_plugin
+[81.116s] [ 40%] [32m[1mLinking CXX shared library libforward_trajectory_plugin.so[0m
+[82.762s] [ 40%] Built target forward_trajectory_plugin
+[99.416s] [ 45%] [32m[1mLinking CXX shared library libmotion_planning_pipeline_plugin.so[0m
+[101.514s] [ 45%] Built target motion_planning_pipeline_plugin
+[152.993s] [ 50%] [32m[1mLinking CXX shared library libmoveit_global_planner_component.so[0m
+[155.639s] [ 50%] Built target moveit_global_planner_component
+[169.194s] [ 55%] [32m[1mLinking CXX shared library libmoveit_hybrid_planning_manager.so[0m
+[173.052s] [ 55%] Built target moveit_hybrid_planning_manager
+[173.124s] [35m[1mConsolidate compiler generated dependencies of target single_plan_execution_plugin[0m
+[173.229s] [ 60%] [32mBuilding CXX object hybrid_planning_manager/planner_logic_plugins/CMakeFiles/single_plan_execution_plugin.dir/src/single_plan_execution.cpp.o[0m
+[205.578s] [ 65%] [32m[1mLinking CXX shared library libsingle_plan_execution_plugin.so[0m
+[207.179s] [ 65%] Built target single_plan_execution_plugin
+[207.265s] [35m[1mConsolidate compiler generated dependencies of target replan_invalidated_trajectory_plugin[0m
+[207.425s] [ 70%] [32mBuilding CXX object hybrid_planning_manager/planner_logic_plugins/CMakeFiles/replan_invalidated_trajectory_plugin.dir/src/replan_invalidated_trajectory.cpp.o[0m
+[216.519s] [ 75%] [32m[1mLinking CXX shared library libmoveit_local_planner_component.so[0m
+[219.646s] [ 75%] Built target moveit_local_planner_component
+[237.136s] [ 80%] [32m[1mLinking CXX shared library libreplan_invalidated_trajectory_plugin.so[0m
+[238.711s] [ 80%] Built target replan_invalidated_trajectory_plugin
+[238.780s] [35m[1mConsolidate compiler generated dependencies of target cancel_action[0m
+[238.813s] [35m[1mConsolidate compiler generated dependencies of target hybrid_planning_demo_node[0m
+[238.885s] [ 85%] [32mBuilding CXX object test/CMakeFiles/cancel_action.dir/cancel_action.cpp.o[0m
+[238.980s] [ 90%] [32mBuilding CXX object test/CMakeFiles/hybrid_planning_demo_node.dir/hybrid_planning_demo_node.cpp.o[0m
+[266.139s] [ 95%] [32m[1mLinking CXX executable cancel_action[0m
+[268.970s] [ 95%] Built target cancel_action
+[384.823s] [100%] [32m[1mLinking CXX executable hybrid_planning_demo_node[0m
+[388.301s] [100%] Built target hybrid_planning_demo_node
+[388.346s] Invoked command in '/home/a/ws_nhk/build/moveit_hybrid_planning' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_planners_ompl/lib:/home/a/ws_nhk/install/moveit_kinematics/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_simple_controller_manager/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_hybrid_planning -- -j22 -l22
+[388.355s] Invoking command in '/home/a/ws_nhk/build/moveit_hybrid_planning': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_planners_ompl/lib:/home/a/ws_nhk/install/moveit_kinematics/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_simple_controller_manager/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_hybrid_planning
+[388.392s] -- Install configuration: "Release"
+[388.402s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_global_planner_component.so.2.5.9
+[388.407s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_global_planner_component.so.2.5.9" to ""
+[388.407s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_global_planner_component.so
+[388.408s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_hybrid_planning_manager.so.2.5.9
+[388.415s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_hybrid_planning_manager.so.2.5.9" to ""
+[388.415s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_hybrid_planning_manager.so
+[388.416s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_local_planner_component.so.2.5.9
+[388.423s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_local_planner_component.so.2.5.9" to ""
+[388.424s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmoveit_local_planner_component.so
+[388.424s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libforward_trajectory_plugin.so.2.5.9
+[388.426s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libforward_trajectory_plugin.so.2.5.9" to ""
+[388.427s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libforward_trajectory_plugin.so
+[388.427s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmotion_planning_pipeline_plugin.so.2.5.9
+[388.430s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmotion_planning_pipeline_plugin.so.2.5.9" to ""
+[388.430s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libmotion_planning_pipeline_plugin.so
+[388.431s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libreplan_invalidated_trajectory_plugin.so.2.5.9
+[388.433s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libreplan_invalidated_trajectory_plugin.so.2.5.9" to ""
+[388.433s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libreplan_invalidated_trajectory_plugin.so
+[388.434s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsimple_sampler_plugin.so.2.5.9
+[388.436s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsimple_sampler_plugin.so.2.5.9" to ""
+[388.436s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsimple_sampler_plugin.so
+[388.437s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsingle_plan_execution_plugin.so.2.5.9
+[388.439s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsingle_plan_execution_plugin.so.2.5.9" to ""
+[388.439s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/libsingle_plan_execution_plugin.so
+[388.440s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/moveit_hybrid_planning/cancel_action
+[388.442s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/moveit_hybrid_planning/cancel_action" to ""
+[388.444s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/lib/moveit_hybrid_planning/hybrid_planning_demo_node
+[388.449s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_hybrid_planning/lib/moveit_hybrid_planning/hybrid_planning_demo_node" to ""
+[388.449s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.450s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.450s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/global_planner
+[388.450s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/global_planner/global_planner_component.h
+[388.450s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/global_planner/global_planner_interface.h
+[388.451s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.451s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.451s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/global_planner
+[388.452s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/global_planner/moveit_planning_pipeline.h
+[388.452s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.453s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.453s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/hybrid_planning_manager
+[388.453s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/hybrid_planning_manager/planner_logic_interface.h
+[388.454s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/hybrid_planning_manager/moveit_error_code_interface.h
+[388.454s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/hybrid_planning_manager/hybrid_planning_manager.h
+[388.454s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/hybrid_planning_manager/hybrid_planning_events.h
+[388.455s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.455s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.455s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/planner_logic_plugins
+[388.455s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/planner_logic_plugins/single_plan_execution.h
+[388.456s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/planner_logic_plugins/replan_invalidated_trajectory.h
+[388.456s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.456s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.456s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_planner
+[388.457s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_planner/local_planner_component.h
+[388.457s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_planner/trajectory_operator_interface.h
+[388.457s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_planner/feedback_types.h
+[388.458s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_planner/local_constraint_solver_interface.h
+[388.458s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.458s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.459s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/trajectory_operator_plugins
+[388.459s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/trajectory_operator_plugins/simple_sampler.h
+[388.460s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include
+[388.460s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit
+[388.460s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_constraint_solver_plugins
+[388.461s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/include/moveit/local_constraint_solver_plugins/forward_trajectory.h
+[388.461s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/launch
+[388.462s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/launch/test_basic_integration.test.py
+[388.462s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/launch/hybrid_planning_common.py
+[388.462s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/launch/hybrid_planning_demo.launch.py
+[388.463s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config
+[388.463s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/global_planner.yaml
+[388.463s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/local_planner.yaml
+[388.464s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/hybrid_planning_demo.rviz
+[388.465s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/demo_controller.yaml
+[388.465s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/hybrid_planning_manager.yaml
+[388.465s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/config/common_hybrid_planning_params.yaml
+[388.466s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/single_plan_execution_plugin.xml
+[388.466s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/moveit_planning_pipeline_plugin.xml
+[388.466s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/simple_sampler_plugin.xml
+[388.466s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/replan_invalidated_trajectory_plugin.xml
+[388.467s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/forward_trajectory_plugin.xml
+[388.467s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/library_path.sh
+[388.467s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/library_path.dsv
+[388.467s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/ament_index/resource_index/package_run_dependencies/moveit_hybrid_planning
+[388.468s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/ament_index/resource_index/parent_prefix_path/moveit_hybrid_planning
+[388.468s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/ament_prefix_path.sh
+[388.468s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/ament_prefix_path.dsv
+[388.468s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/path.sh
+[388.469s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/environment/path.dsv
+[388.469s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/local_setup.bash
+[388.469s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/local_setup.sh
+[388.469s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/local_setup.zsh
+[388.470s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/local_setup.dsv
+[388.470s] -- Installing: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/package.dsv
+[388.470s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/ament_index/resource_index/packages/moveit_hybrid_planning
+[388.470s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/ament_index/resource_index/moveit_hybrid_planning__pluginlib__plugin/moveit_hybrid_planning
+[388.471s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/ament_index/resource_index/rclcpp_components/moveit_hybrid_planning
+[388.471s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/export_moveit_hybrid_planningExport.cmake
+[388.471s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/export_moveit_hybrid_planningExport-release.cmake
+[388.472s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/ament_cmake_export_include_directories-extras.cmake
+[388.472s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/ament_cmake_export_libraries-extras.cmake
+[388.472s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/ament_cmake_export_dependencies-extras.cmake
+[388.472s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/ament_cmake_export_targets-extras.cmake
+[388.473s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/moveit_hybrid_planningConfig.cmake
+[388.473s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/cmake/moveit_hybrid_planningConfig-version.cmake
+[388.473s] -- Up-to-date: /home/a/ws_nhk/install/moveit_hybrid_planning/share/moveit_hybrid_planning/package.xml
+[388.479s] Invoked command in '/home/a/ws_nhk/build/moveit_hybrid_planning' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_planners_ompl/lib:/home/a/ws_nhk/install/moveit_kinematics/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_simple_controller_manager/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_hybrid_planning

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-6dc476b6254164e1f1c9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "rogidrive_msg__py",
+					"jsonFile" : "directory-rogidrive_msg__py-Release-3c82d85989da37ecf274.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/a/ws_nhk/build/rogidrive_msg/rogidrive_msg__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rogidrive_msg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rogidrive_msg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rogidrive_msg_egg-Release-96a2e41f7dc736740260.json",
+					"name" : "ament_cmake_python_build_rogidrive_msg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rogidrive_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rogidrive_msg-Release-e606a0e0238336af2c82.json",
+					"name" : "ament_cmake_python_copy_rogidrive_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg-Release-aa05661f5d02278182fd.json",
+					"name" : "rogidrive_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__cpp-Release-71475ae0975606238f1d.json",
+					"name" : "rogidrive_msg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rogidrive_msg__py::@36d4ef983137ccf6be02",
+					"jsonFile" : "target-rogidrive_msg__py-Release-cf40de40a39d2cd9dd23.json",
+					"name" : "rogidrive_msg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_generator_c-Release-6edfdd65eada18467bd6.json",
+					"name" : "rogidrive_msg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_generator_py-Release-053482e5fb02bffa2db2.json",
+					"name" : "rogidrive_msg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_c-Release-9fd7da4dedf21e6aaea2.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_c__pyext-Release-e6f8790a8f8d7c4e74d0.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_cpp-Release-a6cffe496f92b1bc6fd1.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_fastrtps_c-Release-deaeedd7d0275b21c563.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_fastrtps_c__pyext-Release-9256ebb77922cde7b260.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_fastrtps_cpp-Release-60c46c489895aa5878d7.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_introspection_c-Release-fd24c1bd6692157811b6.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_introspection_c__pyext-Release-2e4c8d5206052b777764.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg__rosidl_typesupport_introspection_cpp-Release-43899103cee7a0a52f7a.json",
+					"name" : "rogidrive_msg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rogidrive_msg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rogidrive_msg_uninstall-Release-1952cf079a3526a98ff2.json",
+					"name" : "rogidrive_msg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-8b3b114a8e64d37c475f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/a/ws_nhk/build/rogidrive_msg",
+		"source" : "/home/a/ws_nhk/src/rogidrive/rogidrive_msg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,33 @@
+[0.006s] Invoking command in '/home/a/ws_nhk/build/moveit_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/moveit2/moveit_common -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/moveit_common
+[0.010s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.092s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.141s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.142s] -- Added test 'lint_cmake' to check CMake code style
+[0.143s] -- Added test 'xmllint' to check XML markup files
+[0.144s] -- Configuring done
+[0.145s] -- Generating done
+[0.146s] -- Build files have been written to: /home/a/ws_nhk/build/moveit_common
+[0.150s] Invoked command in '/home/a/ws_nhk/build/moveit_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/moveit2/moveit_common -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/moveit_common
+[0.150s] Invoking command in '/home/a/ws_nhk/build/moveit_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_common -- -j22 -l22
+[0.181s] Invoked command in '/home/a/ws_nhk/build/moveit_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_common -- -j22 -l22
+[0.184s] Invoking command in '/home/a/ws_nhk/build/moveit_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_common
+[0.191s] -- Install configuration: "Release"
+[0.191s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/ament_index/resource_index/package_run_dependencies/moveit_common
+[0.191s] -- Installing: /home/a/ws_nhk/install/moveit_common/share/ament_index/resource_index/parent_prefix_path/moveit_common
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/environment/ament_prefix_path.sh
+[0.192s] -- Installing: /home/a/ws_nhk/install/moveit_common/share/moveit_common/environment/ament_prefix_path.dsv
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/environment/path.sh
+[0.192s] -- Installing: /home/a/ws_nhk/install/moveit_common/share/moveit_common/environment/path.dsv
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/local_setup.bash
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/local_setup.sh
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/local_setup.zsh
+[0.192s] -- Installing: /home/a/ws_nhk/install/moveit_common/share/moveit_common/local_setup.dsv
+[0.192s] -- Installing: /home/a/ws_nhk/install/moveit_common/share/moveit_common/package.dsv
+[0.192s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/ament_index/resource_index/packages/moveit_common
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake/moveit_common-extras.cmake
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake/moveit_commonConfig.cmake
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake/moveit_commonConfig-version.cmake
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/package.xml
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake
+[0.193s] -- Up-to-date: /home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake/moveit_package.cmake
+[0.194s] Invoked command in '/home/a/ws_nhk/build/moveit_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_common

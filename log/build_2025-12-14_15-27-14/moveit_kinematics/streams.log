@@ -1,0 +1,169 @@
+[0.032s] Invoking command in '/home/a/ws_nhk/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_kinematics -- -j22 -l22
+[0.067s] -- Found moveit_common: 2.5.9 (/home/a/ws_nhk/install/moveit_common/share/moveit_common/cmake)
+[0.067s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.214s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.295s] [0mmoveit_kinematics: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[0.296s] -- Found tf2_kdl: 0.25.17 (/opt/ros/humble/share/tf2_kdl/cmake)
+[0.331s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.333s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.340s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.368s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.417s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.418s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.482s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.484s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.631s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.754s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[0.758s] -- Found random_numbers: 2.0.1 (/opt/ros/humble/share/random_numbers/cmake)
+[0.769s] -- Found pluginlib: 5.1.2 (/opt/ros/humble/share/pluginlib/cmake)
+[0.787s] -- Found moveit_core: 2.5.9 (/home/a/ws_nhk/install/moveit_core/share/moveit_core/cmake)
+[0.806s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.837s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.846s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.873s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[0.923s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.160s] -- Found moveit_ros_planning: 2.5.9 (/home/a/ws_nhk/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[1.169s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.206s] -- Found trac_ik: 2.2.0 (/home/a/ws_nhk/install/trac_ik/share/trac_ik/cmake)
+[1.206s] -- Found trac_ik_lib: 2.2.0 (/home/a/ws_nhk/install/trac_ik_lib/share/trac_ik_lib/cmake)
+[1.212s] -- Found trac_ik_kinematics_plugin: 2.2.0 (/home/a/ws_nhk/install/trac_ik_kinematics_plugin/share/trac_ik_kinematics_plugin/cmake)
+[1.234s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system 
+[1.315s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.316s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[1.316s] -- Found launch_testing_ament_cmake: 1.0.13 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[1.317s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.370s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.371s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.371s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.375s] -- Found moveit_resources_fanuc_description: 2.0.7 (/home/a/ws_nhk/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/cmake)
+[1.375s] -- Found moveit_resources_fanuc_moveit_config: 2.0.7 (/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/cmake)
+[1.376s] -- Found moveit_resources_panda_description: 2.0.7 (/home/a/ws_nhk/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake)
+[1.376s] -- Found moveit_resources_panda_moveit_config: 2.0.7 (/home/a/ws_nhk/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake)
+[1.378s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.409s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.416s] -- Found launch_testing_ament_cmake: 1.0.13 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[1.417s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.466s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.466s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.466s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.562s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.564s] -- Configured cppcheck include dirs: /home/a/ws_nhk/src/moveit2/moveit_kinematics/kdl_kinematics_plugin/include;/home/a/ws_nhk/src/moveit2/moveit_kinematics/lma_kinematics_plugin/include;/home/a/ws_nhk/src/moveit2/moveit_kinematics/srv_kinematics_plugin/include;/home/a/ws_nhk/src/moveit2/moveit_kinematics/cached_ik_kinematics_plugin/include
+[1.564s] -- Configured cppcheck exclude dirs and/or files: 
+[1.567s] -- Added test 'lint_cmake' to check CMake code style
+[1.573s] -- Configuring done
+[2.250s] -- Generating done
+[2.660s] -- Build files have been written to: /home/a/ws_nhk/build/moveit_kinematics
+[3.012s] [35m[1mConsolidate compiler generated dependencies of target moveit_srv_kinematics_plugin[0m
+[3.021s] [35m[1mConsolidate compiler generated dependencies of target moveit_lma_kinematics_plugin[0m
+[3.027s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[3.041s] [35m[1mConsolidate compiler generated dependencies of target moveit_kdl_kinematics_plugin[0m
+[3.065s] [35m[1mConsolidate compiler generated dependencies of target moveit_cached_ik_kinematics_base[0m
+[3.113s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[3.162s] [35m[1mConsolidate compiler generated dependencies of target benchmark_ik[0m
+[3.195s] [ 10%] Built target gtest
+[3.325s] [ 15%] [32mBuilding CXX object lma_kinematics_plugin/CMakeFiles/moveit_lma_kinematics_plugin.dir/src/lma_kinematics_plugin.cpp.o[0m
+[3.342s] [ 21%] [32mBuilding CXX object kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/src/kdl_kinematics_plugin.cpp.o[0m
+[3.353s] [ 31%] Built target gtest_main
+[3.370s] [ 36%] [32mBuilding CXX object srv_kinematics_plugin/CMakeFiles/moveit_srv_kinematics_plugin.dir/src/srv_kinematics_plugin.cpp.o[0m
+[3.446s] [ 42%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_base.dir/src/ik_cache.cpp.o[0m
+[3.659s] [ 47%] [32mBuilding CXX object test/CMakeFiles/benchmark_ik.dir/benchmark_ik.cpp.o[0m
+[117.980s] [ 52%] [32m[1mLinking CXX shared library libmoveit_lma_kinematics_plugin.so[0m
+[118.800s] [ 57%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_base.so[0m
+[120.244s] [ 57%] Built target moveit_lma_kinematics_plugin
+[121.440s] [ 57%] Built target moveit_cached_ik_kinematics_base
+[127.037s] [ 63%] [32m[1mLinking CXX shared library libmoveit_kdl_kinematics_plugin.so[0m
+[127.736s] [ 68%] Built target moveit_kdl_kinematics_plugin
+[133.891s] [ 73%] [32m[1mLinking CXX shared library libmoveit_srv_kinematics_plugin.so[0m
+[134.449s] [ 73%] Built target moveit_srv_kinematics_plugin
+[140.807s] [ 78%] [32m[1mLinking CXX executable benchmark_ik[0m
+[142.224s] [ 78%] Built target benchmark_ik
+[142.311s] [35m[1mConsolidate compiler generated dependencies of target moveit_cached_ik_kinematics_plugin[0m
+[142.453s] [ 84%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_plugin.dir/src/cached_ik_kinematics_plugin.cpp.o[0m
+[170.669s] [ 89%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_plugin.so[0m
+[172.157s] [ 89%] Built target moveit_cached_ik_kinematics_plugin
+[172.203s] [35m[1mConsolidate compiler generated dependencies of target test_kinematics_plugin[0m
+[172.283s] [ 94%] [32mBuilding CXX object test/CMakeFiles/test_kinematics_plugin.dir/test_kinematics_plugin.cpp.o[0m
+[267.966s] [100%] [32m[1mLinking CXX executable test_kinematics_plugin[0m
+[269.122s] [100%] Built target test_kinematics_plugin
+[269.161s] Invoked command in '/home/a/ws_nhk/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_kinematics -- -j22 -l22
+[269.169s] Invoking command in '/home/a/ws_nhk/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_kinematics
+[269.201s] -- Install configuration: "Release"
+[269.203s] -- Execute custom install script
+[269.205s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics//kdl_kinematics_plugin_description.xml
+[269.206s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics//lma_kinematics_plugin_description.xml
+[269.206s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics//srv_kinematics_plugin_description.xml
+[269.207s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics//cached_ik_kinematics_plugin_description.xml
+[269.208s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin-inl.h
+[269.209s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin.h
+[269.209s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/GreedyKCenters.h
+[269.210s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighbors.h
+[269.210s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighborsGNAT.h
+[269.211s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/measure_ik_call_cost.launch
+[269.212s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/lib/moveit_kinematics/auto_create_ikfast_moveit_plugin.sh
+[269.213s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/lib/moveit_kinematics/create_ikfast_moveit_plugin.py
+[269.213s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/lib/moveit_kinematics/round_collada_numbers.py
+[269.214s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/CMakeLists.txt
+[269.214s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast.h
+[269.215s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast61_moveit_plugin_template.cpp
+[269.216s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/chainiksolver_vel_mimic_svd.hpp
+[269.217s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/joint_mimic.hpp
+[269.217s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/kdl_kinematics_plugin.h
+[269.218s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/lma_kinematics_plugin/lma_kinematics_plugin.h
+[269.219s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/include/moveit/srv_kinematics_plugin/srv_kinematics_plugin.h
+[269.220s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-singular-test.yaml
+[269.221s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-test.yaml
+[269.222s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-singular-test.yaml
+[269.222s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-test.yaml
+[269.222s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-singular-test.yaml
+[269.223s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-test.yaml
+[269.223s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-singular-test.yaml
+[269.224s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-test.yaml
+[269.224s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl-singular.test.py
+[269.225s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl.test.py
+[269.225s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma-singular.test.py
+[269.226s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma.test.py
+[269.226s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl-singular.test.py
+[269.227s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl.test.py
+[269.227s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma-singular.test.py
+[269.228s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma.test.py
+[269.228s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/lib/moveit_kinematics/benchmark_ik
+[269.228s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/lib/moveit_kinematics/test_kinematics_plugin
+[269.229s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.sh
+[269.230s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.dsv
+[269.230s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/ament_index/resource_index/package_run_dependencies/moveit_kinematics
+[269.231s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/ament_index/resource_index/parent_prefix_path/moveit_kinematics
+[269.232s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.sh
+[269.232s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.dsv
+[269.233s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/path.sh
+[269.233s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/environment/path.dsv
+[269.234s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/local_setup.bash
+[269.235s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/local_setup.sh
+[269.235s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/local_setup.zsh
+[269.236s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/local_setup.dsv
+[269.236s] -- Symlinking: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/package.dsv
+[269.272s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/ament_index/resource_index/packages/moveit_kinematics
+[269.273s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_kinematics
+[269.275s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/ConfigExtras.cmake
+[269.276s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_targets-extras.cmake
+[269.276s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake
+[269.277s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig.cmake
+[269.277s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig-version.cmake
+[269.277s] -- Up-to-date symlink: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/package.xml
+[269.281s] -- Installing: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.9
+[269.283s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.9" to ""
+[269.283s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so
+[269.284s] -- Installing: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.9
+[269.285s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.9" to ""
+[269.285s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so
+[269.286s] -- Installing: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so
+[269.288s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so" to ""
+[269.288s] -- Installing: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.9
+[269.290s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.9" to ""
+[269.291s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so
+[269.291s] -- Installing: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.9
+[269.292s] -- Set runtime path of "/home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.9" to ""
+[269.293s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so
+[269.294s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport.cmake
+[269.294s] -- Up-to-date: /home/a/ws_nhk/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport-release.cmake
+[269.301s] Invoked command in '/home/a/ws_nhk/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/a/ws_nhk/build/moveit_kinematics

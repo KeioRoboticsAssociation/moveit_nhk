@@ -1,0 +1,9 @@
+setup.py
+rogidrive_msg/__init__.py
+rogidrive_msg.egg-info/PKG-INFO
+rogidrive_msg.egg-info/SOURCES.txt
+rogidrive_msg.egg-info/dependency_links.txt
+rogidrive_msg.egg-info/top_level.txt
+rogidrive_msg/msg/__init__.py
+rogidrive_msg/msg/_rogidrive_message.py
+rogidrive_msg/msg/_rogidrive_multi_array.py

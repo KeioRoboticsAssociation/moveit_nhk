@@ -1,0 +1,45 @@
+running egg_info
+creating ../../../build/rogidrive/rogidrive.egg-info
+writing ../../../build/rogidrive/rogidrive.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rogidrive/rogidrive.egg-info/dependency_links.txt
+writing entry points to ../../../build/rogidrive/rogidrive.egg-info/entry_points.txt
+writing requirements to ../../../build/rogidrive/rogidrive.egg-info/requires.txt
+writing top-level names to ../../../build/rogidrive/rogidrive.egg-info/top_level.txt
+writing manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+reading manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rogidrive/rogidrive.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/a/ws_nhk/build/rogidrive/build
+creating /home/a/ws_nhk/build/rogidrive/build/lib
+creating /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+copying rogidrive/rogidrive_tester.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+copying rogidrive/__init__.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+copying rogidrive/rogidrive.py -> /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive
+running install
+running install_lib
+creating /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/rogidrive_tester.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/__init__.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+copying /home/a/ws_nhk/build/rogidrive/build/lib/rogidrive/rogidrive.py -> /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive
+byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/rogidrive_tester.py to rogidrive_tester.cpython-310.pyc
+byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive/rogidrive.py to rogidrive.cpython-310.pyc
+running install_data
+creating /home/a/ws_nhk/install/rogidrive/share/ament_index
+creating /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index
+creating /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index/packages
+copying resource/rogidrive -> /home/a/ws_nhk/install/rogidrive/share/ament_index/resource_index/packages
+copying package.xml -> /home/a/ws_nhk/install/rogidrive/share/rogidrive
+creating /home/a/ws_nhk/install/rogidrive/share/rogidrive/launch
+copying launch/rogidrive.launch.py -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/launch
+creating /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+copying config/test.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+copying config/r1.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+copying config/r2.json -> /home/a/ws_nhk/install/rogidrive/share/rogidrive/config
+running install_egg_info
+Copying ../../../build/rogidrive/rogidrive.egg-info to /home/a/ws_nhk/install/rogidrive/lib/python3.10/site-packages/rogidrive-0.0.0-py3.10.egg-info
+running install_scripts
+Installing rogidrive script to /home/a/ws_nhk/install/rogidrive/lib/rogidrive
+Installing rogidrive_tester script to /home/a/ws_nhk/install/rogidrive/lib/rogidrive
+writing list of installed files to '/home/a/ws_nhk/build/rogidrive/install.log'
