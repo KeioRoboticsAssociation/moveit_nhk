@@ -197,6 +197,43 @@ moveit_r2_config_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/moveit_r2_config_uninstall.dir/build.make CMakeFiles/moveit_r2_config_uninstall.dir/build
 .PHONY : moveit_r2_config_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named move_hand_node
+
+# Build rule for target.
+move_hand_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_hand_node
+.PHONY : move_hand_node
+
+# fast build rule for target.
+move_hand_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_hand_node.dir/build.make CMakeFiles/move_hand_node.dir/build
+.PHONY : move_hand_node/fast
+
+src/move_hand_node.o: src/move_hand_node.cpp.o
+.PHONY : src/move_hand_node.o
+
+# target to build an object file
+src/move_hand_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_hand_node.dir/build.make CMakeFiles/move_hand_node.dir/src/move_hand_node.cpp.o
+.PHONY : src/move_hand_node.cpp.o
+
+src/move_hand_node.i: src/move_hand_node.cpp.i
+.PHONY : src/move_hand_node.i
+
+# target to preprocess a source file
+src/move_hand_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_hand_node.dir/build.make CMakeFiles/move_hand_node.dir/src/move_hand_node.cpp.i
+.PHONY : src/move_hand_node.cpp.i
+
+src/move_hand_node.s: src/move_hand_node.cpp.s
+.PHONY : src/move_hand_node.s
+
+# target to generate assembly for a file
+src/move_hand_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_hand_node.dir/build.make CMakeFiles/move_hand_node.dir/src/move_hand_node.cpp.s
+.PHONY : src/move_hand_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... moveit_r2_config_uninstall"
 	@echo "... uninstall"
+	@echo "... move_hand_node"
+	@echo "... src/move_hand_node.o"
+	@echo "... src/move_hand_node.i"
+	@echo "... src/move_hand_node.s"
 .PHONY : help
 
 

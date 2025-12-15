@@ -1,0 +1,1149 @@
+[0.229s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'moveit_r2_config']
+[0.229s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['moveit_r2_config'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x9366ba42ce0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x9366ba427d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x9366ba427d0>>, mixin_verb=('build',))
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) discover
+[0.626s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.626s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/a/ws_nhk'
+[0.626s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore'
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore_ament_install'
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_pkg']
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_pkg'
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_meta']
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_meta'
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ros']
+[0.627s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ros'
+[0.649s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['cmake', 'python']
+[0.649s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'cmake'
+[0.649s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python'
+[0.649s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['python_setup_py']
+[0.650s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python_setup_py'
+[0.650s] colcon.colcon_core.package_identification Level 1 _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.650s] colcon.colcon_core.package_identification Level 1 _identify(build) by extension 'ignore'
+[0.650s] colcon.colcon_core.package_identification Level 1 _identify(build) ignored
+[0.650s] colcon.colcon_core.package_identification Level 1 _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(install) by extension 'ignore'
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(install) ignored
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(log) by extension 'ignore'
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(log) ignored
+[0.651s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore_ament_install'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_pkg']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_pkg'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_meta']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_meta'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ros']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ros'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['cmake', 'python']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'cmake'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python'
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['python_setup_py']
+[0.652s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python_setup_py'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['ignore', 'ignore_ament_install']
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'ignore'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'ignore_ament_install'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['colcon_pkg']
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'colcon_pkg'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['colcon_meta']
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'colcon_meta'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['ros']
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'ros'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['cmake', 'python']
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'cmake'
+[0.653s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'python'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extensions ['python_setup_py']
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001) by extension 'python_setup_py'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extension 'ignore'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extension 'ignore_ament_install'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extensions ['colcon_pkg']
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extension 'colcon_pkg'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extensions ['colcon_meta']
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extension 'colcon_meta'
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extensions ['ros']
+[0.654s] colcon.colcon_core.package_identification Level 1 _identify(src/a_r2_description-20251207T063721Z-3-001/a_r2_description) by extension 'ros'
+[0.659s] colcon.colcon_core.package_identification DEBUG Package 'src/a_r2_description-20251207T063721Z-3-001/a_r2_description' with type 'ros.ament_cmake' and name 'a_r2_description'
+[0.659s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'ignore'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'ignore_ament_install'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['colcon_pkg']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'colcon_pkg'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['colcon_meta']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'colcon_meta'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['ros']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'ros'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['cmake', 'python']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'cmake'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'python'
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extensions ['python_setup_py']
+[0.660s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001) by extension 'python_setup_py'
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extensions ['ignore', 'ignore_ament_install']
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extension 'ignore'
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extension 'ignore_ament_install'
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extensions ['colcon_pkg']
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extension 'colcon_pkg'
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extensions ['colcon_meta']
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extension 'colcon_meta'
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extensions ['ros']
+[0.661s] colcon.colcon_core.package_identification Level 1 _identify(src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description) by extension 'ros'
+[0.663s] colcon.colcon_core.package_identification DEBUG Package 'src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description' with type 'ros.ament_cmake' and name 'arm_v20_description'
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'ignore'
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'ignore_ament_install'
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['colcon_pkg']
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'colcon_pkg'
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['colcon_meta']
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'colcon_meta'
+[0.663s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['ros']
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'ros'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['cmake', 'python']
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'cmake'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'python'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extensions ['python_setup_py']
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2) by extension 'python_setup_py'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'ignore'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'ignore_ament_install'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['colcon_pkg']
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'colcon_pkg'
+[0.664s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['colcon_meta']
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'colcon_meta'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['ros']
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'ros'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['cmake', 'python']
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'cmake'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'python'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extensions ['python_setup_py']
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK) by extension 'python_setup_py'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extension 'ignore'
+[0.665s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extension 'colcon_pkg'
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extensions ['colcon_meta']
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extension 'colcon_meta'
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extensions ['ros']
+[0.666s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk) by extension 'ros'
+[0.667s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.667s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.667s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.668s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.669s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.669s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore'
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extension 'ignore_ament_install'
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_pkg']
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_pkg'
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extensions ['colcon_meta']
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extension 'colcon_meta'
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extensions ['ros']
+[0.670s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples) by extension 'ros'
+[0.671s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples' with type 'ros.ament_cmake' and name 'dynamixel_sdk_examples'
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extension 'ignore'
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extension 'ignore_ament_install'
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extensions ['colcon_pkg']
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extension 'colcon_pkg'
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extensions ['colcon_meta']
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extension 'colcon_meta'
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extensions ['ros']
+[0.672s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller) by extension 'ros'
+[0.674s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/dynamixel_controller' with type 'ros.ament_cmake' and name 'dynamixel_controller'
+[0.674s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extensions ['ignore', 'ignore_ament_install']
+[0.674s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extension 'ignore'
+[0.674s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extension 'ignore_ament_install'
+[0.674s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extensions ['colcon_pkg']
+[0.674s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extension 'colcon_pkg'
+[0.675s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extensions ['colcon_meta']
+[0.675s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extension 'colcon_meta'
+[0.675s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extensions ['ros']
+[0.675s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_client) by extension 'ros'
+[0.676s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/dynamixel_controller_client' with type 'ros.ament_python' and name 'dynamixel_controller_client'
+[0.676s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.676s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extension 'ignore'
+[0.676s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extension 'ignore_ament_install'
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extensions ['colcon_pkg']
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extension 'colcon_pkg'
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extensions ['colcon_meta']
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extension 'colcon_meta'
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extensions ['ros']
+[0.677s] colcon.colcon_core.package_identification Level 1 _identify(src/dynamixel_ros2/dynamixel_controller_gui) by extension 'ros'
+[0.678s] colcon.colcon_core.package_identification DEBUG Package 'src/dynamixel_ros2/dynamixel_controller_gui' with type 'ros.ament_python' and name 'dynamixel_controller_gui'
+[0.678s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extensions ['ignore', 'ignore_ament_install']
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extension 'ignore'
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extension 'ignore_ament_install'
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extensions ['colcon_pkg']
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extension 'colcon_pkg'
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extensions ['colcon_meta']
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extension 'colcon_meta'
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extensions ['ros']
+[0.679s] colcon.colcon_core.package_identification Level 1 _identify(src/launch_param_builder) by extension 'ros'
+[0.680s] colcon.colcon_core.package_identification DEBUG Package 'src/launch_param_builder' with type 'ros.ament_python' and name 'launch_param_builder'
+[0.680s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'ignore'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'ignore_ament_install'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['colcon_pkg']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'colcon_pkg'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['colcon_meta']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'colcon_meta'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['ros']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'ros'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['cmake', 'python']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'cmake'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'python'
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extensions ['python_setup_py']
+[0.681s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2) by extension 'python_setup_py'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'ignore'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'ignore_ament_install'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['colcon_pkg']
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'colcon_pkg'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['colcon_meta']
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'colcon_meta'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['ros']
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'ros'
+[0.682s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['cmake', 'python']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'cmake'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'python'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extensions ['python_setup_py']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/doc) by extension 'python_setup_py'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extension 'ignore'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extension 'ignore_ament_install'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extensions ['colcon_pkg']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extension 'colcon_pkg'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extensions ['colcon_meta']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extension 'colcon_meta'
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extensions ['ros']
+[0.683s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit) by extension 'ros'
+[0.685s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit' with type 'ros.ament_cmake' and name 'moveit'
+[0.685s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_commander) by extensions ['ignore', 'ignore_ament_install']
+[0.685s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_commander) by extension 'ignore'
+[0.685s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_commander) ignored
+[0.685s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extension 'ignore'
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extension 'ignore_ament_install'
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extensions ['colcon_pkg']
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extension 'colcon_pkg'
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extensions ['colcon_meta']
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extension 'colcon_meta'
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extensions ['ros']
+[0.686s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_common) by extension 'ros'
+[0.687s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_common' with type 'ros.ament_cmake' and name 'moveit_common'
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extension 'ignore'
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extension 'ignore_ament_install'
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extensions ['colcon_pkg']
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extension 'colcon_pkg'
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extensions ['colcon_meta']
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extension 'colcon_meta'
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extensions ['ros']
+[0.688s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_configs_utils) by extension 'ros'
+[0.689s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_configs_utils' with type 'ros.ament_python' and name 'moveit_configs_utils'
+[0.690s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extensions ['ignore', 'ignore_ament_install']
+[0.691s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extension 'ignore'
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extension 'ignore_ament_install'
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extensions ['colcon_pkg']
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extension 'colcon_pkg'
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extensions ['colcon_meta']
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extension 'colcon_meta'
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extensions ['ros']
+[0.692s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_core) by extension 'ros'
+[0.700s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_core' with type 'ros.ament_cmake' and name 'moveit_core'
+[0.700s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_experimental) by extensions ['ignore', 'ignore_ament_install']
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_experimental) by extension 'ignore'
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_experimental) ignored
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extension 'ignore'
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extension 'ignore_ament_install'
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extensions ['colcon_pkg']
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extension 'colcon_pkg'
+[0.701s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extensions ['colcon_meta']
+[0.702s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extension 'colcon_meta'
+[0.702s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extensions ['ros']
+[0.702s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_kinematics) by extension 'ros'
+[0.705s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_kinematics' with type 'ros.ament_cmake' and name 'moveit_kinematics'
+[0.705s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['ignore', 'ignore_ament_install']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'ignore'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'ignore_ament_install'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['colcon_pkg']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'colcon_pkg'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['colcon_meta']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'colcon_meta'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['ros']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'ros'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['cmake', 'python']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'cmake'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'python'
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extensions ['python_setup_py']
+[0.706s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners) by extension 'python_setup_py'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['ignore', 'ignore_ament_install']
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'ignore'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'ignore_ament_install'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['colcon_pkg']
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'colcon_pkg'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['colcon_meta']
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'colcon_meta'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['ros']
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'ros'
+[0.707s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['cmake', 'python']
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'cmake'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'python'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extensions ['python_setup_py']
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp) by extension 'python_setup_py'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extension 'ignore'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extension 'ignore_ament_install'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extensions ['colcon_pkg']
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extension 'colcon_pkg'
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extensions ['colcon_meta']
+[0.708s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extension 'colcon_meta'
+[0.709s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extensions ['ros']
+[0.709s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_interface) by extension 'ros'
+[0.710s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/chomp/chomp_interface' with type 'ros.ament_cmake' and name 'moveit_planners_chomp'
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extension 'ignore'
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extension 'ignore_ament_install'
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extensions ['colcon_pkg']
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extension 'colcon_pkg'
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extensions ['colcon_meta']
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extension 'colcon_meta'
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extensions ['ros']
+[0.711s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_motion_planner) by extension 'ros'
+[0.713s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/chomp/chomp_motion_planner' with type 'ros.ament_cmake' and name 'chomp_motion_planner'
+[0.713s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extension 'ignore'
+[0.713s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extension 'ignore_ament_install'
+[0.713s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extensions ['colcon_pkg']
+[0.714s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extension 'colcon_pkg'
+[0.714s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extensions ['colcon_meta']
+[0.714s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extension 'colcon_meta'
+[0.714s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extensions ['ros']
+[0.714s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter) by extension 'ros'
+[0.716s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter' with type 'ros.ament_cmake' and name 'moveit_chomp_optimizer_adapter'
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extensions ['ignore', 'ignore_ament_install']
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extension 'ignore'
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extension 'ignore_ament_install'
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extensions ['colcon_pkg']
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extension 'colcon_pkg'
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extensions ['colcon_meta']
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extension 'colcon_meta'
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extensions ['ros']
+[0.716s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/moveit_planners) by extension 'ros'
+[0.718s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/moveit_planners' with type 'ros.ament_cmake' and name 'moveit_planners'
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extension 'ignore'
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extension 'ignore_ament_install'
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extensions ['colcon_pkg']
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extension 'colcon_pkg'
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extensions ['colcon_meta']
+[0.718s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extension 'colcon_meta'
+[0.719s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extensions ['ros']
+[0.719s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/ompl) by extension 'ros'
+[0.721s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/ompl' with type 'ros.ament_cmake' and name 'moveit_planners_ompl'
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extension 'ignore'
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extension 'ignore_ament_install'
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extensions ['colcon_pkg']
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extension 'colcon_pkg'
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extensions ['colcon_meta']
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extension 'colcon_meta'
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extensions ['ros']
+[0.722s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner) by extension 'ros'
+[0.726s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/pilz_industrial_motion_planner' with type 'ros.ament_cmake' and name 'pilz_industrial_motion_planner'
+[0.726s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extension 'ignore'
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extension 'ignore_ament_install'
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extensions ['colcon_pkg']
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extension 'colcon_pkg'
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extensions ['colcon_meta']
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extension 'colcon_meta'
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extensions ['ros']
+[0.727s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils) by extension 'ros'
+[0.729s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils' with type 'ros.ament_cmake' and name 'pilz_industrial_motion_planner_testutils'
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['ignore', 'ignore_ament_install']
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'ignore'
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'ignore_ament_install'
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['colcon_pkg']
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'colcon_pkg'
+[0.729s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['colcon_meta']
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'colcon_meta'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['ros']
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'ros'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['cmake', 'python']
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'cmake'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'python'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extensions ['python_setup_py']
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs) by extension 'python_setup_py'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extension 'ignore'
+[0.730s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extension 'ignore_ament_install'
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extensions ['colcon_pkg']
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extension 'colcon_pkg'
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extensions ['colcon_meta']
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extension 'colcon_meta'
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extensions ['ros']
+[0.731s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin) by extension 'ros'
+[0.732s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin' with type 'ros.ament_cmake' and name 'moveit_resources_prbt_ikfast_manipulator_plugin'
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extension 'ignore'
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extension 'ignore_ament_install'
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extensions ['colcon_pkg']
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extension 'colcon_pkg'
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extensions ['colcon_meta']
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extension 'colcon_meta'
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extensions ['ros']
+[0.733s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_moveit_config) by extension 'ros'
+[0.735s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/test_configs/prbt_moveit_config' with type 'ros.ament_cmake' and name 'moveit_resources_prbt_moveit_config'
+[0.735s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extensions ['ignore', 'ignore_ament_install']
+[0.735s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extension 'ignore'
+[0.735s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extension 'ignore_ament_install'
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extensions ['colcon_pkg']
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extension 'colcon_pkg'
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extensions ['colcon_meta']
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extension 'colcon_meta'
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extensions ['ros']
+[0.736s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_pg70_support) by extension 'ros'
+[0.737s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/test_configs/prbt_pg70_support' with type 'ros.ament_cmake' and name 'moveit_resources_prbt_pg70_support'
+[0.737s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extensions ['ignore', 'ignore_ament_install']
+[0.737s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extension 'ignore'
+[0.737s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extension 'ignore_ament_install'
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extensions ['colcon_pkg']
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extension 'colcon_pkg'
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extensions ['colcon_meta']
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extension 'colcon_meta'
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extensions ['ros']
+[0.738s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/test_configs/prbt_support) by extension 'ros'
+[0.739s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_planners/test_configs/prbt_support' with type 'ros.ament_cmake' and name 'moveit_resources_prbt_support'
+[0.739s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/trajopt) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/trajopt) by extension 'ignore'
+[0.739s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_planners/trajopt) ignored
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'ignore'
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'ignore_ament_install'
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['colcon_pkg']
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'colcon_pkg'
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['colcon_meta']
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'colcon_meta'
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['ros']
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'ros'
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['cmake', 'python']
+[0.740s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'cmake'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'python'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extensions ['python_setup_py']
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins) by extension 'python_setup_py'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extension 'ignore'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extension 'ignore_ament_install'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extensions ['colcon_pkg']
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extension 'colcon_pkg'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extensions ['colcon_meta']
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extension 'colcon_meta'
+[0.741s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extensions ['ros']
+[0.742s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_plugins) by extension 'ros'
+[0.743s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_plugins/moveit_plugins' with type 'ros.ament_cmake' and name 'moveit_plugins'
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extension 'ignore'
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extension 'ignore_ament_install'
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extensions ['colcon_pkg']
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extension 'colcon_pkg'
+[0.743s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extensions ['colcon_meta']
+[0.744s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extension 'colcon_meta'
+[0.744s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extensions ['ros']
+[0.744s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_ros_control_interface) by extension 'ros'
+[0.746s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_plugins/moveit_ros_control_interface' with type 'ros.ament_cmake' and name 'moveit_ros_control_interface'
+[0.746s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extension 'ignore'
+[0.746s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extension 'ignore_ament_install'
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extensions ['colcon_pkg']
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extension 'colcon_pkg'
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extensions ['colcon_meta']
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extension 'colcon_meta'
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extensions ['ros']
+[0.747s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_plugins/moveit_simple_controller_manager) by extension 'ros'
+[0.749s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_plugins/moveit_simple_controller_manager' with type 'ros.ament_cmake' and name 'moveit_simple_controller_manager'
+[0.749s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'ignore'
+[0.749s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'ignore_ament_install'
+[0.749s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['colcon_pkg']
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'colcon_pkg'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['colcon_meta']
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'colcon_meta'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['ros']
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'ros'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['cmake', 'python']
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'cmake'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'python'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extensions ['python_setup_py']
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros) by extension 'python_setup_py'
+[0.750s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extension 'ignore'
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extension 'ignore_ament_install'
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extensions ['colcon_pkg']
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extension 'colcon_pkg'
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extensions ['colcon_meta']
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extension 'colcon_meta'
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extensions ['ros']
+[0.751s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/benchmarks) by extension 'ros'
+[0.753s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/benchmarks' with type 'ros.ament_cmake' and name 'moveit_ros_benchmarks'
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extension 'ignore'
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extension 'ignore_ament_install'
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extensions ['colcon_pkg']
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extension 'colcon_pkg'
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extensions ['colcon_meta']
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extension 'colcon_meta'
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extensions ['ros']
+[0.754s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/hybrid_planning) by extension 'ros'
+[0.758s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/hybrid_planning' with type 'ros.ament_cmake' and name 'moveit_hybrid_planning'
+[0.758s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extension 'ignore'
+[0.758s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extension 'ignore_ament_install'
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extensions ['colcon_pkg']
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extension 'colcon_pkg'
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extensions ['colcon_meta']
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extension 'colcon_meta'
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extensions ['ros']
+[0.759s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/move_group) by extension 'ros'
+[0.762s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/move_group' with type 'ros.ament_cmake' and name 'moveit_ros_move_group'
+[0.762s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extension 'ignore'
+[0.762s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extension 'ignore_ament_install'
+[0.762s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extensions ['colcon_pkg']
+[0.762s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extension 'colcon_pkg'
+[0.763s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extensions ['colcon_meta']
+[0.763s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extension 'colcon_meta'
+[0.763s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extensions ['ros']
+[0.763s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_ros) by extension 'ros'
+[0.764s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/moveit_ros' with type 'ros.ament_cmake' and name 'moveit_ros'
+[0.764s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extension 'ignore'
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extension 'ignore_ament_install'
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extensions ['colcon_pkg']
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extension 'colcon_pkg'
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extensions ['colcon_meta']
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extension 'colcon_meta'
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extensions ['ros']
+[0.765s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/moveit_servo) by extension 'ros'
+[0.769s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/moveit_servo' with type 'ros.ament_cmake' and name 'moveit_servo'
+[0.769s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extension 'ignore'
+[0.769s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extension 'ignore_ament_install'
+[0.769s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extensions ['colcon_pkg']
+[0.769s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extension 'colcon_pkg'
+[0.770s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extensions ['colcon_meta']
+[0.770s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extension 'colcon_meta'
+[0.770s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extensions ['ros']
+[0.770s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/occupancy_map_monitor) by extension 'ros'
+[0.772s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/occupancy_map_monitor' with type 'ros.ament_cmake' and name 'moveit_ros_occupancy_map_monitor'
+[0.772s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extensions ['ignore', 'ignore_ament_install']
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extension 'ignore'
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extension 'ignore_ament_install'
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extensions ['colcon_pkg']
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extension 'colcon_pkg'
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extensions ['colcon_meta']
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extension 'colcon_meta'
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extensions ['ros']
+[0.773s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/perception) by extension 'ros'
+[0.778s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/perception' with type 'ros.ament_cmake' and name 'moveit_ros_perception'
+[0.778s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extension 'ignore'
+[0.778s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extension 'ignore_ament_install'
+[0.778s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extensions ['colcon_pkg']
+[0.778s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extension 'colcon_pkg'
+[0.779s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extensions ['colcon_meta']
+[0.779s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extension 'colcon_meta'
+[0.779s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extensions ['ros']
+[0.779s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning) by extension 'ros'
+[0.783s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/planning' with type 'ros.ament_cmake' and name 'moveit_ros_planning'
+[0.783s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extension 'ignore'
+[0.783s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extension 'ignore_ament_install'
+[0.783s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extensions ['colcon_pkg']
+[0.783s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extension 'colcon_pkg'
+[0.784s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extensions ['colcon_meta']
+[0.784s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extension 'colcon_meta'
+[0.784s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extensions ['ros']
+[0.784s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/planning_interface) by extension 'ros'
+[0.787s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/planning_interface' with type 'ros.ament_cmake' and name 'moveit_ros_planning_interface'
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extensions ['ignore', 'ignore_ament_install']
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extension 'ignore'
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extension 'ignore_ament_install'
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extensions ['colcon_pkg']
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extension 'colcon_pkg'
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extensions ['colcon_meta']
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extension 'colcon_meta'
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extensions ['ros']
+[0.788s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/robot_interaction) by extension 'ros'
+[0.791s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/robot_interaction' with type 'ros.ament_cmake' and name 'moveit_ros_robot_interaction'
+[0.791s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extension 'ignore'
+[0.791s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extension 'ignore_ament_install'
+[0.791s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extensions ['colcon_pkg']
+[0.792s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extension 'colcon_pkg'
+[0.792s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extensions ['colcon_meta']
+[0.792s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extension 'colcon_meta'
+[0.792s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extensions ['ros']
+[0.792s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/visualization) by extension 'ros'
+[0.795s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/visualization' with type 'ros.ament_cmake' and name 'moveit_ros_visualization'
+[0.795s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extensions ['ignore', 'ignore_ament_install']
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extension 'ignore'
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extension 'ignore_ament_install'
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extensions ['colcon_pkg']
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extension 'colcon_pkg'
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extensions ['colcon_meta']
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extension 'colcon_meta'
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extensions ['ros']
+[0.796s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_ros/warehouse) by extension 'ros'
+[0.798s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_ros/warehouse' with type 'ros.ament_cmake' and name 'moveit_ros_warehouse'
+[0.798s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extensions ['ignore', 'ignore_ament_install']
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extension 'ignore'
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extension 'ignore_ament_install'
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extensions ['colcon_pkg']
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extension 'colcon_pkg'
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extensions ['colcon_meta']
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extension 'colcon_meta'
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extensions ['ros']
+[0.799s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_runtime) by extension 'ros'
+[0.800s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_runtime' with type 'ros.ament_cmake' and name 'moveit_runtime'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'ignore'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'ignore_ament_install'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['colcon_pkg']
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'colcon_pkg'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['colcon_meta']
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'colcon_meta'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['ros']
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'ros'
+[0.801s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['cmake', 'python']
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'cmake'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'python'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extensions ['python_setup_py']
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant) by extension 'python_setup_py'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['ignore', 'ignore_ament_install']
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'ignore'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'ignore_ament_install'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['colcon_pkg']
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'colcon_pkg'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['colcon_meta']
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'colcon_meta'
+[0.802s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['ros']
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'ros'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['cmake', 'python']
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'cmake'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'python'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extensions ['python_setup_py']
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics) by extension 'python_setup_py'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['ignore', 'ignore_ament_install']
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'ignore'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'ignore_ament_install'
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['colcon_pkg']
+[0.803s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'colcon_pkg'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['colcon_meta']
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'colcon_meta'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['ros']
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'ros'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['cmake', 'python']
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'cmake'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'python'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extensions ['python_setup_py']
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/graphics/source) by extension 'python_setup_py'
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.804s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extension 'ignore'
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extension 'ignore_ament_install'
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extensions ['colcon_pkg']
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extension 'colcon_pkg'
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extensions ['colcon_meta']
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extension 'colcon_meta'
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extensions ['ros']
+[0.805s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins) by extension 'ros'
+[0.807s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins' with type 'ros.ament_cmake' and name 'moveit_setup_app_plugins'
+[0.807s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extensions ['ignore', 'ignore_ament_install']
+[0.807s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extension 'ignore'
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extension 'ignore_ament_install'
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extensions ['colcon_pkg']
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extension 'colcon_pkg'
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extensions ['colcon_meta']
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extension 'colcon_meta'
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extensions ['ros']
+[0.808s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_assistant) by extension 'ros'
+[0.810s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_assistant' with type 'ros.ament_cmake' and name 'moveit_setup_assistant'
+[0.810s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extension 'ignore'
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extension 'ignore_ament_install'
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extensions ['colcon_pkg']
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extension 'colcon_pkg'
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extensions ['colcon_meta']
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extension 'colcon_meta'
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extensions ['ros']
+[0.811s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_controllers) by extension 'ros'
+[0.813s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_controllers' with type 'ros.ament_cmake' and name 'moveit_setup_controllers'
+[0.813s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extension 'ignore'
+[0.813s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extension 'ignore_ament_install'
+[0.813s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extensions ['colcon_pkg']
+[0.814s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extension 'colcon_pkg'
+[0.814s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extensions ['colcon_meta']
+[0.814s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extension 'colcon_meta'
+[0.814s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extensions ['ros']
+[0.814s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins) by extension 'ros'
+[0.817s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins' with type 'ros.ament_cmake' and name 'moveit_setup_core_plugins'
+[0.817s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extensions ['ignore', 'ignore_ament_install']
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extension 'ignore'
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extension 'ignore_ament_install'
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extensions ['colcon_pkg']
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extension 'colcon_pkg'
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extensions ['colcon_meta']
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extension 'colcon_meta'
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extensions ['ros']
+[0.818s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_framework) by extension 'ros'
+[0.821s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_framework' with type 'ros.ament_cmake' and name 'moveit_setup_framework'
+[0.821s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.821s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_simulation) by extension 'ignore'
+[0.821s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_simulation) ignored
+[0.821s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.821s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extension 'ignore'
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extension 'ignore_ament_install'
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extensions ['colcon_pkg']
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extension 'colcon_pkg'
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extensions ['colcon_meta']
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extension 'colcon_meta'
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extensions ['ros']
+[0.822s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins) by extension 'ros'
+[0.823s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins' with type 'ros.ament_cmake' and name 'moveit_setup_srdf_plugins'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['ignore', 'ignore_ament_install']
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'ignore'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'ignore_ament_install'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['colcon_pkg']
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'colcon_pkg'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['colcon_meta']
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'colcon_meta'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['ros']
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'ros'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['cmake', 'python']
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'cmake'
+[0.824s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'python'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extensions ['python_setup_py']
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2/moveit_setup_assistant/unported_templates) by extension 'python_setup_py'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extension 'ignore'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extension 'ignore_ament_install'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extensions ['colcon_pkg']
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extension 'colcon_pkg'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extensions ['colcon_meta']
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extension 'colcon_meta'
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extensions ['ros']
+[0.825s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit2_tutorials) by extension 'ros'
+[0.830s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit2_tutorials' with type 'ros.ament_cmake' and name 'moveit2_tutorials'
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extension 'ignore'
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extension 'ignore_ament_install'
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extensions ['colcon_pkg']
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extension 'colcon_pkg'
+[0.830s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extensions ['colcon_meta']
+[0.831s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extension 'colcon_meta'
+[0.831s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extensions ['ros']
+[0.831s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_config) by extension 'ros'
+[0.832s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_config' with type 'ros.ament_cmake' and name 'moveit_config'
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extensions ['ignore', 'ignore_ament_install']
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extension 'ignore'
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extension 'ignore_ament_install'
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extensions ['colcon_pkg']
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extension 'colcon_pkg'
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extensions ['colcon_meta']
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extension 'colcon_meta'
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extensions ['ros']
+[0.833s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_r2_config) by extension 'ros'
+[0.835s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_r2_config' with type 'ros.ament_cmake' and name 'moveit_r2_config'
+[0.835s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.835s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'ignore'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'ignore_ament_install'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['colcon_pkg']
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'colcon_pkg'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['colcon_meta']
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'colcon_meta'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['ros']
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'ros'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['cmake', 'python']
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'cmake'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'python'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extensions ['python_setup_py']
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources) by extension 'python_setup_py'
+[0.836s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extension 'ignore'
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extension 'ignore_ament_install'
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extensions ['colcon_pkg']
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extension 'colcon_pkg'
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extensions ['colcon_meta']
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extension 'colcon_meta'
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extensions ['ros']
+[0.837s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_description) by extension 'ros'
+[0.838s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/fanuc_description' with type 'ros.ament_cmake' and name 'moveit_resources_fanuc_description'
+[0.838s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extension 'ignore'
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extension 'ignore_ament_install'
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extensions ['colcon_pkg']
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extension 'colcon_pkg'
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extensions ['colcon_meta']
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extension 'colcon_meta'
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extensions ['ros']
+[0.839s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/fanuc_moveit_config) by extension 'ros'
+[0.840s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/fanuc_moveit_config' with type 'ros.ament_cmake' and name 'moveit_resources_fanuc_moveit_config'
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extension 'ignore'
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extension 'ignore_ament_install'
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extensions ['colcon_pkg']
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extension 'colcon_pkg'
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extensions ['colcon_meta']
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extension 'colcon_meta'
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extensions ['ros']
+[0.841s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/moveit_resources) by extension 'ros'
+[0.843s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/moveit_resources' with type 'ros.ament_cmake' and name 'moveit_resources'
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extensions ['ignore', 'ignore_ament_install']
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extension 'ignore'
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extension 'ignore_ament_install'
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extensions ['colcon_pkg']
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extension 'colcon_pkg'
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extensions ['colcon_meta']
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extension 'colcon_meta'
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extensions ['ros']
+[0.843s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_description) by extension 'ros'
+[0.844s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/panda_description' with type 'ros.ament_cmake' and name 'moveit_resources_panda_description'
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extension 'ignore'
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extension 'ignore_ament_install'
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extensions ['colcon_pkg']
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extension 'colcon_pkg'
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extensions ['colcon_meta']
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extension 'colcon_meta'
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extensions ['ros']
+[0.845s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/panda_moveit_config) by extension 'ros'
+[0.846s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/panda_moveit_config' with type 'ros.ament_cmake' and name 'moveit_resources_panda_moveit_config'
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extension 'ignore'
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extension 'ignore_ament_install'
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extensions ['colcon_pkg']
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extension 'colcon_pkg'
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extensions ['colcon_meta']
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extension 'colcon_meta'
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extensions ['ros']
+[0.847s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_resources/pr2_description) by extension 'ros'
+[0.849s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_resources/pr2_description' with type 'ros.ament_cmake' and name 'moveit_resources_pr2_description'
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['ignore', 'ignore_ament_install']
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'ignore'
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'ignore_ament_install'
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['colcon_pkg']
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'colcon_pkg'
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['colcon_meta']
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'colcon_meta'
+[0.849s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['ros']
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'ros'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['cmake', 'python']
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'cmake'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'python'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extensions ['python_setup_py']
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor) by extension 'python_setup_py'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extension 'ignore'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extension 'ignore_ament_install'
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extensions ['colcon_pkg']
+[0.850s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extension 'colcon_pkg'
+[0.851s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extensions ['colcon_meta']
+[0.851s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extension 'colcon_meta'
+[0.851s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extensions ['ros']
+[0.851s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/capabilities) by extension 'ros'
+[0.853s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/capabilities' with type 'ros.ament_cmake' and name 'moveit_task_constructor_capabilities'
+[0.853s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extensions ['ignore', 'ignore_ament_install']
+[0.853s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extension 'ignore'
+[0.853s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extension 'ignore_ament_install'
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extensions ['colcon_pkg']
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extension 'colcon_pkg'
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extensions ['colcon_meta']
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extension 'colcon_meta'
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extensions ['ros']
+[0.854s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/core) by extension 'ros'
+[0.857s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/core' with type 'ros.ament_cmake' and name 'moveit_task_constructor_core'
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extension 'ignore'
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extension 'ignore_ament_install'
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extensions ['colcon_pkg']
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extension 'colcon_pkg'
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extensions ['colcon_meta']
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extension 'colcon_meta'
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extensions ['ros']
+[0.857s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/demo) by extension 'ros'
+[0.859s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/demo' with type 'ros.ament_cmake' and name 'moveit_task_constructor_demo'
+[0.859s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.859s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extension 'ignore'
+[0.859s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extension 'ignore_ament_install'
+[0.859s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extensions ['colcon_pkg']
+[0.860s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extension 'colcon_pkg'
+[0.860s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extensions ['colcon_meta']
+[0.860s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extension 'colcon_meta'
+[0.860s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extensions ['ros']
+[0.860s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/msgs) by extension 'ros'
+[0.861s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/msgs' with type 'ros.ament_cmake' and name 'moveit_task_constructor_msgs'
+[0.861s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extension 'ignore'
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extension 'ignore_ament_install'
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extensions ['colcon_pkg']
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extension 'colcon_pkg'
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extensions ['colcon_meta']
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extension 'colcon_meta'
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extensions ['ros']
+[0.862s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/rviz_marker_tools) by extension 'ros'
+[0.864s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/rviz_marker_tools' with type 'ros.ament_cmake' and name 'rviz_marker_tools'
+[0.864s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.864s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extension 'ignore'
+[0.864s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extension 'ignore_ament_install'
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extensions ['colcon_pkg']
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extension 'colcon_pkg'
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extensions ['colcon_meta']
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extension 'colcon_meta'
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extensions ['ros']
+[0.865s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_task_constructor/visualization) by extension 'ros'
+[0.867s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_task_constructor/visualization' with type 'ros.ament_cmake' and name 'moveit_task_constructor_visualization'
+[0.867s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.867s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extension 'ignore'
+[0.867s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extension 'ignore_ament_install'
+[0.867s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extensions ['colcon_pkg']
+[0.868s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extension 'colcon_pkg'
+[0.868s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extensions ['colcon_meta']
+[0.868s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extension 'colcon_meta'
+[0.868s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extensions ['ros']
+[0.868s] colcon.colcon_core.package_identification Level 1 _identify(src/moveit_visual_tools) by extension 'ros'
+[0.870s] colcon.colcon_core.package_identification DEBUG Package 'src/moveit_visual_tools' with type 'ros.ament_cmake' and name 'moveit_visual_tools'
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extensions ['ignore', 'ignore_ament_install']
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extension 'ignore'
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extension 'ignore_ament_install'
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extensions ['colcon_pkg']
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extension 'colcon_pkg'
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extensions ['colcon_meta']
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extension 'colcon_meta'
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extensions ['ros']
+[0.871s] colcon.colcon_core.package_identification Level 1 _identify(src/nhk_bt) by extension 'ros'
+[0.873s] colcon.colcon_core.package_identification DEBUG Package 'src/nhk_bt' with type 'ros.ament_cmake' and name 'nhk_bt'
+[0.873s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extensions ['ignore', 'ignore_ament_install']
+[0.873s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extension 'ignore'
+[0.873s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extension 'ignore_ament_install'
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extensions ['colcon_pkg']
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extension 'colcon_pkg'
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extensions ['colcon_meta']
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extension 'colcon_meta'
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extensions ['ros']
+[0.874s] colcon.colcon_core.package_identification Level 1 _identify(src/r2_odrive) by extension 'ros'
+[0.875s] colcon.colcon_core.package_identification DEBUG Package 'src/r2_odrive' with type 'ros.ament_python' and name 'r2_odrive'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['ignore', 'ignore_ament_install']
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'ignore'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'ignore_ament_install'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['colcon_pkg']
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'colcon_pkg'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['colcon_meta']
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'colcon_meta'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['ros']
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'ros'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['cmake', 'python']
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'cmake'
+[0.876s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'python'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extensions ['python_setup_py']
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive) by extension 'python_setup_py'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extensions ['ignore', 'ignore_ament_install']
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extension 'ignore'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extension 'ignore_ament_install'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extensions ['colcon_pkg']
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extension 'colcon_pkg'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extensions ['colcon_meta']
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extension 'colcon_meta'
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extensions ['ros']
+[0.877s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive) by extension 'ros'
+[0.878s] colcon.colcon_core.package_identification DEBUG Package 'src/rogidrive/rogidrive' with type 'ros.ament_python' and name 'rogidrive'
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extension 'ignore'
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extension 'ignore_ament_install'
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extensions ['colcon_pkg']
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extension 'colcon_pkg'
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extensions ['colcon_meta']
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extension 'colcon_meta'
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extensions ['ros']
+[0.879s] colcon.colcon_core.package_identification Level 1 _identify(src/rogidrive/rogidrive_msg) by extension 'ros'
+[0.880s] colcon.colcon_core.package_identification DEBUG Package 'src/rogidrive/rogidrive_msg' with type 'ros.ament_cmake' and name 'rogidrive_msg'
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extensions ['ignore', 'ignore_ament_install']
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extension 'ignore'
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extension 'ignore_ament_install'
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extensions ['colcon_pkg']
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extension 'colcon_pkg'
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extensions ['colcon_meta']
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extension 'colcon_meta'
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extensions ['ros']
+[0.881s] colcon.colcon_core.package_identification Level 1 _identify(src/rosparam_shortcuts) by extension 'ros'
+[0.883s] colcon.colcon_core.package_identification DEBUG Package 'src/rosparam_shortcuts' with type 'ros.ament_cmake' and name 'rosparam_shortcuts'
+[0.883s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extensions ['ignore', 'ignore_ament_install']
+[0.883s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extension 'ignore'
+[0.883s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extension 'ignore_ament_install'
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extensions ['colcon_pkg']
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extension 'colcon_pkg'
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extensions ['colcon_meta']
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extension 'colcon_meta'
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extensions ['ros']
+[0.884s] colcon.colcon_core.package_identification Level 1 _identify(src/srdfdom) by extension 'ros'
+[0.886s] colcon.colcon_core.package_identification DEBUG Package 'src/srdfdom' with type 'ros.ament_cmake' and name 'srdfdom'
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['ignore', 'ignore_ament_install']
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'ignore'
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'ignore_ament_install'
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['colcon_pkg']
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'colcon_pkg'
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['colcon_meta']
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'colcon_meta'
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['ros']
+[0.886s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'ros'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['cmake', 'python']
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'cmake'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'python'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extensions ['python_setup_py']
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik) by extension 'python_setup_py'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extensions ['ignore', 'ignore_ament_install']
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extension 'ignore'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extension 'ignore_ament_install'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extensions ['colcon_pkg']
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extension 'colcon_pkg'
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extensions ['colcon_meta']
+[0.887s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extension 'colcon_meta'
+[0.888s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extensions ['ros']
+[0.888s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik) by extension 'ros'
+[0.889s] colcon.colcon_core.package_identification DEBUG Package 'src/trac_ik/trac_ik' with type 'ros.ament_cmake' and name 'trac_ik'
+[0.889s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.889s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_examples) by extension 'ignore'
+[0.889s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_examples) ignored
+[0.889s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extension 'ignore'
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extension 'ignore_ament_install'
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extensions ['colcon_pkg']
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extension 'colcon_pkg'
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extensions ['colcon_meta']
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extension 'colcon_meta'
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extensions ['ros']
+[0.890s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_kinematics_plugin) by extension 'ros'
+[0.892s] colcon.colcon_core.package_identification DEBUG Package 'src/trac_ik/trac_ik_kinematics_plugin' with type 'ros.ament_cmake' and name 'trac_ik_kinematics_plugin'
+[0.892s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extensions ['ignore', 'ignore_ament_install']
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extension 'ignore'
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extension 'ignore_ament_install'
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extensions ['colcon_pkg']
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extension 'colcon_pkg'
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extensions ['colcon_meta']
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extension 'colcon_meta'
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extensions ['ros']
+[0.893s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_lib) by extension 'ros'
+[0.895s] colcon.colcon_core.package_identification DEBUG Package 'src/trac_ik/trac_ik_lib' with type 'ros.ament_cmake' and name 'trac_ik_lib'
+[0.895s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_python) by extensions ['ignore', 'ignore_ament_install']
+[0.895s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_python) by extension 'ignore'
+[0.895s] colcon.colcon_core.package_identification Level 1 _identify(src/trac_ik/trac_ik_python) ignored
+[0.896s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
+[0.896s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) discover
+[0.896s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) using defaults
+[0.896s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) discover
+[0.896s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) using defaults
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'a_r2_description' in 'src/a_r2_description-20251207T063721Z-3-001/a_r2_description'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'arm_v20_description' in 'src/arm_v20_description-20251026T114629Z-1-001/arm_v20_description'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_controller_client' in 'src/dynamixel_ros2/dynamixel_controller_client'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_sdk' in 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_sdk_custom_interfaces' in 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_custom_interfaces'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'launch_param_builder' in 'src/launch_param_builder'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_common' in 'src/moveit2/moveit_common'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_fanuc_description' in 'src/moveit_resources/fanuc_description'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_panda_description' in 'src/moveit_resources/panda_description'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_pr2_description' in 'src/moveit_resources/pr2_description'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_prbt_support' in 'src/moveit2/moveit_planners/test_configs/prbt_support'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_task_constructor_msgs' in 'src/moveit_task_constructor/msgs'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'nhk_bt' in 'src/nhk_bt'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'rogidrive_msg' in 'src/rogidrive/rogidrive_msg'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'rosparam_shortcuts' in 'src/rosparam_shortcuts'
+[1.070s] colcon.colcon_core.package_selection INFO Skipping not selected package 'srdfdom' in 'src/srdfdom'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'trac_ik_lib' in 'src/trac_ik/trac_ik_lib'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_controller' in 'src/dynamixel_ros2/dynamixel_controller'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_sdk_examples' in 'src/dynamixel_ros2/DynamixelSDK/dynamixel_sdk_examples'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_configs_utils' in 'src/moveit2/moveit_configs_utils'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_fanuc_moveit_config' in 'src/moveit_resources/fanuc_moveit_config'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_panda_moveit_config' in 'src/moveit_resources/panda_moveit_config'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'r2_odrive' in 'src/r2_odrive'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'rogidrive' in 'src/rogidrive/rogidrive'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'rviz_marker_tools' in 'src/moveit_task_constructor/rviz_marker_tools'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dynamixel_controller_gui' in 'src/dynamixel_ros2/dynamixel_controller_gui'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_core' in 'src/moveit2/moveit_core'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources' in 'src/moveit_resources/moveit_resources'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chomp_motion_planner' in 'src/moveit2/moveit_planners/chomp/chomp_motion_planner'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_prbt_ikfast_manipulator_plugin' in 'src/moveit2/moveit_planners/test_configs/prbt_ikfast_manipulator_plugin'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_occupancy_map_monitor' in 'src/moveit2/moveit_ros/occupancy_map_monitor'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_simple_controller_manager' in 'src/moveit2/moveit_plugins/moveit_simple_controller_manager'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'pilz_industrial_motion_planner_testutils' in 'src/moveit2/moveit_planners/pilz_industrial_motion_planner_testutils'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'trac_ik_kinematics_plugin' in 'src/trac_ik/trac_ik_kinematics_plugin'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_chomp_optimizer_adapter' in 'src/moveit2/moveit_planners/chomp/chomp_optimizer_adapter'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_planners_chomp' in 'src/moveit2/moveit_planners/chomp/chomp_interface'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_plugins' in 'src/moveit2/moveit_plugins/moveit_plugins'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_control_interface' in 'src/moveit2/moveit_plugins/moveit_ros_control_interface'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_planning' in 'src/moveit2/moveit_ros/planning'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'trac_ik' in 'src/trac_ik/trac_ik'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_kinematics' in 'src/moveit2/moveit_kinematics'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_planners_ompl' in 'src/moveit2/moveit_planners/ompl'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_perception' in 'src/moveit2/moveit_ros/perception'
+[1.071s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_robot_interaction' in 'src/moveit2/moveit_ros/robot_interaction'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_warehouse' in 'src/moveit2/moveit_ros/warehouse'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_visual_tools' in 'src/moveit_visual_tools'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_benchmarks' in 'src/moveit2/moveit_ros/benchmarks'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_move_group' in 'src/moveit2/moveit_ros/move_group'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_prbt_moveit_config' in 'src/moveit2/moveit_planners/test_configs/prbt_moveit_config'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_planning_interface' in 'src/moveit2/moveit_ros/planning_interface'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_hybrid_planning' in 'src/moveit2/moveit_ros/hybrid_planning'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_resources_prbt_pg70_support' in 'src/moveit2/moveit_planners/test_configs/prbt_pg70_support'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros_visualization' in 'src/moveit2/moveit_ros/visualization'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_servo' in 'src/moveit2/moveit_ros/moveit_servo'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_ros' in 'src/moveit2/moveit_ros/moveit_ros'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_framework' in 'src/moveit2/moveit_setup_assistant/moveit_setup_framework'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'pilz_industrial_motion_planner' in 'src/moveit2/moveit_planners/pilz_industrial_motion_planner'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_planners' in 'src/moveit2/moveit_planners/moveit_planners'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_app_plugins' in 'src/moveit2/moveit_setup_assistant/moveit_setup_app_plugins'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_controllers' in 'src/moveit2/moveit_setup_assistant/moveit_setup_controllers'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_core_plugins' in 'src/moveit2/moveit_setup_assistant/moveit_setup_core_plugins'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_srdf_plugins' in 'src/moveit2/moveit_setup_assistant/moveit_setup_srdf_plugins'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_runtime' in 'src/moveit2/moveit_runtime'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_setup_assistant' in 'src/moveit2/moveit_setup_assistant/moveit_setup_assistant'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_task_constructor_core' in 'src/moveit_task_constructor/core'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit' in 'src/moveit2/moveit'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_config' in 'src/moveit_config'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_task_constructor_capabilities' in 'src/moveit_task_constructor/capabilities'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_task_constructor_visualization' in 'src/moveit_task_constructor/visualization'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit2_tutorials' in 'src/moveit2_tutorials'
+[1.072s] colcon.colcon_core.package_selection INFO Skipping not selected package 'moveit_task_constructor_demo' in 'src/moveit_task_constructor/demo'
+[1.073s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) check parameters
+[1.073s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) discover
+[1.076s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 1 installed packages in /home/a/install
+[1.079s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 363 installed packages in /opt/ros/humble
+[1.083s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) using defaults
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_args' from command line to 'None'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_target' from command line to 'None'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.172s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.173s] colcon.colcon_core.verb Level 5 set package 'moveit_r2_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.173s] colcon.colcon_core.verb DEBUG Building package 'moveit_r2_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/a/ws_nhk/build/moveit_r2_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/a/ws_nhk/install/moveit_r2_config', 'merge_install': False, 'path': '/home/a/ws_nhk/src/moveit_r2_config', 'symlink_install': False, 'test_result_base': None}
+[1.173s] colcon.colcon_core.executor INFO Executing jobs using 'parallel' executor
+[1.175s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete
+[1.176s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/a/ws_nhk/src/moveit_r2_config' with build type 'ament_cmake'
+[1.176s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/a/ws_nhk/src/moveit_r2_config'
+[1.185s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.185s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.185s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[1.380s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/a/ws_nhk/build/moveit_r2_config': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/moveit_setup_assistant:/home/a/ws_nhk/install/moveit_setup_srdf_plugins:/home/a/ws_nhk/install/moveit_setup_core_plugins:/home/a/ws_nhk/install/moveit_setup_controllers:/home/a/ws_nhk/install/moveit_setup_app_plugins:/home/a/ws_nhk/install/moveit_planners:/home/a/ws_nhk/install/pilz_industrial_motion_planner:/home/a/ws_nhk/install/moveit_setup_framework:/home/a/ws_nhk/install/moveit_ros_visualization:/home/a/ws_nhk/install/moveit_resources_prbt_pg70_support:/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_resources_prbt_moveit_config:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_ros_robot_interaction:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/moveit_planners_chomp:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/pilz_industrial_motion_planner_testutils:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/a/ws_nhk/install/chomp_motion_planner:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_prbt_support:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/a_r2_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/moveit_setup_assistant:/home/a/ws_nhk/install/moveit_setup_srdf_plugins:/home/a/ws_nhk/install/moveit_setup_core_plugins:/home/a/ws_nhk/install/moveit_setup_controllers:/home/a/ws_nhk/install/moveit_setup_app_plugins:/home/a/ws_nhk/install/moveit_planners:/home/a/ws_nhk/install/pilz_industrial_motion_planner:/home/a/ws_nhk/install/moveit_setup_framework:/home/a/ws_nhk/install/moveit_ros_visualization:/home/a/ws_nhk/install/moveit_resources_prbt_pg70_support:/home/a/ws_nhk/install/moveit_ros_planning_interface:/home/a/ws_nhk/install/moveit_resources_prbt_moveit_config:/home/a/ws_nhk/install/moveit_ros_move_group:/home/a/ws_nhk/install/moveit_ros_warehouse:/home/a/ws_nhk/install/moveit_ros_robot_interaction:/home/a/ws_nhk/install/moveit_planners_ompl:/home/a/ws_nhk/install/moveit_kinematics:/home/a/ws_nhk/install/trac_ik:/home/a/ws_nhk/install/moveit_ros_planning:/home/a/ws_nhk/install/moveit_planners_chomp:/home/a/ws_nhk/install/trac_ik_kinematics_plugin:/home/a/ws_nhk/install/pilz_industrial_motion_planner_testutils:/home/a/ws_nhk/install/moveit_simple_controller_manager:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor:/home/a/ws_nhk/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/a/ws_nhk/install/chomp_motion_planner:/home/a/ws_nhk/install/moveit_core:/home/a/ws_nhk/install/moveit_resources_panda_moveit_config:/home/a/ws_nhk/install/moveit_resources_fanuc_moveit_config:/home/a/ws_nhk/install/trac_ik_lib:/home/a/ws_nhk/install/srdfdom:/home/a/ws_nhk/install/moveit_resources_prbt_support:/home/a/ws_nhk/install/moveit_resources_pr2_description:/home/a/ws_nhk/install/moveit_resources_panda_description:/home/a/ws_nhk/install/moveit_resources_fanuc_description:/home/a/ws_nhk/install/moveit_common:/home/a/ws_nhk/install/a_r2_description:/home/a/install/field_description_test:/opt/ros/humble LD_LIBRARY_PATH=/home/a/ws_nhk/install/moveit_setup_assistant/lib:/home/a/ws_nhk/install/moveit_setup_srdf_plugins/lib:/home/a/ws_nhk/install/moveit_setup_core_plugins/lib:/home/a/ws_nhk/install/moveit_setup_controllers/lib:/home/a/ws_nhk/install/moveit_setup_app_plugins/lib:/home/a/ws_nhk/install/pilz_industrial_motion_planner/lib:/home/a/ws_nhk/install/moveit_setup_framework/lib:/home/a/ws_nhk/install/moveit_ros_visualization/lib:/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_ros_robot_interaction/lib:/home/a/ws_nhk/install/moveit_planners_ompl/lib:/home/a/ws_nhk/install/moveit_kinematics/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/moveit_planners_chomp/lib:/home/a/ws_nhk/install/trac_ik_kinematics_plugin/lib:/home/a/ws_nhk/install/pilz_industrial_motion_planner_testutils/lib:/home/a/ws_nhk/install/moveit_simple_controller_manager/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/a/ws_nhk/install/chomp_motion_planner/lib:/home/a/ws_nhk/install/moveit_core/lib:/home/a/ws_nhk/install/trac_ik_lib/lib:/home/a/ws_nhk/install/srdfdom/lib PATH=/home/a/ws_nhk/install/moveit_core/bin:${PATH} PYTHONPATH=/home/a/ws_nhk/install/moveit_configs_utils/lib/python3.10/site-packages:/home/a/ws_nhk/install/srdfdom/local/lib/python3.10/dist-packages:/home/a/ws_nhk/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/a/ws_nhk/build/moveit_r2_config -- -j22 -l22

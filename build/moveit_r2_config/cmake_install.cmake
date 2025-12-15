@@ -43,6 +43,42 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE DIRECTORY FILES "/home/a/ws_nhk/src/moveit_r2_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE DIRECTORY FILES "/home/a/ws_nhk/src/moveit_r2_config/config")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE FILE FILES "/home/a/ws_nhk/src/moveit_r2_config/.setup_assistant")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config" TYPE EXECUTABLE FILES "/home/a/ws_nhk/build/moveit_r2_config/move_hand_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node"
+         OLD_RPATH "/home/a/ws_nhk/install/moveit_ros_planning_interface/lib:/home/a/ws_nhk/install/moveit_ros_move_group/lib:/home/a/ws_nhk/install/moveit_ros_warehouse/lib:/home/a/ws_nhk/install/moveit_ros_planning/lib:/home/a/ws_nhk/install/moveit_ros_occupancy_map_monitor/lib:/home/a/ws_nhk/install/moveit_core/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/a/ws_nhk/install/srdfdom/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config/move_hand_node")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/moveit_r2_config" TYPE PROGRAM FILES "/home/a/ws_nhk/src/moveit_r2_config/scripts/direct_hand_controller.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/a/ws_nhk/build/moveit_r2_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/moveit_r2_config")
 endif()
 
@@ -99,18 +135,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE FILE FILES "/home/a/ws_nhk/src/moveit_r2_config/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE DIRECTORY FILES "/home/a/ws_nhk/src/moveit_r2_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE DIRECTORY FILES "/home/a/ws_nhk/src/moveit_r2_config/config")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_r2_config" TYPE FILE FILES "/home/a/ws_nhk/src/moveit_r2_config/.setup_assistant")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

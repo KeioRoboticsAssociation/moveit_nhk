@@ -1,0 +1,14 @@
+[0.068s] Invoking command in '/home/a/ws_nhk/build/srdfdom': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/srdfdom -- -j22 -l22
+[0.507s] [ 27%] Built target srdfdom
+[0.507s] [ 45%] Built target gtest_main
+[0.507s] [ 63%] Built target gtest
+[0.508s] [ 63%] Built target ament_cmake_python_copy_srdfdom
+[0.508s] [100%] Built target test_cpp_C
+[0.508s] [100%] Built target test_cpp_nl_NL.UTF-8
+[0.508s] running egg_info
+[0.508s] writing srdfdom.egg-info/PKG-INFO
+[0.508s] writing dependency_links to srdfdom.egg-info/dependency_links.txt
+[0.508s] writing top-level names to srdfdom.egg-info/top_level.txt
+[0.508s] reading manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.508s] writing manifest file 'srdfdom.egg-info/SOURCES.txt'
+[0.508s] [100%] Built target ament_cmake_python_build_srdfdom_egg
