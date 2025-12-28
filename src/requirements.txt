@@ -1,0 +1,212 @@
+# ROS2 Core packages
+rclpy>=3.3.0
+launch>=1.0.0
+launch_ros>=0.19.0
+ament_index_python
+launch_testing>=1.0.0
+
+# MoveIt and Robot Control
+# Note: moveit packages are typically installed via rosdep
+# moveit_configs_utils>=2.5.0  # Install via rosdep
+# moveit_commander>=1.1.0      # Install via rosdep
+
+# URDF/SRDF parsing
+urdf_parser_py>=1.2.0
+xacro>=2.1.0
+
+# Build and packaging
+setuptools>=40.0.0
+catkin_pkg>=1.0.0
+
+# Hardware interfaces
+odrive>=0.6.0
+
+# Data processing and visualization
+numpy>=1.21.0,<2.0.0
+matplotlib>=3.5.0
+
+# File parsing and processing
+PyYAML>=5.0.0
+lxml>=4.8.0
+
+# Terminal and output formatting
+rich>=13.0.0
+pygments>=2.0.0
+
+# Documentation
+sphinx_rtd_theme>=1.0.0
+
+# Web requests
+requests>=2.25.0
+
+# Testing
+pytest>=6.0.0
+ament_copyright
+ament_flake8
+ament_pep257
+
+# Python bindings
+pybind11>=2.6.0
+
+# ROS1 compatibility (if needed - optional)
+# rospy
+# roslib
+# rospkg
+# genpy
+
+# Development tools (optional)
+# nox
+# ghapi
+
+# Additional ROS2 message types
+# sensor_msgs, geometry_msgs, std_msgs, etc. are typically installed via rosdep
+
+# Note: Some packages may be pre-installed with ROS2 distribution
+# Install using: pip install -r requirements.txt
+# Or use rosdep: rosdep install --from-paths . --ignore-src -r -y
+
+# ==============================================================================
+# C++ DEPENDENCIES (Install via apt/rosdep, NOT pip)
+# ==============================================================================
+# The following C++ libraries and ROS2 packages are required.
+# Install them using: rosdep install --from-paths . --ignore-src -r -y
+# Or manually via apt: sudo apt install <package-name>
+#
+# ROS2 Core (C++):
+#   - rclcpp (version varies by ROS2 distro)
+#   - rclcpp_action
+#   - rclcpp_components
+#   - ament-cmake
+#   - ament-index-cpp
+#
+# MoveIt2 Suite (workspace version: 2.5.9):
+#   - ros-<distro>-moveit-core>=2.5.0
+#   - ros-<distro>-moveit-ros-planning>=2.5.0
+#   - ros-<distro>-moveit-ros-planning-interface>=2.5.0
+#   - ros-<distro>-moveit-ros-visualization>=2.5.0
+#   - ros-<distro>-moveit-task-constructor-core>=0.1.3
+#   - ros-<distro>-moveit-visual-tools>=4.0.0
+#   - ros-<distro>-moveit-servo>=2.5.0
+#   - ros-<distro>-moveit-simple-controller-manager>=2.5.0
+#   - ros-<distro>-moveit-commander>=1.1.7
+#   - ros-<distro>-moveit-configs-utils>=2.5.9
+#
+# Motion Planning Libraries:
+#   - ros-<distro>-ompl>=1.5.0 (Open Motion Planning Library)
+#   - ros-<distro>-trac-ik>=2.2.0 (TRAC-IK inverse kinematics solver)
+#   - libnlopt-cxx-dev>=2.7.0 (NLopt optimization library)
+#   - ros-<distro>-chomp-motion-planner>=2.5.0
+#   - trajopt>=1.1.0 (Trajectory optimization)
+#   - ros-<distro>-ruckig>=0.6.0 (Real-time trajectory generation)
+#
+# Collision Detection & Physics:
+#   - libbullet-dev>=2.87.0 (Bullet physics engine)
+#   - libfcl-dev>=0.6.0 (Flexible Collision Library)
+#   - ros-<distro>-geometric-shapes>=2.1.0
+#   - ros-<distro>-octomap>=1.9.0
+#   - ros-<distro>-octomap-msgs>=2.0.0
+#
+# Kinematics & Transforms:
+#   - ros-<distro>-kdl-parser
+#   - ros-<distro>-orocos-kdl-vendor
+#   - ros-<distro>-tf2
+#   - ros-<distro>-tf2-ros
+#   - ros-<distro>-tf2-eigen
+#   - ros-<distro>-tf2-kdl
+#   - ros-<distro>-tf2-geometry-msgs
+#
+# URDF/SRDF:
+#   - ros-<distro>-urdf
+#   - ros-<distro>-urdfdom
+#   - ros-<distro>-urdfdom-headers
+#   - ros-<distro>-srdfdom
+#
+# Robot Control:
+#   - ros-<distro>-controller-manager-msgs
+#   - ros-<distro>-control-msgs
+#   - ros-<distro>-control-toolbox
+#   - ros-<distro>-joint-limits-interface
+#
+# Hardware Drivers:
+#   - ros-<distro>-dynamixel-sdk>=3.7.60
+#   - dynamixel_controller (custom package in this workspace, v0.0.0)
+#   - rogidrive_msg (custom package in this workspace, v0.0.0)
+#
+# Behavior Trees:
+#   - ros-<distro>-behaviortree-cpp>=3.8.0 (BehaviorTree.CPP)
+#
+# Visualization:
+#   - ros-<distro>-rviz2>=11.0.0
+#   - ros-<distro>-rviz-common>=11.0.0
+#   - ros-<distro>-rviz-rendering>=11.0.0
+#   - ros-<distro>-rviz-visual-tools>=4.1.0
+#   - ros-<distro>-interactive-markers>=2.0.0
+#   - qtbase5-dev>=5.12.0 (Qt5 for GUI)
+#   - libglew-dev>=2.1.0 (OpenGL Extension Wrangler)
+#   - freeglut3-dev>=3.0.0 (OpenGL utility toolkit)
+#
+# Math & Linear Algebra:
+#   - libeigen3-dev>=3.3.0 (Eigen library)
+#   - ros-<distro>-eigen-stl-containers>=1.0.0
+#
+# External Libraries:
+#   - libboost-all-dev>=1.71.0 (Boost C++ libraries)
+#   - libyaml-cpp-dev>=0.6.0 (YAML for C++)
+#   - libtinyxml2-dev>=8.0.0 (TinyXML2 for XML parsing)
+#   - libconsole-bridge-dev>=1.0.0 (Logging)
+#   - libopencv-dev>=4.5.0 (OpenCV)
+#   - ros-<distro>-cv-bridge>=3.0.0
+#   - ros-<distro>-image-transport>=3.0.0
+#   - libomp-dev>=12.0.0 (OpenMP for parallel computing)
+#
+# Utilities:
+#   - ros-<distro>-pluginlib
+#   - ros-<distro>-class-loader
+#   - ros-<distro>-rosparam-shortcuts
+#   - ros-<distro>-random-numbers
+#   - ros-<distro>-warehouse-ros
+#   - ros-<distro>-backward-ros
+#   - ros-<distro>-generate-parameter-library
+#   - libfmt-dev (Format library)
+#
+# Message Packages:
+#   - ros-<distro>-sensor-msgs
+#   - ros-<distro>-geometry-msgs
+#   - ros-<distro>-std-msgs
+#   - ros-<distro>-std-srvs
+#   - ros-<distro>-visualization-msgs
+#   - ros-<distro>-trajectory-msgs
+#   - ros-<distro>-shape-msgs
+#   - ros-<distro>-object-recognition-msgs
+#   - ros-<distro>-graph-msgs
+#
+# Testing (C++):
+#   - catch2 (Catch2 testing framework)
+#
+# Python Bindings:
+#   - ros-<distro>-pybind11-vendor
+#   - ros-<distro>-py-binding-tools
+#
+# Note: Replace <distro> with your ROS2 distribution name (e.g., humble, iron, jazzy)
+
+# ==============================================================================
+# WORKSPACE-SPECIFIC CUSTOM PACKAGES
+# ==============================================================================
+# The following custom packages are built from source in this workspace:
+#
+# Custom ROS2 Packages (built with colcon):
+#   - dynamixel_controller: Dynamixel motor controller with custom protocol
+#   - dynamixel_controller_client: Python client for Dynamixel controller
+#   - dynamixel_controller_gui: Tkinter-based GUI for Dynamixel motors
+#   - rogidrive: ODrive motor controller interface
+#   - rogidrive_msg: Custom messages for Rogidrive
+#   - r2_odrive: JointState to Rogidrive converter
+#   - nhk_bt: NHK robot behavior tree with remote control
+#   - moveit_r2_config: MoveIt configuration for R2 robot
+#   - sakai_r2_config: Alternative R2 configuration
+#
+# Build all workspace packages:
+#   colcon build --symlink-install
+#
+# Source the workspace:
+#   source install/setup.bash
