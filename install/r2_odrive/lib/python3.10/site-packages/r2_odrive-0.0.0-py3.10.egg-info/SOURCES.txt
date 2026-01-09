@@ -12,4 +12,5 @@ setup.py
 launch/odrive_controller.launch.py
 r2_odrive/__init__.py
 r2_odrive/odrive_controller_node.py
+r2_odrive/rtz_to_joint_trajectory.py
 resource/r2_odrive

@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'odrive_controller_node = r2_odrive.odrive_controller_node:main',
+            'rtz_to_joint_trajectory = r2_odrive.rtz_to_joint_trajectory:main',
         ],
     },
 )
