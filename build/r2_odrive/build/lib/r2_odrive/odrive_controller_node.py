@@ -3,7 +3,7 @@
 JointState → Rogidrive converter node.
 
 `/joint_states` の position 情報を受け取り，ODrive 側で利用しやすい
-`RogidriveMultiArray` メッセージへ変換して `/odrive_status` に流す。
+`RogidriveMessage` に変換して `/odrive_cmd` に流す。
 """
 
 from typing import Dict, List
@@ -11,11 +11,11 @@ from typing import Dict, List
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from rogidrive_msg.msg import RogidriveMessage, RogidriveMultiArray
+from rogidrive_msg.msg import RogidriveMessage
 
 
 class ODriveControllerNode(Node):
-    """JointState から RogidriveMultiArray へ変換する ROS2 ノード"""
+    """JointState から RogidriveMessage へ変換する ROS2 ノード"""
 
     def __init__(self) -> None:
         super().__init__('odrive_controller_node')
@@ -25,9 +25,9 @@ class ODriveControllerNode(Node):
 
         self._missing_joint_log: Dict[str, bool] = {}
 
-        self.status_publisher = self.create_publisher(
-            RogidriveMultiArray,
-            self.odrive_status_topic,
+        self.command_publisher = self.create_publisher(
+            RogidriveMessage,
+            self.odrive_cmd_topic,
             10,
         )
         self.joint_state_subscription = self.create_subscription(
@@ -38,21 +38,21 @@ class ODriveControllerNode(Node):
         )
 
         self.get_logger().info(
-            f'Listening on {self.joint_state_topic} and publishing to {self.odrive_status_topic}'
+            f'Listening on {self.joint_state_topic} and publishing to {self.odrive_cmd_topic}'
         )
         if self.joint_names:
             self.get_logger().info(f'Configured joint order: {self.joint_names}')
 
     def _declare_parameters(self) -> None:
         self.declare_parameter('joint_state_topic', '/joint_states')
-        self.declare_parameter('odrive_status_topic', '/odrive_status')
+        self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
         # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
-        self.declare_parameter('joint_names', ['Slider 1', 'Slider 3'])
+        self.declare_parameter('joint_names', ['Slider 1', 'Revolute 2', 'Slider 4'])
         self.declare_parameter('default_mode', 3)
 
     def _load_parameters(self) -> None:
         self.joint_state_topic = self.get_parameter('joint_state_topic').value
-        self.odrive_status_topic = self.get_parameter('odrive_status_topic').value
+        self.odrive_cmd_topic = self.get_parameter('odrive_cmd_topic').value
         raw_joint_names = self.get_parameter('joint_names').value
         self.joint_names: List[str] = [name for name in raw_joint_names if name]
         self.default_mode = int(self.get_parameter('default_mode').value)
@@ -64,8 +64,6 @@ class ODriveControllerNode(Node):
 
         name_to_index = {name: idx for idx, name in enumerate(msg.name)}
         target_names = self.joint_names if self.joint_names else list(msg.name)
-        status_msg = RogidriveMultiArray()
-
         for joint_name in target_names:
             index = name_to_index.get(joint_name)
             if index is None:
@@ -79,10 +77,7 @@ class ODriveControllerNode(Node):
             effort = self._get_value(msg.effort, index)
 
             rogi_msg = self._convert_joint_state(joint_name, position, velocity, effort)
-            status_msg.data.append(rogi_msg)
-
-        if status_msg.data:
-            self.status_publisher.publish(status_msg)
+            self.command_publisher.publish(rogi_msg)
 
     @staticmethod
     def _get_value(sequence: List[float], index: int, default: float = 0.0) -> float:

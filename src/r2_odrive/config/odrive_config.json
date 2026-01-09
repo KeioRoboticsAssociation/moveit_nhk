@@ -1,8 +1,12 @@
 {
   "motors": {
-    "モータの名前(任意)": {
+    "Slider 1": {
       "serial": "odriveのシリアル番号",
       "axis": 0
+    },
+    "Slider 4": {
+      "serial": "odriveのシリアル番号",
+      "axis": 1
     }
   }
 }
