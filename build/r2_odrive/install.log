@@ -5,7 +5,7 @@
 /home/a/ws_nhk/install/r2_odrive/share/ament_index/resource_index/packages/r2_odrive
 /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/package.xml
 /home/a/ws_nhk/install/r2_odrive/share/r2_odrive/launch/odrive_controller.launch.py
-/home/a/ws_nhk/install/r2_odrive/share/r2_odrive/config/odrive_config.yaml
+/home/a/ws_nhk/install/r2_odrive/share/r2_odrive/config
 /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive-0.0.0-py3.10.egg-info/top_level.txt
 /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/a/ws_nhk/install/r2_odrive/lib/python3.10/site-packages/r2_odrive-0.0.0-py3.10.egg-info/zip-safe

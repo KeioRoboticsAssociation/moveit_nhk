@@ -46,7 +46,8 @@ class ODriveControllerNode(Node):
     def _declare_parameters(self) -> None:
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('odrive_status_topic', '/odrive_status')
-        self.declare_parameter('joint_names', [])
+        # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
+        self.declare_parameter('joint_names', ['Slider 1', 'Slider 3'])
         self.declare_parameter('default_mode', 3)
 
     def _load_parameters(self) -> None:

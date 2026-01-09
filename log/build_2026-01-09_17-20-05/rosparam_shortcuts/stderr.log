@@ -1,0 +1,4 @@
+gmake[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/test_node_parameters.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/rosparam_shortcuts_example.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/rosparam_shortcuts_node_parameters_example.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

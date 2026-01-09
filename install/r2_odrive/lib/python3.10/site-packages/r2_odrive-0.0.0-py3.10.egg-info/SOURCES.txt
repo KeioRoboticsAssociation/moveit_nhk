@@ -9,7 +9,6 @@ setup.py
 ../../build/r2_odrive/r2_odrive.egg-info/requires.txt
 ../../build/r2_odrive/r2_odrive.egg-info/top_level.txt
 ../../build/r2_odrive/r2_odrive.egg-info/zip-safe
-config/odrive_config.yaml
 launch/odrive_controller.launch.py
 r2_odrive/__init__.py
 r2_odrive/odrive_controller_node.py

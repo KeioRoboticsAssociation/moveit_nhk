@@ -1,0 +1,8 @@
+[0.472s] Invoking command in '/home/a/ws_nhk/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rosparam_shortcuts -- -j22 -l22
+[0.567s] [ 15%] Built target gtest_main
+[0.567s] [ 38%] Built target rosparam_shortcuts
+[0.567s] [ 53%] Built target gtest
+[0.568s] gmake[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/test_node_parameters.dir/all] Interrupt
+[0.568s] gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/rosparam_shortcuts_example.dir/all] Interrupt
+[0.568s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/rosparam_shortcuts_node_parameters_example.dir/all] Interrupt
+[0.568s] gmake: *** [Makefile:146: all] Interrupt

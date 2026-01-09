@@ -1,0 +1,24 @@
+[0.241s] Invoking command in '/home/a/ws_nhk/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/dynamixel_sdk_custom_interfaces -- -j22 -l22
+[0.483s] [  2%] Built target dynamixel_sdk_custom_interfaces__cpp
+[0.484s] [ 12%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[0.484s] [ 12%] Built target ament_cmake_python_copy_dynamixel_sdk_custom_interfaces
+[0.484s] [ 23%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[0.484s] [ 33%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.484s] [ 43%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[0.484s] [ 64%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[0.484s] [ 64%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[0.484s] [ 74%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[0.484s] [ 74%] Built target dynamixel_sdk_custom_interfaces
+[0.484s] [ 76%] Built target dynamixel_sdk_custom_interfaces__py
+[0.484s] [ 84%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py
+[0.484s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext
+[0.484s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.484s] [100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.579s] running egg_info
+[0.579s] writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO
+[0.579s] writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt
+[0.580s] writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt
+[0.580s] interrupted
+[0.588s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg] Interrupt
+[0.588s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg.dir/all] Interrupt
+[0.588s] gmake: *** [Makefile:146: all] Interrupt
