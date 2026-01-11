@@ -329,7 +329,7 @@ libsequence_capability.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesuppor
 libsequence_capability.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libsequence_capability.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 libsequence_capability.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libsequence_capability.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libsequence_capability.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libsequence_capability.so: /opt/ros/humble/lib/librmw.so
 libsequence_capability.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 libsequence_capability.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

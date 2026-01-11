@@ -1,0 +1,57 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/RS485MotorState.msg
+// generated code does not contain a copyright notice
+
+
+module stm32_mavlink_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "RS485 Motor State Message (IDs 30-49)" "\n"
+      "Telemetry data from RS485-connected motors (e.g., Ikeya MD)")
+    struct RS485MotorState {
+      @verbatim (language="comment", text=
+        "Motor ID (30-49 for RS485 motors)")
+      uint8 motor_id;
+
+      @verbatim (language="comment", text=
+        "RS485 board device ID (DIP switch setting)")
+      uint8 device_id;
+
+      @verbatim (language="comment", text=
+        "Motor index on board (0-2 for 3-motor boards)")
+      uint8 motor_index;
+
+      @verbatim (language="comment", text=
+        "Control mode (0=position, 1=velocity)")
+      uint8 control_mode;
+
+      @verbatim (language="comment", text=
+        "Motor status (0=OK, 1=ERROR, 2=TIMEOUT, 3=NOT_INITIALIZED)")
+      uint8 status;
+
+      @verbatim (language="comment", text=
+        "RS485 protocol error code (0=no error)")
+      uint8 error_code;
+
+      @verbatim (language="comment", text=
+        "Current position in rotations")
+      float current_position_rotations;
+
+      @verbatim (language="comment", text=
+        "Current velocity in revolutions per second")
+      float current_velocity_rps;
+
+      @verbatim (language="comment", text=
+        "Target velocity in revolutions per second")
+      float target_velocity_rps;
+
+      @verbatim (language="comment", text=
+        "Acceleration setting in rev/s^2")
+      float acceleration_rps2;
+
+      @verbatim (language="comment", text=
+        "Timestamp in milliseconds")
+      uint32 timestamp_ms;
+    };
+  };
+};

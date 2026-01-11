@@ -1,0 +1,45 @@
+[ 10%] Built target dynamixel_controller__rosidl_generator_c
+[ 12%] Built target dynamixel_controller__cpp
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_typesupport_fastrtps_c[0m
+[ 12%] Built target ament_cmake_python_copy_dynamixel_controller
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_typesupport_fastrtps_cpp[0m
+[ 22%] Built target dynamixel_controller__rosidl_typesupport_introspection_c
+[ 32%] Built target dynamixel_controller__rosidl_typesupport_cpp
+[ 42%] Built target dynamixel_controller__rosidl_typesupport_fastrtps_c
+[ 53%] Built target dynamixel_controller__rosidl_typesupport_c
+[ 63%] Built target dynamixel_controller__rosidl_typesupport_introspection_cpp
+[ 73%] Built target dynamixel_controller__rosidl_typesupport_fastrtps_cpp
+[ 73%] Built target dynamixel_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/dynamixel_controller_node.dir/src/dynamixel_controller.cpp.o[0m
+[ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+running egg_info
+writing dynamixel_controller.egg-info/PKG-INFO
+writing dependency_links to dynamixel_controller.egg-info/dependency_links.txt
+writing top-level names to dynamixel_controller.egg-info/top_level.txt
+reading manifest file 'dynamixel_controller.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_controller.egg-info/SOURCES.txt'
+[ 77%] Built target ament_cmake_python_build_dynamixel_controller_egg
+[ 77%] Built target dynamixel_controller__py
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_generator_py[0m
+[ 79%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_controller/msg/_dynamixel_controller_s.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_controller/msg/_dynamixel_command_s.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_controller/msg/_dynamixel_response_s.c.o[0m
+[ 85%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_controller/libdynamixel_controller__rosidl_generator_py.so[0m
+[ 85%] Built target dynamixel_controller__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target dynamixel_controller__rosidl_typesupport_c__pyext[0m
+[ 87%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dynamixel_controller/_dynamixel_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dynamixel_controller/_dynamixel_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/dynamixel_controller__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dynamixel_controller/_dynamixel_controller_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_controller/dynamixel_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_controller/dynamixel_controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 95%] Built target dynamixel_controller__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/dynamixel_controller/dynamixel_controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] Built target dynamixel_controller__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target dynamixel_controller__rosidl_typesupport_c__pyext
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/dynamixel_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

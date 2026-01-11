@@ -368,7 +368,7 @@ libtrajectory_generation_common.so: /opt/ros/humble/lib/librosidl_typesupport_fa
 libtrajectory_generation_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libtrajectory_generation_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libtrajectory_generation_common.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libtrajectory_generation_common.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libtrajectory_generation_common.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libtrajectory_generation_common.so: /opt/ros/humble/lib/librmw.so
 libtrajectory_generation_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 libtrajectory_generation_common.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so

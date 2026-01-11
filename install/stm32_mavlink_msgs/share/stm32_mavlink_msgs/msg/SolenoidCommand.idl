@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/SolenoidCommand.msg
+// generated code does not contain a copyright notice
+
+
+module stm32_mavlink_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Solenoid Command Message" "\n"
+      "Command to control solenoid output state")
+    struct SolenoidCommand {
+      @verbatim (language="comment", text=
+        "Solenoid ID (125-130)")
+      uint8 solenoid_id;
+
+      @verbatim (language="comment", text=
+        "Output state (false=OFF, true=ON)")
+      boolean state;
+    };
+  };
+};

@@ -1,0 +1,93 @@
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/common.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/servo_controller.hpp:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/servo_controller.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/robomaster_motor.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/robomaster_controller.hpp:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/robomaster_controller.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/robomaster_motor.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/rs485motor_controller.hpp:21[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/rs485motor_controller.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/robomaster_motor.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/encoder_interface.hpp:11[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/encoder_interface.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/rs485motor_controller.cpp:[m[K In member function ‘[01m[Kbool stm32_mavlink_udp::RS485MotorController::getReadRequestMessage(mavlink_message_t&, uint8_t, uint8_t, uint8_t)[m[K’:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/rs485motor_controller.cpp:207:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_system_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  207 |                                                  [01;35m[Kuint8_t target_system_id[m[K) {
+      |                                                  [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/robomaster_motor.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/mavlink_udp_node.hpp:20[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/mavlink_udp_node.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/robomaster_motor/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/encoder_interface.cpp:[m[K In member function ‘[01m[Kvoid stm32_mavlink_udp::EncoderInterface::handleParamValue(const mavlink_param_value_t&)[m[K’:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/encoder_interface.cpp:62:43:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<stm32_mavlink_udp::EncoderInterface::EncoderData>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   62 |         if (encoder_id >= 1 && [01;35m[Kencoder_id <= encoder_states_.size()[m[K) {
+      |                                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/encoder_interface.cpp:[m[K In member function ‘[01m[Kvoid stm32_mavlink_udp::EncoderInterface::resetPositionCallback(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/encoder_interface.cpp:135:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  135 |     [01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../protocol.h:4[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/common.h:29[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/mavlink.h:32[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/dcmotor_controller.hpp:15[m[K,
+                 from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/dcmotor_controller.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../mavlink_types.h:78:12:[m[K [01;35m[Kwarning: [m[KISO C++ prohibits anonymous structs [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   78 |     struct [01;35m[K{[m[K
+      |            [01;35m[K^[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/../mavlink_SDK/mavlink/common/../mavlink_types.h:17:40:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KMAVPACKED[m[K’
+   17 |   #define MAVPACKED( __Declaration__ ) [01;36m[K__Declaration__[m[K __attribute__((packed))
+      |                                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/mavlink_udp_node.cpp:1[m[K:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/mavlink_udp_node.hpp:[m[K In constructor ‘[01m[Kstm32_mavlink_udp::MAVLinkUDPNode::MAVLinkUDPNode()[m[K’:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/mavlink_udp_node.hpp:69:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstm32_mavlink_udp::MAVLinkUDPNode::running_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   69 |   std::atomic<bool> [01;35m[Krunning_[m[K;
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/include/stm32_mavlink_udp/mavlink_udp_node.hpp:60:25:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::atomic<long unsigned int> stm32_mavlink_udp::MAVLinkUDPNode::last_heartbeat_time_ms_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   60 |   std::atomic<uint64_t> [01;35m[Klast_heartbeat_time_ms_[m[K;
+      |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/mavlink_udp_node.cpp:10:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   10 | [01;35m[KMAVLinkUDPNode[m[K::MAVLinkUDPNode()
+      | [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/dcmotor_controller.cpp:[m[K In member function ‘[01m[Kbool stm32_mavlink_udp::DCMotorController::getMotorControlMessage(mavlink_message_t&, uint8_t, uint8_t, uint8_t)[m[K’:
+[01m[K/home/a/ws_nhk/src/MAVLink_ros2/stm32_mavlink_udp/src/dcmotor_controller.cpp:176:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kpayload[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  176 |   uint8_t [01;35m[Kpayload[m[K[8];
+      |           [01;35m[K^~~~~~~[m[K

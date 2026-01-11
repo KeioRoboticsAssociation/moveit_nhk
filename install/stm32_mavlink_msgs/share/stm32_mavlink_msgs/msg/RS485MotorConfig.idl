@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/RS485MotorConfig.msg
+// generated code does not contain a copyright notice
+
+
+module stm32_mavlink_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "RS485 Motor Configuration Message")
+    struct RS485MotorConfig {
+      @verbatim (language="comment", text=
+        "Motor ID (30-49 for RS485 motors)")
+      uint8 motor_id;
+
+      @verbatim (language="comment", text=
+        "RS485 board device ID (DIP switch setting)")
+      uint8 device_id;
+
+      @verbatim (language="comment", text=
+        "Motor index on board (0-2 for 3-motor boards)")
+      uint8 motor_index;
+
+      @verbatim (language="comment", text=
+        "Maximum velocity limit in rev/s")
+      float max_velocity_rps;
+
+      @verbatim (language="comment", text=
+        "Maximum acceleration in rev/s^2")
+      float max_acceleration;
+
+      @verbatim (language="comment", text=
+        "Motor enable state")
+      boolean enabled;
+    };
+  };
+};

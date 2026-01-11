@@ -337,7 +337,7 @@ libservo_node.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastr
 libservo_node.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libservo_node.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libservo_node.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libservo_node.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libservo_node.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libservo_node.so: /opt/ros/humble/lib/librmw.so
 libservo_node.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
 libservo_node.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

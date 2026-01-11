@@ -562,6 +562,7 @@ trajectory_rviz_plugin/CMakeFiles/moveit_trajectory_rviz_plugin.dir/src/plugin_i
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
   /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
@@ -3125,8 +3126,6 @@ trajectory_rviz_plugin/moveit_trajectory_rviz_plugin_autogen/mocs_compilation.cp
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
-/usr/include/boost/preprocessor/control/if.hpp:
-
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSimpleRenderable.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
@@ -3675,6 +3674,12 @@ trajectory_rviz_plugin/moveit_trajectory_rviz_plugin_autogen/mocs_compilation.cp
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
+/usr/include/boost/preprocessor/control/if.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
@@ -4170,8 +4175,6 @@ trajectory_rviz_plugin/moveit_trajectory_rviz_plugin_autogen/mocs_compilation.cp
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__struct.hpp:
 

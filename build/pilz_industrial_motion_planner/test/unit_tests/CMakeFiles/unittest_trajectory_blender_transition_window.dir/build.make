@@ -334,7 +334,7 @@ test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/l
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/librmw.so
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 test/unit_tests/unittest_trajectory_blender_transition_window: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

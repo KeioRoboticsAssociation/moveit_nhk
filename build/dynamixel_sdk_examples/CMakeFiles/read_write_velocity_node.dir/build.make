@@ -149,7 +149,7 @@ read_write_velocity_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_type
 read_write_velocity_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 read_write_velocity_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 read_write_velocity_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-read_write_velocity_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+read_write_velocity_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 read_write_velocity_node: /opt/ros/humble/lib/librmw.so
 read_write_velocity_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 read_write_velocity_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

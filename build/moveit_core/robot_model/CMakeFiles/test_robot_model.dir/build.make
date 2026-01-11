@@ -219,7 +219,7 @@ robot_model/test_robot_model: /opt/ros/humble/lib/libstd_msgs__rosidl_typesuppor
 robot_model/test_robot_model: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 robot_model/test_robot_model: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 robot_model/test_robot_model: /opt/ros/humble/lib/librmw.so
-robot_model/test_robot_model: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+robot_model/test_robot_model: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 robot_model/test_robot_model: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 robot_model/test_robot_model: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 robot_model/test_robot_model: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

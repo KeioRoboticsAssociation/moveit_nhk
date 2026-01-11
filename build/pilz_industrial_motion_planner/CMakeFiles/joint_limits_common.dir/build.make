@@ -416,7 +416,7 @@ libjoint_limits_common.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.
 libjoint_limits_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libjoint_limits_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libjoint_limits_common.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libjoint_limits_common.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libjoint_limits_common.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libjoint_limits_common.so: /opt/ros/humble/lib/librmw.so
 libjoint_limits_common.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 libjoint_limits_common.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so

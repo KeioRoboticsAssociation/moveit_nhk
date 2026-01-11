@@ -1046,6 +1046,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_d
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -3392,6 +3393,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_e
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -5151,6 +5153,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_g
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -6700,6 +6703,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_k
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -8249,6 +8253,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_p
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -10130,6 +10135,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_p
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -11924,6 +11930,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_r
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -13553,6 +13560,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/include/moveit_setup_srdf_plugins/moc_v
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -16852,6 +16860,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/compute_default_collisions.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -18722,6 +18731,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/default_collisions.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -20634,6 +20644,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/default_collisions_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -22755,6 +22766,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/end_effectors.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -24236,6 +24248,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/end_effectors_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -26044,6 +26057,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/group_edit_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -27471,6 +27485,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/group_meta_config.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -28281,6 +28296,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/kinematic_chain_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -29823,6 +29839,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/passive_joints.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -31173,6 +31190,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/passive_joints_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -32941,6 +32959,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/planning_groups.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -35528,6 +35547,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/planning_groups_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -37599,6 +37619,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/robot_poses.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -39098,6 +39119,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/robot_poses_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -41105,6 +41127,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/virtual_joints.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
@@ -42455,6 +42478,7 @@ CMakeFiles/moveit_setup_srdf_plugins.dir/src/virtual_joints_widget.cpp.o
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp

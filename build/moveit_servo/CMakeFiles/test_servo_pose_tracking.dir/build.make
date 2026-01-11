@@ -340,7 +340,7 @@ test_servo_pose_tracking: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesuppo
 test_servo_pose_tracking: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 test_servo_pose_tracking: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test_servo_pose_tracking: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test_servo_pose_tracking: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test_servo_pose_tracking: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test_servo_pose_tracking: /opt/ros/humble/lib/librmw.so
 test_servo_pose_tracking: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
 test_servo_pose_tracking: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

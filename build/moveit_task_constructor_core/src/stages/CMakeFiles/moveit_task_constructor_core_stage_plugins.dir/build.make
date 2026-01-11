@@ -321,7 +321,7 @@ src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/librmw.so
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
 src/stages/libmoveit_task_constructor_core_stage_plugins.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so

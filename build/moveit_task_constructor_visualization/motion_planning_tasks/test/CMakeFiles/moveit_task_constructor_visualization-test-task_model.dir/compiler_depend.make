@@ -948,6 +948,7 @@ motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -1525,6 +1526,8 @@ motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:
 
@@ -2457,6 +2460,8 @@ motion_planning_tasks/test/CMakeFiles/moveit_task_constructor_visualization-test
 /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resource.hpp:
 
 motion_planning_tasks/test/moveit_task_constructor_visualization-test-task_model_autogen/mocs_compilation.cpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -3875,5 +3880,3 @@ motion_planning_tasks/test/moveit_task_constructor_visualization-test-task_model
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:

@@ -600,7 +600,7 @@ libmoveit_setup_framework.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps
 libmoveit_setup_framework.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 libmoveit_setup_framework.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libmoveit_setup_framework.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libmoveit_setup_framework.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libmoveit_setup_framework.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libmoveit_setup_framework.so: /opt/ros/humble/lib/librmw.so
 libmoveit_setup_framework.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 libmoveit_setup_framework.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

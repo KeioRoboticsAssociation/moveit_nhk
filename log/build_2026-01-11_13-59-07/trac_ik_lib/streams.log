@@ -1,0 +1,7 @@
+[0.270s] Invoking command in '/home/a/ws_nhk/build/trac_ik_lib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/trac_ik_lib -- -j22 -l22
+[0.598s] [ 25%] [32mBuilding CXX object CMakeFiles/trac_ik.dir/src/trac_ik.cpp.o[0m
+[16.451s] gmake[2]: *** wait: No child processes.  Stop.
+[16.451s] gmake[2]: *** Waiting for unfinished jobs....
+[16.452s] gmake[2]: *** wait: No child processes.  Stop.
+[16.452s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/trac_ik.dir/all] Error 2
+[16.486s] gmake: *** [Makefile:146: all] Interrupt

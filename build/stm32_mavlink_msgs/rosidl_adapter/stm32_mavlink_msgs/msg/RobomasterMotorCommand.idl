@@ -1,0 +1,75 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/RobomasterMotorCommand.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module stm32_mavlink_msgs {
+  module msg {
+    module RobomasterMotorCommand_Constants {
+      @verbatim (language="comment", text=
+        "Control mode - Determines motor control behavior (matches STM32 MAVLink MOTOR_CONTROL_MODE enum)" "\n"        "CONTROL_MODE_OPEN_LOOP (0): Open loop PWM/current control using target_current_ma" "\n"        "  - Direct motor drive without feedback control" "\n"        "  - Use for torque control or when precise current limiting is needed" "\n"        "  - Range: -16000 to 16000 mA (approximately -16A to +16A)" "\n"        "  - Motor applies specified current regardless of speed or position" "\n"        "CONTROL_MODE_SPEED (1): Closed-loop velocity control using target_velocity_rps" "\n"        "  - Use for constant speed applications (wheels, conveyors, etc.)" "\n"        "  - PID controller maintains target rotational speed" "\n"        "  - Unit: rotations per second (positive = forward, negative = reverse)" "\n"        "CONTROL_MODE_POSITION (2): Closed-loop position control using target_position_rad" "\n"        "  - Use for precise positioning (arms, turrets, actuators)" "\n"        "  - PID controller moves motor to target absolute position" "\n"        "  - Unit: radians (relative to motor's zero position)" "\n"        "CONTROL_MODE_DISABLED (3): Motor disabled state" "\n"        "  - Motor is completely disabled and freewheels" "\n"        "  - All target values are ignored" "\n"        "  - Use for emergency stops or power saving" "\n"        "CONTROL_MODE_DUTY_TO_POSITION (4): Apply duty cycle until target position reached" "\n"        "  - Hybrid control: applies constant duty cycle (open loop) until position target is met" "\n"        "  - Uses target_current_ma as duty cycle percentage (-16000 to +16000 = -100% to +100%)" "\n"        "  - Uses target_position_rad as position target to stop at" "\n"        "  - Useful for fast positioning without overshoot in systems with known dynamics")
+      const uint8 CONTROL_MODE_OPEN_LOOP = 0;
+      const uint8 CONTROL_MODE_SPEED = 1;
+      const uint8 CONTROL_MODE_POSITION = 2;
+      const uint8 CONTROL_MODE_DISABLED = 3;
+      const uint8 CONTROL_MODE_DUTY_TO_POSITION = 4;
+      @verbatim (language="comment", text=
+        "Legacy aliases for backward compatibility" "\n"        "Same as OPEN_LOOP")
+      const uint8 CONTROL_MODE_CURRENT = 0;
+      @verbatim (language="comment", text=
+        "Same as SPEED")
+      const uint8 CONTROL_MODE_VELOCITY = 1;
+    };
+    @verbatim (language="comment", text=
+      "RoboMaster Motor Command Message" "\n"
+      "Motor control command for individual RoboMaster motors")
+    struct RobomasterMotorCommand {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Motor identification" "\n"
+        "Motor ID (20-29 for RoboMaster motors)")
+      uint8 motor_id;
+
+      uint8 control_mode;
+
+      @verbatim (language="comment", text=
+        "Command values - Usage depends on control_mode" "\n"
+        "Target current in milliamps (-16000 to 16000)" "\n"
+        "CONTROL_MODE_OPEN_LOOP: Direct current/torque control" "\n"
+        "CONTROL_MODE_DUTY_TO_POSITION: Duty cycle (-16000 to +16000 = -100% to +100%)")
+      int16 target_current_ma;
+
+      @verbatim (language="comment", text=
+        "Target velocity in rotations per second" "\n"
+        "CONTROL_MODE_SPEED: Target rotational speed" "\n"
+        "Positive values = clockwise rotation (when viewed from motor shaft end)")
+      float target_velocity_rps;
+
+      @verbatim (language="comment", text=
+        "Target position in radians" "\n"
+        "CONTROL_MODE_POSITION: Target absolute position" "\n"
+        "CONTROL_MODE_DUTY_TO_POSITION: Position to stop at when using duty cycle" "\n"
+        "Absolute position relative to motor's calibrated zero point")
+      float target_position_rad;
+
+      @verbatim (language="comment", text=
+        "Control flags" "\n"
+        "Enable/disable motor" "\n"
+        "false = motor freewheels (no active control)" "\n"
+        "true = motor applies control based on control_mode")
+      boolean enabled;
+
+      @verbatim (language="comment", text=
+        "Reset communication watchdog timer" "\n"
+        "Set to true to reset timeout counter on STM32 side")
+      boolean reset_watchdog;
+
+      @verbatim (language="comment", text=
+        "Emergency stop this motor immediately" "\n"
+        "Overrides all other commands, motor stops and disables")
+      boolean emergency_stop;
+    };
+  };
+};

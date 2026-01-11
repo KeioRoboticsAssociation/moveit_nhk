@@ -158,7 +158,7 @@ fake_command_publisher: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 fake_command_publisher: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 fake_command_publisher: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 fake_command_publisher: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-fake_command_publisher: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+fake_command_publisher: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 fake_command_publisher: /opt/ros/humble/lib/librmw.so
 fake_command_publisher: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 fake_command_publisher: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so

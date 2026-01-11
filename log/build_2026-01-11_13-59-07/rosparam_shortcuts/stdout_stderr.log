@@ -1,0 +1,6 @@
+[ 15%] Built target gtest_main
+[ 30%] Built target gtest
+[ 38%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o[0m
+gmake[2]: *** [CMakeFiles/rosparam_shortcuts.dir/build.make:90: CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/rosparam_shortcuts.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

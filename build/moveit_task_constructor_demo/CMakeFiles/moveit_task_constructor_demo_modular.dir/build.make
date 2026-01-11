@@ -337,7 +337,7 @@ modular: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.s
 modular: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 modular: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 modular: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-modular: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+modular: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 modular: /opt/ros/humble/lib/librmw.so
 modular: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 modular: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so

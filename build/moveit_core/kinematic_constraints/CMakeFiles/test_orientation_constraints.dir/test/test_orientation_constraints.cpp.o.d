@@ -769,6 +769,7 @@ kinematic_constraints/CMakeFiles/test_orientation_constraints.dir/test/test_orie
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -1108,6 +1109,11 @@ kinematic_constraints/CMakeFiles/test_orientation_constraints.dir/test/test_orie
  /opt/ros/humble/include/urdfdom_headers/urdf_sensor/types.h \
  /opt/ros/humble/include/urdfdom/urdf_parser/exportdecl.h \
  /opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \

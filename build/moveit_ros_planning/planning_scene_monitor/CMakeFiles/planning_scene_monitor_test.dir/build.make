@@ -302,7 +302,7 @@ planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/librosid
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/librmw.so
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 planning_scene_monitor/planning_scene_monitor_test: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

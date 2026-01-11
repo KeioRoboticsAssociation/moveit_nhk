@@ -315,7 +315,7 @@ test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libaction_msg
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/librmw.so
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 test/unit_tests/unittest_get_solver_tip_frame: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

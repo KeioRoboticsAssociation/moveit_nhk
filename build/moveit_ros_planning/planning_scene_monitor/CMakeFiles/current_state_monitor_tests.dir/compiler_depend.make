@@ -1176,6 +1176,7 @@ planning_scene_monitor/CMakeFiles/current_state_monitor_tests.dir/test/current_s
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -3390,6 +3391,8 @@ planning_scene_monitor/CMakeFiles/current_state_monitor_tests.dir/test/current_s
 /usr/include/boost/mpl/O1_size.hpp:
 
 /usr/include/c++/11/bits/streambuf.tcc:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/boost/preprocessor/control/if.hpp:
 

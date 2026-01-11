@@ -1,0 +1,3 @@
+[console_scripts]
+ikeyaMD_wizard_gui = ikeyaMD_wizard.ikeyaMD_wizard_gui:main
+

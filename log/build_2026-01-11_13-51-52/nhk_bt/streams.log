@@ -1,0 +1,7 @@
+[0.832s] Invoking command in '/home/a/ws_nhk/build/nhk_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/nhk_bt -- -j22 -l22
+[1.113s] [ 50%] [32mBuilding CXX object CMakeFiles/remote_control_bt_node.dir/src/remote_control_bt_node.cpp.o[0m
+[33.407s] gmake[2]: *** wait: No child processes.  Stop.
+[33.409s] gmake[2]: *** Waiting for unfinished jobs....
+[33.409s] gmake[2]: *** wait: No child processes.  Stop.
+[33.616s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/remote_control_bt_node.dir/all] Error 2
+[33.617s] gmake: *** [Makefile:146: all] Interrupt

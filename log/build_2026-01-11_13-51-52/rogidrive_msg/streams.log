@@ -1,0 +1,175 @@
+[0.247s] Invoking command in '/home/a/ws_nhk/build/rogidrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rogidrive_msg -- -j22 -l22
+[0.886s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_generator_c[0m
+[0.886s] [  2%] Built target rogidrive_msg__cpp
+[0.886s] [ 12%] Built target rogidrive_msg__rosidl_generator_c
+[0.886s] [ 12%] Built target ament_cmake_python_copy_rogidrive_msg
+[0.886s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_fastrtps_c[0m
+[0.886s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_fastrtps_cpp[0m
+[0.886s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_introspection_c[0m
+[0.887s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_c[0m
+[0.892s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_cpp[0m
+[0.892s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_introspection_cpp[0m
+[0.893s] [ 23%] Built target rogidrive_msg__rosidl_typesupport_fastrtps_c
+[0.893s] [ 33%] Built target rogidrive_msg__rosidl_typesupport_introspection_c
+[0.893s] [ 43%] Built target rogidrive_msg__rosidl_typesupport_c
+[0.893s] [ 53%] Built target rogidrive_msg__rosidl_typesupport_fastrtps_cpp
+[0.893s] [ 64%] Built target rogidrive_msg__rosidl_typesupport_introspection_cpp
+[0.893s] [ 74%] Built target rogidrive_msg__rosidl_typesupport_cpp
+[0.893s] [ 74%] Built target rogidrive_msg
+[0.893s] [ 76%] Built target rogidrive_msg__py
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_generator_py[0m
+[0.893s] [ 84%] Built target rogidrive_msg__rosidl_generator_py
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_c__pyext[0m
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_introspection_c__pyext[0m
+[0.893s] [35m[1mConsolidate compiler generated dependencies of target rogidrive_msg__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.893s] [ 89%] Built target rogidrive_msg__rosidl_typesupport_introspection_c__pyext
+[0.893s] [ 94%] Built target rogidrive_msg__rosidl_typesupport_c__pyext
+[0.893s] [100%] Built target rogidrive_msg__rosidl_typesupport_fastrtps_c__pyext
+[0.894s] running egg_info
+[0.894s] writing rogidrive_msg.egg-info/PKG-INFO
+[0.894s] writing dependency_links to rogidrive_msg.egg-info/dependency_links.txt
+[0.894s] writing top-level names to rogidrive_msg.egg-info/top_level.txt
+[0.894s] reading manifest file 'rogidrive_msg.egg-info/SOURCES.txt'
+[0.894s] writing manifest file 'rogidrive_msg.egg-info/SOURCES.txt'
+[0.894s] [100%] Built target ament_cmake_python_build_rogidrive_msg_egg
+[1.128s] Invoked command in '/home/a/ws_nhk/build/rogidrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rogidrive_msg -- -j22 -l22
+[1.137s] Invoking command in '/home/a/ws_nhk/build/rogidrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/rogidrive_msg
+[1.172s] -- Install configuration: "Release"
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/ament_index/resource_index/rosidl_interfaces/rogidrive_msg
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rogidrive_multi_array.h
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rogidrive_message.h
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rosidl_generator_c__visibility_control.h
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.172s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__struct.h
+[1.176s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__functions.h
+[1.176s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__type_support.h
+[1.177s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__struct.h
+[1.177s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__functions.c
+[1.177s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__functions.c
+[1.177s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__functions.h
+[1.178s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__type_support.h
+[1.178s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/library_path.sh
+[1.179s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/library_path.dsv
+[1.183s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_generator_c.so
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__rosidl_typesupport_fastrtps_c.h
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__rosidl_typesupport_fastrtps_c.h
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_fastrtps_c.so
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.184s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rogidrive_message.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rogidrive_multi_array.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__type_support.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__type_support.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__struct.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__traits.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__struct.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__builder.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__builder.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__traits.hpp
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.185s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.186s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.187s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__rosidl_typesupport_fastrtps_cpp.hpp
+[1.188s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__rosidl_typesupport_fastrtps_cpp.hpp
+[1.189s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/dds_fastrtps
+[1.189s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.193s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_fastrtps_cpp.so
+[1.194s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.194s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.194s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.194s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.194s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__rosidl_typesupport_introspection_c.h
+[1.195s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__type_support.c
+[1.196s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__type_support.c
+[1.196s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__rosidl_typesupport_introspection_c.h
+[1.196s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_introspection_c.so
+[1.196s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_c.so
+[1.196s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__rosidl_typesupport_introspection_cpp.hpp
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_message__type_support.cpp
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__rosidl_typesupport_introspection_cpp.hpp
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/include/rogidrive_msg/rogidrive_msg/msg/detail/rogidrive_multi_array__type_support.cpp
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_introspection_cpp.so
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_typesupport_cpp.so
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/pythonpath.sh
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/pythonpath.dsv
+[1.197s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg-0.0.0-py3.10.egg-info
+[1.197s] -- Installing: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg-0.0.0-py3.10.egg-info/top_level.txt
+[1.198s] -- Installing: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.198s] -- Installing: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[1.198s] -- Installing: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/librogidrive_msg__rosidl_generator_py.so
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg/_rogidrive_message_s.c
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg/_rogidrive_multi_array.py
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg/__init__.py
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg/_rogidrive_multi_array_s.c
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg/_rogidrive_message.py
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.198s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/__init__.py
+[1.204s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/_rogidrive_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.204s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.204s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/_rogidrive_msg_s.ep.rosidl_typesupport_introspection_c.c
+[1.204s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.204s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/_rogidrive_msg_s.ep.rosidl_typesupport_c.c
+[1.206s] Listing '/home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg'...
+[1.206s] Listing '/home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/msg'...
+[1.207s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.207s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.207s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/local/lib/python3.10/dist-packages/rogidrive_msg/rogidrive_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.207s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/lib/librogidrive_msg__rosidl_generator_py.so
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/msg/RogidriveMessage.idl
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/msg/RogidriveMultiArray.idl
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/msg/RogidriveMessage.msg
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/msg/RogidriveMultiArray.msg
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/ament_index/resource_index/package_run_dependencies/rogidrive_msg
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/ament_index/resource_index/parent_prefix_path/rogidrive_msg
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/ament_prefix_path.sh
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/ament_prefix_path.dsv
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/path.sh
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/environment/path.dsv
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/local_setup.bash
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/local_setup.sh
+[1.208s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/local_setup.zsh
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/local_setup.dsv
+[1.212s] -- Installing: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/package.dsv
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/ament_index/resource_index/packages/rogidrive_msg
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_generator_cExport.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_generator_cExport-release.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_generator_cppExport.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.212s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_introspection_cExport.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_introspection_cExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_cExport.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_cExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_introspection_cppExport.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_cppExport.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msg__rosidl_typesupport_cppExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_generator_pyExport.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/export_rogidrive_msg__rosidl_generator_pyExport-release.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rosidl_cmake-extras.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.213s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/ament_cmake_export_targets-extras.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msgConfig.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/cmake/rogidrive_msgConfig-version.cmake
+[1.214s] -- Up-to-date: /home/a/ws_nhk/install/rogidrive_msg/share/rogidrive_msg/package.xml
+[1.489s] Invoked command in '/home/a/ws_nhk/build/rogidrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/rogidrive_msg

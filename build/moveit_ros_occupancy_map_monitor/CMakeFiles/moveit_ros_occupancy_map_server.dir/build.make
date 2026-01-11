@@ -286,7 +286,7 @@ moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libgeometry_msgs__rosidl_ty
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/librmw.so
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.so
 moveit_ros_occupancy_map_server: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

@@ -474,6 +474,7 @@ test/unit_tests/CMakeFiles/unittest_trajectory_generator_lin.dir/src/unittest_tr
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -3430,6 +3431,8 @@ test/unit_tests/CMakeFiles/unittest_trajectory_generator_lin.dir/src/unittest_tr
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
 /usr/include/boost/type_traits/is_const.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
@@ -4490,6 +4493,8 @@ test/unit_tests/CMakeFiles/unittest_trajectory_generator_lin.dir/src/unittest_tr
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/kdl/utilities/utility_io.h:
@@ -5457,8 +5462,6 @@ test/unit_tests/CMakeFiles/unittest_trajectory_generator_lin.dir/src/unittest_tr
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
 /usr/include/boost/optional/detail/optional_reference_spec.hpp:
 

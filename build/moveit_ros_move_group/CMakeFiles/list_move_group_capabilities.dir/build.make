@@ -277,7 +277,7 @@ list_move_group_capabilities: /opt/ros/humble/lib/libgeometry_msgs__rosidl_types
 list_move_group_capabilities: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 list_move_group_capabilities: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 list_move_group_capabilities: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-list_move_group_capabilities: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+list_move_group_capabilities: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 list_move_group_capabilities: /opt/ros/humble/lib/librmw.so
 list_move_group_capabilities: /opt/ros/humble/lib/libmoveit_msgs__rosidl_typesupport_introspection_cpp.so
 list_move_group_capabilities: /opt/ros/humble/lib/liboctomap_msgs__rosidl_typesupport_introspection_cpp.so

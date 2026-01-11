@@ -1,0 +1,19 @@
+# RS485 Interface2 Motor Mapping Configuration
+# Maps motor name strings to MAVLink motor IDs (30-49)
+#
+# Format:
+#   motor_name: mavlink_motor_id
+#
+# Example motor names for omni-directional robot:
+#   omni1, omni2, omni3, omni4 (wheel motors)
+#
+# The MAVLink motor ID is used to address the physical motor via RS485 protocol.
+
+rs485_interface2_node:
+  ros__parameters:
+    # Motor name to MAVLink ID mapping
+    motor_mapping:
+      wheel_fr: 30
+      wheel_fl: 31
+      wheel_rl: 32
+      wheel_rr: 33

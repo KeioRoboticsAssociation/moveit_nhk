@@ -238,7 +238,7 @@ utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/librosidl_typesupport_f
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/librmw.so
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 utils/libmoveit_test_utils.so.2.5.9: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

@@ -1,0 +1,36 @@
+[0.245s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/arm_v20_description -- -j22 -l22
+[1.041s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/arm_v20_description -- -j22 -l22
+[1.078s] Invoking command in '/home/a/ws_nhk/build/arm_v20_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/arm_v20_description
+[1.096s] -- Install configuration: "Release"
+[1.096s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link5_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/base_link.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link1_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link4_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/endeffector_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link2_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/meshes/link3_1.stl
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.trans
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/materials.xacro
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/materials.urdf
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.xacro
+[1.097s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/urdf/arm_v20.urdf
+[1.101s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/launch
+[1.101s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/launch/robot_description.launch.py
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/package_run_dependencies/arm_v20_description
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/parent_prefix_path/arm_v20_description
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/ament_prefix_path.sh
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/ament_prefix_path.dsv
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/path.sh
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/environment/path.dsv
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.bash
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.sh
+[1.102s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.zsh
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/local_setup.dsv
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/package.dsv
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/ament_index/resource_index/packages/arm_v20_description
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/cmake/arm_v20_descriptionConfig.cmake
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/cmake/arm_v20_descriptionConfig-version.cmake
+[1.103s] -- Up-to-date: /home/a/ws_nhk/install/arm_v20_description/share/arm_v20_description/package.xml
+[1.321s] Invoked command in '/home/a/ws_nhk/build/arm_v20_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/arm_v20_description

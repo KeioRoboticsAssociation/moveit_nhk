@@ -1,0 +1,9 @@
+from stm32_mavlink_msgs.srv._flash_save_rs485 import FlashSaveRS485  # noqa: F401
+from stm32_mavlink_msgs.srv._get_dc_motor_config import GetDCMotorConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._get_robomaster_motor_config import GetRobomasterMotorConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._read_rs485_param import ReadRS485Param  # noqa: F401
+from stm32_mavlink_msgs.srv._set_dc_motor_config import SetDCMotorConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._set_encoder_config import SetEncoderConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._set_robomaster_motor_config import SetRobomasterMotorConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._set_servo_config import SetServoConfig  # noqa: F401
+from stm32_mavlink_msgs.srv._write_rs485_param import WriteRS485Param  # noqa: F401

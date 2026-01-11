@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "stm32_mavlink_msgs__py",
+		"source" : "/home/a/ws_nhk/build/stm32_mavlink_msgs/stm32_mavlink_msgs__py"
+	}
+}

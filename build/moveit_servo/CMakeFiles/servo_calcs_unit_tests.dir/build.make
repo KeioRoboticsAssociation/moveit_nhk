@@ -339,7 +339,7 @@ servo_calcs_unit_tests: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport
 servo_calcs_unit_tests: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 servo_calcs_unit_tests: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 servo_calcs_unit_tests: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-servo_calcs_unit_tests: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+servo_calcs_unit_tests: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 servo_calcs_unit_tests: /opt/ros/humble/lib/librmw.so
 servo_calcs_unit_tests: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
 servo_calcs_unit_tests: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

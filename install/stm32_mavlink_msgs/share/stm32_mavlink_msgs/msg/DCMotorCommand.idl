@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/DCMotorCommand.msg
+// generated code does not contain a copyright notice
+
+
+module stm32_mavlink_msgs {
+  module msg {
+    module DCMotorCommand_Constants {
+      @verbatim (language="comment", text=
+        "Control mode - Determines interpretation of target_value" "\n"        "CONTROL_MODE_POSITION (0): Position control using target_value as radians" "\n"        "  - Use for precise angular positioning (servo-like behavior)" "\n"        "  - PID controller moves motor to target absolute position" "\n"        "  - Unit: radians (relative to motor's zero position)" "\n"        "CONTROL_MODE_VELOCITY (1): Velocity control using target_value as rad/s" "\n"        "  - Use for constant speed applications (fans, pumps, wheels)" "\n"        "  - PID controller maintains target rotational speed" "\n"        "  - Unit: radians per second (positive = forward, negative = reverse)" "\n"        "CONTROL_MODE_CURRENT (2): Current control using target_value as amperes" "\n"        "  - Use for torque control or current limiting" "\n"        "  - Direct current control for precise force application" "\n"        "  - Unit: amperes (positive = forward torque, negative = reverse torque)" "\n"        "CONTROL_MODE_DUTY_TO_POSITION (3): Duty cycle control until position reached" "\n"        "  - Apply fixed duty cycle until target position is reached" "\n"        "  - Combines open-loop duty control with position feedback" "\n"        "  - target_value = duty cycle (-1.0 to 1.0), target_position_rad = position target")
+      const uint8 CONTROL_MODE_POSITION = 0;
+      const uint8 CONTROL_MODE_VELOCITY = 1;
+      const uint8 CONTROL_MODE_CURRENT = 2;
+      const uint8 CONTROL_MODE_DUTY_TO_POSITION = 3;
+    };
+    @verbatim (language="comment", text=
+      "DC Motor Control Command Message" "\n"
+      "Simple brushed/brushless DC motor control interface")
+    struct DCMotorCommand {
+      @verbatim (language="comment", text=
+        "Motor identification" "\n"
+        "Motor ID (10-15 for direct PWM DC motors)")
+      uint8 motor_id;
+
+      uint8 control_mode;
+
+      @verbatim (language="comment", text=
+        "Command value - Interpretation depends on control_mode" "\n"
+        "Target position (rad), velocity (rad/s), current (A), or duty cycle (-1.0 to 1.0)" "\n"
+        "See control_mode constants for unit interpretation")
+      float target_value;
+
+      @verbatim (language="comment", text=
+        "Additional parameter for duty-to-position control mode" "\n"
+        "Target position for CONTROL_MODE_DUTY_TO_POSITION (ignored for other modes)")
+      float target_position_rad;
+
+      @verbatim (language="comment", text=
+        "Control flag" "\n"
+        "Enable/disable motor" "\n"
+        "false = motor freewheels (no active control)" "\n"
+        "true = motor applies control based on control_mode and target_value")
+      boolean enabled;
+    };
+  };
+};

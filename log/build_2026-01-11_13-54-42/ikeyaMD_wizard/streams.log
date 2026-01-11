@@ -1,0 +1,39 @@
+[1.480s] Invoking command in '/home/a/ws_nhk/src/MAVLink_ros2/ikeyaMD_wizard': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/stm32_mavlink_uart:/home/a/ws_nhk/install/stm32_mavlink_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/stm32_mavlink_uart:/home/a/ws_nhk/install/stm32_mavlink_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/a/ws_nhk/install/stm32_mavlink_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/ws_nhk/build/ikeyaMD_wizard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages:/home/a/ws_nhk/install/stm32_mavlink_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ikeyaMD_wizard build --build-base /home/a/ws_nhk/build/ikeyaMD_wizard/build install --record /home/a/ws_nhk/build/ikeyaMD_wizard/install.log --single-version-externally-managed install_data
+[1.995s] running egg_info
+[1.996s] creating ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info
+[1.996s] writing ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/PKG-INFO
+[1.997s] writing dependency_links to ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/dependency_links.txt
+[1.997s] writing entry points to ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/entry_points.txt
+[1.997s] writing requirements to ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/requires.txt
+[1.997s] writing top-level names to ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/top_level.txt
+[1.997s] writing manifest file '../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/SOURCES.txt'
+[2.000s] reading manifest file '../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/SOURCES.txt'
+[2.000s] adding license file 'LICENSE'
+[2.001s] writing manifest file '../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info/SOURCES.txt'
+[2.001s] running build
+[2.001s] running build_py
+[2.001s] creating /home/a/ws_nhk/build/ikeyaMD_wizard/build
+[2.001s] creating /home/a/ws_nhk/build/ikeyaMD_wizard/build/lib
+[2.001s] creating /home/a/ws_nhk/build/ikeyaMD_wizard/build/lib/ikeyaMD_wizard
+[2.002s] copying ikeyaMD_wizard/__init__.py -> /home/a/ws_nhk/build/ikeyaMD_wizard/build/lib/ikeyaMD_wizard
+[2.002s] running install
+[2.002s] running install_lib
+[2.003s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages/ikeyaMD_wizard
+[2.003s] copying /home/a/ws_nhk/build/ikeyaMD_wizard/build/lib/ikeyaMD_wizard/__init__.py -> /home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages/ikeyaMD_wizard
+[2.005s] byte-compiling /home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages/ikeyaMD_wizard/__init__.py to __init__.cpython-310.pyc
+[2.005s] running install_data
+[2.005s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/share/ament_index
+[2.005s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/share/ament_index/resource_index
+[2.006s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/share/ament_index/resource_index/packages
+[2.006s] copying resource/ikeyaMD_wizard -> /home/a/ws_nhk/install/ikeyaMD_wizard/share/ament_index/resource_index/packages
+[2.006s] copying package.xml -> /home/a/ws_nhk/install/ikeyaMD_wizard/share/ikeyaMD_wizard
+[2.006s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/share/ikeyaMD_wizard/launch
+[2.006s] copying launch/ikeyaMD_wizard.launch.py -> /home/a/ws_nhk/install/ikeyaMD_wizard/share/ikeyaMD_wizard/launch
+[2.006s] creating /home/a/ws_nhk/install/ikeyaMD_wizard/lib/ikeyaMD_wizard
+[2.006s] copying scripts/ikeyaMD_wizard_gui.py -> /home/a/ws_nhk/install/ikeyaMD_wizard/lib/ikeyaMD_wizard
+[2.007s] running install_egg_info
+[2.009s] Copying ../../../build/ikeyaMD_wizard/ikeyaMD_wizard.egg-info to /home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages/ikeyaMD_wizard-1.0.0-py3.10.egg-info
+[2.010s] running install_scripts
+[2.049s] Installing ikeyaMD_wizard_gui script to /home/a/ws_nhk/install/ikeyaMD_wizard/lib/ikeyaMD_wizard
+[2.049s] writing list of installed files to '/home/a/ws_nhk/build/ikeyaMD_wizard/install.log'
+[2.090s] Invoked command in '/home/a/ws_nhk/src/MAVLink_ros2/ikeyaMD_wizard' returned '0': AMENT_PREFIX_PATH=/home/a/ws_nhk/install/stm32_mavlink_uart:/home/a/ws_nhk/install/stm32_mavlink_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/a/ws_nhk/install/stm32_mavlink_uart:/home/a/ws_nhk/install/stm32_mavlink_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/a/ws_nhk/install/stm32_mavlink_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/a/ws_nhk/build/ikeyaMD_wizard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/ws_nhk/install/ikeyaMD_wizard/lib/python3.10/site-packages:/home/a/ws_nhk/install/stm32_mavlink_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ikeyaMD_wizard build --build-base /home/a/ws_nhk/build/ikeyaMD_wizard/build install --record /home/a/ws_nhk/build/ikeyaMD_wizard/install.log --single-version-externally-managed install_data

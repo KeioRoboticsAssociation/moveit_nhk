@@ -1,0 +1,42 @@
+[0.529s] Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/a_r2_description-20251207T063721Z-3-001/a_r2_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/a_r2_description
+[1.459s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.462s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.463s] -- Configuring done
+[1.463s] -- Generating done
+[1.463s] -- Build files have been written to: /home/a/ws_nhk/build/a_r2_description
+[1.565s] Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/a_r2_description-20251207T063721Z-3-001/a_r2_description -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/a_r2_description
+[1.567s] Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/a_r2_description -- -j22 -l22
+[2.176s] Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/a_r2_description -- -j22 -l22
+[2.178s] Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/a_r2_description
+[2.239s] -- Install configuration: "Release"
+[2.239s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes
+[2.240s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/link5_1.stl
+[2.240s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/base_link.stl
+[2.241s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/link1_1.stl
+[2.241s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/link4_1.stl
+[2.241s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/link2_1.stl
+[2.242s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/meshes/link3_1.stl
+[2.242s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf
+[2.242s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf/a_r2.xacro
+[2.243s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf/materials.xacro
+[2.243s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf/materials.urdf
+[2.243s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf/a_r2.urdf
+[2.244s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/urdf/a_r2.trans
+[2.244s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/launch
+[2.244s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/launch/robot_description.launch.py
+[2.245s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/ament_index/resource_index/package_run_dependencies/a_r2_description
+[2.245s] -- Installing: /home/a/ws_nhk/install/a_r2_description/share/ament_index/resource_index/parent_prefix_path/a_r2_description
+[2.245s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/environment/ament_prefix_path.sh
+[2.246s] -- Installing: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/environment/ament_prefix_path.dsv
+[2.246s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/environment/path.sh
+[2.246s] -- Installing: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/environment/path.dsv
+[2.247s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/local_setup.bash
+[2.247s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/local_setup.sh
+[2.247s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/local_setup.zsh
+[2.248s] -- Installing: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/local_setup.dsv
+[2.248s] -- Installing: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/package.dsv
+[2.249s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/ament_index/resource_index/packages/a_r2_description
+[2.249s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/cmake/a_r2_descriptionConfig.cmake
+[2.249s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/cmake/a_r2_descriptionConfig-version.cmake
+[2.249s] -- Up-to-date: /home/a/ws_nhk/install/a_r2_description/share/a_r2_description/package.xml
+[2.700s] Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/a_r2_description

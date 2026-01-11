@@ -286,7 +286,7 @@ occupancy_map_monitor_tests: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesu
 occupancy_map_monitor_tests: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 occupancy_map_monitor_tests: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 occupancy_map_monitor_tests: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-occupancy_map_monitor_tests: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+occupancy_map_monitor_tests: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 occupancy_map_monitor_tests: /opt/ros/humble/lib/librmw.so
 occupancy_map_monitor_tests: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.so
 occupancy_map_monitor_tests: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

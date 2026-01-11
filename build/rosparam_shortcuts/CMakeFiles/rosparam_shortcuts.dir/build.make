@@ -167,7 +167,7 @@ librosparam_shortcuts.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport
 librosparam_shortcuts.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 librosparam_shortcuts.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 librosparam_shortcuts.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-librosparam_shortcuts.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+librosparam_shortcuts.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 librosparam_shortcuts.so: /opt/ros/humble/lib/librmw.so
 librosparam_shortcuts.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 librosparam_shortcuts.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

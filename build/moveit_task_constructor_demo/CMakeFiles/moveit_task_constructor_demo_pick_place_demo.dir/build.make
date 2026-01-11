@@ -346,7 +346,7 @@ pick_place_demo: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_f
 pick_place_demo: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 pick_place_demo: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 pick_place_demo: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-pick_place_demo: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+pick_place_demo: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 pick_place_demo: /opt/ros/humble/lib/librmw.so
 pick_place_demo: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 pick_place_demo: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

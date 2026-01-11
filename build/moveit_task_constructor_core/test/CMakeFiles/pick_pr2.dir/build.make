@@ -323,7 +323,7 @@ test/pick_pr2: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps
 test/pick_pr2: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 test/pick_pr2: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/pick_pr2: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test/pick_pr2: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test/pick_pr2: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test/pick_pr2: /opt/ros/humble/lib/librmw.so
 test/pick_pr2: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
 test/pick_pr2: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so

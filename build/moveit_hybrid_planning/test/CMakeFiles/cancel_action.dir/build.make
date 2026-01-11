@@ -333,7 +333,7 @@ test/cancel_action: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fas
 test/cancel_action: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 test/cancel_action: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/cancel_action: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test/cancel_action: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test/cancel_action: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test/cancel_action: /opt/ros/humble/lib/librmw.so
 test/cancel_action: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
 test/cancel_action: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

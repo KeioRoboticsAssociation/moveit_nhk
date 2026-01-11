@@ -1,0 +1,11 @@
+[0.537s] Invoking command in '/home/a/ws_nhk/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rosparam_shortcuts -- -j22 -l22
+[0.599s] [ 15%] Built target gtest_main
+[0.599s] [ 30%] Built target gtest
+[0.604s] [ 38%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o[0m
+[4.308s] gmake[2]: *** wait: No child processes.  Stop.
+[4.308s] gmake[2]: *** Waiting for unfinished jobs....
+[4.308s] gmake[2]: *** wait: No child processes.  Stop.
+[4.313s] gmake[1]: *** wait: No child processes.  Stop.
+[4.313s] gmake[1]: *** Waiting for unfinished jobs....
+[4.313s] gmake[1]: *** wait: No child processes.  Stop.
+[4.313s] gmake: *** [Makefile:146: all] Error 2

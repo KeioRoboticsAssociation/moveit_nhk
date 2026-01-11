@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from stm32_mavlink_msgs/msg/RS485WriteRequest.msg
+// generated code does not contain a copyright notice
+
+
+module stm32_mavlink_msgs {
+  module msg {
+    typedef uint8 uint8__64[64];
+    @verbatim (language="comment", text=
+      "RS485 Write Request Message (MAVLink ID 12009)" "\n"
+      "Request to write parameters to RS485 motor control table")
+    struct RS485WriteRequest {
+      @verbatim (language="comment", text=
+        "Motor ID (30-49 for RS485 motors)")
+      uint8 motor_id;
+
+      @verbatim (language="comment", text=
+        "Control table address to write")
+      uint16 address;
+
+      @verbatim (language="comment", text=
+        "Number of bytes to write (1-64)")
+      uint8 length;
+
+      @verbatim (language="comment", text=
+        "Data to write (up to 64 bytes, little-endian)")
+      uint8__64 data;
+    };
+  };
+};

@@ -248,7 +248,7 @@ collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/librmw.so
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 collision_detection_bullet/test_bullet_collision_detection: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

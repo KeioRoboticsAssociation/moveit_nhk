@@ -132,7 +132,7 @@ pub_current_pos_v2_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 pub_current_pos_v2_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 pub_current_pos_v2_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 pub_current_pos_v2_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-pub_current_pos_v2_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+pub_current_pos_v2_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 pub_current_pos_v2_node: /opt/ros/humble/lib/librmw.so
 pub_current_pos_v2_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 pub_current_pos_v2_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

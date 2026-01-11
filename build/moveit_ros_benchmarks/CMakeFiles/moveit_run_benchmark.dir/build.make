@@ -293,7 +293,7 @@ moveit_run_benchmark: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupp
 moveit_run_benchmark: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 moveit_run_benchmark: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 moveit_run_benchmark: /opt/ros/humble/lib/librmw.so
-moveit_run_benchmark: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+moveit_run_benchmark: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 moveit_run_benchmark: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 moveit_run_benchmark: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 moveit_run_benchmark: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so

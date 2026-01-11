@@ -402,7 +402,7 @@ test_controllers: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fas
 test_controllers: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test_controllers: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 test_controllers: /opt/ros/humble/lib/librmw.so
-test_controllers: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test_controllers: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test_controllers: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 test_controllers: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 test_controllers: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
