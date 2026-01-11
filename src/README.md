@@ -54,23 +54,22 @@ ros2 run r2_odrive odrive_controller_node --ros-args \
 
 ```bash
 ros2 run r2_odrive rtz_to_joint_trajectory --ros-args \
-  -p input_topic:=/rt_cmd \
+  -p input_topic:=/r_cmd \
   -p output_topic:=/arm_controller/joint_trajectory \
   -p joint_names:="[Slider 1, Revolute 2, Revolute 3, Slider 4, Slider 5]"
 ```
 
-## テスト用の rt コマンド送信
+## テスト用の r コマンド送信
 
-`rtz_to_joint_trajectory` は `std_msgs/msg/Float32MultiArray` を購読します。
-`data: [r, theta]` の順で送ってください。
-テスト用に `/rt_cmd` を手動で送る例は以下です。
+`rtz_to_joint_trajectory` は `std_msgs/msg/Float32` を購読します。
+テスト用に `/r_cmd` を手動で送る例は以下です。
 
 ```bash
 # 1回だけ送信
-ros2 topic pub --once /rt_cmd std_msgs/msg/Float32MultiArray "{data: [0.1, 0.2]}"
+ros2 topic pub --once /r_cmd std_msgs/msg/Float32 "{data: 0.1}"
 ```
 
 ```bash
 # 10 Hz で連続送信
-ros2 topic pub -r 10 /rt_cmd std_msgs/msg/Float32MultiArray "{data: [0.1, 0.2]}"
+ros2 topic pub -r 10 /r_cmd std_msgs/msg/Float32 "{data: 0.1}"
 ```
