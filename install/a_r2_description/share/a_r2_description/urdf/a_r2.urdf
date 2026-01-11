@@ -198,7 +198,7 @@
     <limit effort="100" lower="0.0" upper="1.570796" velocity="100"/>
   </joint>
   <joint name="Revolute 2" type="continuous">
-    <origin rpy="-0.436 0 0" xyz="0.0285 0.102562 -0.065004"/>
+    <origin rpy="-0.450 0 0" xyz="0.0285 0.102562 -0.065004"/>
     <parent link="link1_1"/>
     <child link="link2_1"/>
     <axis xyz="1.0 0.0 0.0"/>

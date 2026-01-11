@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/test_controllers_autogen.dir/build.make:71: CMakeFiles/test_controllers_autogen] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/test_controllers_autogen.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

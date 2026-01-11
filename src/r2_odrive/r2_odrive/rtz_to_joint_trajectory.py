@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Subscribe to r/theta/z and publish a JointTrajectory command.
+Subscribe to r/theta and publish a JointTrajectory command.
 """
 
 from typing import List
 
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Vector3
+from std_msgs.msg import Float32MultiArray
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from builtin_interfaces.msg import Duration
 
@@ -25,7 +25,7 @@ class RtzToJointTrajectory(Node):
             10,
         )
         self.subscription = self.create_subscription(
-            Vector3,
+            Float32MultiArray,
             self.input_topic,
             self._callback,
             10,
@@ -39,7 +39,7 @@ class RtzToJointTrajectory(Node):
         )
 
     def _declare_parameters(self) -> None:
-        self.declare_parameter('input_topic', '/rtz_cmd')
+        self.declare_parameter('input_topic', '/rt_cmd')
         self.declare_parameter('output_topic', '/arm_controller/joint_trajectory')
         self.declare_parameter(
             'joint_names',
@@ -47,7 +47,6 @@ class RtzToJointTrajectory(Node):
         )
         self.declare_parameter('joint_name_r', 'Slider 4')
         self.declare_parameter('joint_name_theta', 'Revolute 2')
-        self.declare_parameter('joint_name_z', 'Slider 1')
         self.declare_parameter('duration_sec', 0.5)
 
     def _load_parameters(self) -> None:
@@ -58,18 +57,20 @@ class RtzToJointTrajectory(Node):
         ]
         self.joint_name_r = self.get_parameter('joint_name_r').value
         self.joint_name_theta = self.get_parameter('joint_name_theta').value
-        self.joint_name_z = self.get_parameter('joint_name_z').value
         self.duration_sec = float(self.get_parameter('duration_sec').value)
 
-    def _callback(self, msg: Vector3) -> None:
+    def _callback(self, msg: Float32MultiArray) -> None:
+        if len(msg.data) < 2:
+            self.get_logger().warn('rt_cmd は [r, theta] の2要素が必要です')
+            return
+        r_value = float(msg.data[0])
+        theta_value = float(msg.data[1])
         positions = []
         for name in self.joint_names:
             if name == self.joint_name_r:
-                positions.append(float(msg.x))
+                positions.append(r_value)
             elif name == self.joint_name_theta:
-                positions.append(float(msg.y))
-            elif name == self.joint_name_z:
-                positions.append(float(msg.z))
+                positions.append(theta_value)
             else:
                 positions.append(0.0)
 

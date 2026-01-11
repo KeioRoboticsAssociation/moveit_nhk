@@ -1,0 +1,7 @@
+[  4%] Built target gtest_main
+[  8%] Built target gtest
+[ 95%] Built target moveit_setup_srdf_plugins
+gmake[1]: *** wait: No child processes.  Stop.
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** wait: No child processes.  Stop.
+gmake: *** [Makefile:146: all] Error 2

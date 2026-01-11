@@ -1,0 +1,4 @@
+[  6%] [34m[1mAutomatic MOC for target moveit_setup_core_plugins[0m
+[  6%] Built target moveit_setup_core_plugins_autogen
+[100%] Built target moveit_setup_core_plugins
+-- Install configuration: "Release"
