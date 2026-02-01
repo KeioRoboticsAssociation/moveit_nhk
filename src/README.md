@@ -13,7 +13,7 @@ ros2 launch moveit_r2_config demo.launch.py
 ```
 
 ```bash
-# ターミナル2: r/t/z -> JointTrajectory
+# ターミナル2: r/theta -> JointTrajectory
 ros2 run r2_odrive rtz_to_joint_trajectory
 ```
 
@@ -23,7 +23,17 @@ ros2 run r2_odrive odrive_controller_node
 ```
 
 ```bash
-# ターミナル4: ODrive ドライバ（JSON 設定が必須）
+# ターミナル4: DCMotor 用 UDP ブリッジ（必須）
+ros2 launch stm32_mavlink_udp stm32_udp.launch.py
+```
+
+```bash
+# ターミナル5: JointState -> DCMotorCommand（Revolute 2）
+ros2 run r2_odrive joint_states_to_dcmotor
+```
+
+```bash
+# ターミナル6: ODrive ドライバ（JSON 設定が必須）
 ros2 run rogidrive rogidrive --ros-args -p config_path:='/home/a/ws_nhk/src/r2_odrive/config/odrive_config.json'
 ```
 
@@ -54,22 +64,34 @@ ros2 run r2_odrive odrive_controller_node --ros-args \
 
 ```bash
 ros2 run r2_odrive rtz_to_joint_trajectory --ros-args \
-  -p input_topic:=/r_cmd \
+  -p input_topic:=/arm_cmd \
   -p output_topic:=/arm_controller/joint_trajectory \
   -p joint_names:="[Slider 1, Revolute 2, Revolute 3, Slider 4, Slider 5]"
 ```
 
-## テスト用の r コマンド送信
+`joint_states_to_dcmotor`:
 
-`rtz_to_joint_trajectory` は `std_msgs/msg/Float32` を購読します。
-テスト用に `/r_cmd` を手動で送る例は以下です。
+```bash
+ros2 run r2_odrive joint_states_to_dcmotor --ros-args \
+  -p joint_state_topic:=/joint_states \
+  -p command_topic:=/dcmotor/command \
+  -p joint_name:="Revolute 2" \
+  -p motor_id:=10 \
+  -p control_mode:=0 \
+  -p enabled:=true
+```
+
+## テスト用の r/theta コマンド送信
+
+`rtz_to_joint_trajectory` は `std_msgs/msg/Float32MultiArray` を購読します。
+テスト用に `/arm_cmd` を手動で送る例は以下です。
 
 ```bash
 # 1回だけ送信
-ros2 topic pub --once /r_cmd std_msgs/msg/Float32 "{data: 0.1}"
+ros2 topic pub --once /arm_cmd std_msgs/msg/Float32MultiArray "{data: [0.1, 1.57]}"
 ```
 
 ```bash
 # 10 Hz で連続送信
-ros2 topic pub -r 10 /r_cmd std_msgs/msg/Float32 "{data: 0.1}"
+ros2 topic pub -r 10 /arm_cmd std_msgs/msg/Float32MultiArray "{data: [0.1, 1.57]}"
 ```

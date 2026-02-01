@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'odrive_controller_node = r2_odrive.odrive_controller_node:main',
             'rtz_to_joint_trajectory = r2_odrive.rtz_to_joint_trajectory:main',
+            'joint_states_to_dcmotor = r2_odrive.joint_states_to_dcmotor:main',
         ],
     },
 )
