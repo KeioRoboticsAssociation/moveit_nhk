@@ -1,6 +1,0 @@
-Invoking command in '/home/a/ws_nhk/build/rogidrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/rogidrive/rogidrive_msg -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/rogidrive_msg
-Invoked command in '/home/a/ws_nhk/build/rogidrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/rogidrive/rogidrive_msg -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/rogidrive_msg
-Invoking command in '/home/a/ws_nhk/build/rogidrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rogidrive_msg -- -j22 -l22
-Invoked command in '/home/a/ws_nhk/build/rogidrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/rogidrive_msg -- -j22 -l22
-Invoking command in '/home/a/ws_nhk/build/rogidrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/rogidrive_msg
-Invoked command in '/home/a/ws_nhk/build/rogidrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/rogidrive_msg

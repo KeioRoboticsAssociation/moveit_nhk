@@ -1,1 +1,0 @@
-/home/a/ws_nhk/src/r2_odrive/launch/odrive_controller.launch.py

@@ -1,0 +1,31 @@
+# RS485 Interface2 Motor Mapping Configuration
+# Maps motor name strings to MAVLink motor IDs (30-49) with per-motor settings
+#
+# Format:
+#   motor_name:
+#     id: mavlink_motor_id (required, 30-49)
+#     encoder_resolution: counts_per_revolution (optional, default: 8192)
+#     reverse: true/false (optional, default: false)
+#
+# When reverse is true, vel/pos/current values are multiplied by -1
+#
+# Example motor names for omni-directional robot:
+#   wheel_fr, wheel_fl, wheel_rl, wheel_rr (wheel motors)
+
+rs485_interface2_node:
+  ros__parameters:
+    # Motor configurations
+    motors:
+      Revolute 2:
+        id: 32
+        encoder_resolution: 2031988
+        reverse: false
+        velocity_pid:
+          kp: 0.2
+          ki: 0.01
+          kd: 0.0
+        position_pid:
+          kp: 5.0
+          ki: 1.0
+          kd: 0.0
+      

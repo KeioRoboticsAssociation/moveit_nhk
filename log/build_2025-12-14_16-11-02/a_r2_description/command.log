@@ -1,6 +1,0 @@
-Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/a_r2_description-20251207T063721Z-3-001/a_r2_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/a_r2_description
-Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/a/ws_nhk/src/a_r2_description-20251207T063721Z-3-001/a_r2_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/a/ws_nhk/install/a_r2_description
-Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/a_r2_description -- -j22 -l22
-Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/a_r2_description -- -j22 -l22
-Invoking command in '/home/a/ws_nhk/build/a_r2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/a_r2_description
-Invoked command in '/home/a/ws_nhk/build/a_r2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/a/ws_nhk/build/a_r2_description

@@ -46,8 +46,8 @@ class ODriveControllerNode(Node):
     def _declare_parameters(self) -> None:
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
-        # Default to Slider 1 -> index 0, Slider 4 -> index 1 ordering.
-        self.declare_parameter('joint_names', ['Slider 4'])
+        # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
+        self.declare_parameter('joint_names', ['Revolute 2', 'Slider 4'])
         self.declare_parameter('default_mode', 3)
 
     def _load_parameters(self) -> None:
@@ -100,7 +100,7 @@ class ODriveControllerNode(Node):
 
         # ==== ここから変換式を自由に書き換えてください ==== #
         msg.pos = self._convert_position(joint_name, position)
-        msg.vel = 1.0
+        msg.vel = self._convert_velocity(joint_name, velocity)
         msg.current = self._convert_current(joint_name, effort)
         # ==== ここまで変換式 ==== #
 

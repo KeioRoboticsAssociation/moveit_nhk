@@ -1,5 +1,0 @@
-[1.056s] Invoking command in '/home/a/ws_nhk/build/nhk_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/ws_nhk/install/ikeyaMD_wizard:/home/a/ws_nhk/install/moveit_configs_utils:/home/a/ws_nhk/install/rogidrive:/home/a/ws_nhk/install/launch_param_builder:/home/a/ws_nhk/install/dynamixel_controller_gui:/home/a/ws_nhk/install/dynamixel_controller_client:/opt/ros/humble /usr/bin/cmake --build /home/a/ws_nhk/build/nhk_bt -- -j22 -l22
-[1.329s] [ 50%] [32mBuilding CXX object CMakeFiles/remote_control_bt_node.dir/src/remote_control_bt_node.cpp.o[0m
-[34.632s] gmake[2]: *** [CMakeFiles/remote_control_bt_node.dir/build.make:76: CMakeFiles/remote_control_bt_node.dir/src/remote_control_bt_node.cpp.o] Interrupt
-[34.632s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/remote_control_bt_node.dir/all] Interrupt
-[34.633s] gmake: *** [Makefile:146: all] Interrupt

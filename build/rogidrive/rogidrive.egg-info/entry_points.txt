@@ -1,4 +1,0 @@
-[console_scripts]
-rogidrive = rogidrive.rogidrive:main
-rogidrive_tester = rogidrive.rogidrive_tester:main
-

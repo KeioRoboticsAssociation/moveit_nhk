@@ -1,4 +1,0 @@
-source;share/stm32_mavlink_msgs/local_setup.bash
-source;share/stm32_mavlink_msgs/local_setup.dsv
-source;share/stm32_mavlink_msgs/local_setup.sh
-source;share/stm32_mavlink_msgs/local_setup.zsh

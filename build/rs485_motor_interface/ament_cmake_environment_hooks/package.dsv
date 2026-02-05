@@ -1,4 +1,0 @@
-source;share/rs485_motor_interface/local_setup.bash
-source;share/rs485_motor_interface/local_setup.dsv
-source;share/rs485_motor_interface/local_setup.sh
-source;share/rs485_motor_interface/local_setup.zsh

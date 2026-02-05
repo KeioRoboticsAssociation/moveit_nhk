@@ -1,4 +1,0 @@
-[ 20%] [32mBuilding CXX object CMakeFiles/rs485_motor_node.dir/src/rs485_motor_node.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/rs485_motor_node.dir/src/main.cpp.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/rs485_motor_node.dir/src/motor_protocol.cpp.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/rs485_motor_node.dir/src/ikeya_md_protocol.cpp.o[0m

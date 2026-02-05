@@ -1,6 +1,0 @@
-# Default initial positions for arm_module's ros2_control fake system
-
-initial_positions:
-  Revolute 2: 0
-  Slider 1: 0
-  Slider 3: 0

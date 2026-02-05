@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/rosparam_shortcuts.dir/build.make:90: CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/rosparam_shortcuts.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/trac_ik.dir/build.make:104: CMakeFiles/trac_ik.dir/src/trac_ik.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/trac_ik.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

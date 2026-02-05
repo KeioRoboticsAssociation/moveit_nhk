@@ -1,4 +1,0 @@
-source;share/trac_ik_kinematics_plugin/local_setup.bash
-source;share/trac_ik_kinematics_plugin/local_setup.dsv
-source;share/trac_ik_kinematics_plugin/local_setup.sh
-source;share/trac_ik_kinematics_plugin/local_setup.zsh

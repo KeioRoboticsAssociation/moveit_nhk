@@ -1,1 +1,0 @@
-/home/a/ws_nhk/build/moveit_kinematics/ament_cmake_environment_hooks/local_setup.zsh

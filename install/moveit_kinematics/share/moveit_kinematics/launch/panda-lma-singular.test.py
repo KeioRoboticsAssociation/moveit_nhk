@@ -1,1 +1,0 @@
-/home/a/ws_nhk/src/moveit2/moveit_kinematics/test/launch/panda-lma-singular.test.py

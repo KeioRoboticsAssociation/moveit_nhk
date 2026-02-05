@@ -1,3 +1,0 @@
-[console_scripts]
-dynamixel_controller_client_node = dynamixel_controller_client.dynamixel_controller_client_node:main
-

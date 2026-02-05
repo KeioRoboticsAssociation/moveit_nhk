@@ -1,6 +1,0 @@
-# Service to set RoboMaster motor configuration
-
-# Request
-uint8 motor_id              # Motor ID (1-8)
-RobomasterMotorConfig config # Motor configuration
-

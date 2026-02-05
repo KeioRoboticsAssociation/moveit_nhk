@@ -1,9 +1,0 @@
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/uninstall.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/mavlink_wizard_uninstall.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/test.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/edit_cache.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/rebuild_cache.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/list_install_components.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/install.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/install/local.dir
-/home/a/ws_nhk/build/mavlink_wizard/CMakeFiles/install/strip.dir

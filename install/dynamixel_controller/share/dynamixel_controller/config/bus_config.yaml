@@ -1,4 +1,0 @@
-dynamixel_controller_node:
-  ros__parameters:
-    ttl_ids: [3, 4, 5]
-    rs485_ids: [0, 1, 2, 7]

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target rosparam_shortcuts[0m
-[ 15%] Built target gtest_main
-[ 23%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o[0m
-[ 38%] Built target gtest
