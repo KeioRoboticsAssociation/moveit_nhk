@@ -1,4 +1,4 @@
-# R2 ODrive 立ち上げ手順（Action通信）
+# R2 arm 立ち上げ手順（Action通信）
 
 このワークスペースでは、`PathIndex` Action を使って `path_index` を送ると、
 `nhk_bt/path_index_action_server` が `/arm_cmd` を publish し、
