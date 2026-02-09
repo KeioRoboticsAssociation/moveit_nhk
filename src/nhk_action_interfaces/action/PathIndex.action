@@ -1,0 +1,8 @@
+# Goal
+int32 path_index
+---
+# Result
+bool success
+---
+# Feedback
+bool dummy
