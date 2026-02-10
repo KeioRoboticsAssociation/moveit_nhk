@@ -9,8 +9,8 @@
 各コマンドは別ターミナルで実行してください。
 
 ```bash
-# ターミナル1: MoveIt デモ（/arm_controller/joint_trajectory と /joint_states を提供）
-ros2 launch moveit_r2_config demo.launch.py
+# ターミナル1: デモ
+ros2 launch a_r2_trajectory_viz a_r2_trajectory_viz.launch.py
 ```
 
 ```bash
@@ -52,3 +52,5 @@ ros2 action send_goal --feedback /path_index nhk_action_interfaces/action/PathIn
 - `3 -> [0.0, -1.5303] 左上`
 - `4 -> [0.0, -1.7505] 左中央`
 - `5 -> [0.0, -1.9545] 左下`
+
+

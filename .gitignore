@@ -1,10 +1,7 @@
 build/
 install/
 log/
-src/arm_module_description-20251221T061328Z-3-001
-src/arm_v20_description-20251026T114629Z-1-001
-src/dynamixel_ros2
 src/MAVLink_ros2
-src/moveit_config
 src/rogidrive
-src/sakai_r2_config
+src/launch_param_builder/
+

@@ -40,7 +40,7 @@ class RtzToJointTrajectory(Node):
 
     def _declare_parameters(self) -> None:
         self.declare_parameter('input_topic', '/arm_cmd')
-        self.declare_parameter('output_topic', '/arm_controller/joint_trajectory')
+        self.declare_parameter('output_topic', '/joint_trajectory')
         self.declare_parameter(
             'joint_names',
             ['Slider 1', 'Revolute 2', 'Revolute 3', 'Slider 4', 'Slider 5'],
