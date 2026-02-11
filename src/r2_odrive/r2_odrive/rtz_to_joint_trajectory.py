@@ -43,10 +43,11 @@ class RtzToJointTrajectory(Node):
         self.declare_parameter('output_topic', '/joint_trajectory')
         self.declare_parameter(
             'joint_names',
-            ['Slider 1', 'Revolute 2', 'Revolute 3', 'Slider 4', 'Slider 5'],
+            ['Slider 1', 'Revolute 2', 'Revolute 3', 'Slider 4', 'Revolute 5', 'Slider 6'],
         )
         self.declare_parameter('joint_name_r', 'Slider 4')
         self.declare_parameter('joint_name_theta', 'Revolute 2')
+        self.declare_parameter('joint_name_phi', 'Revolute 5')
         self.declare_parameter('duration_sec', 0.5)
 
     def _load_parameters(self) -> None:
@@ -57,22 +58,26 @@ class RtzToJointTrajectory(Node):
         ]
         self.joint_name_r = self.get_parameter('joint_name_r').value
         self.joint_name_theta = self.get_parameter('joint_name_theta').value
+        self.joint_name_phi = self.get_parameter('joint_name_phi').value
         self.duration_sec = float(self.get_parameter('duration_sec').value)
 
     def _callback(self, msg: Float32MultiArray) -> None:
-        if len(msg.data) < 2:
+        if len(msg.data) < 3:
             self.get_logger().warning(
-                f'arm_cmd needs at least 2 values [r, theta], got {len(msg.data)}'
+                f'arm_cmd needs at least 3 values [r, theta, phi], got {len(msg.data)}'
             )
             return
         r_value = float(msg.data[0])
         theta_value = float(msg.data[1])
+        phi_value = float(msg.data[2])
         positions = []
         for name in self.joint_names:
             if name == self.joint_name_r:
                 positions.append(r_value)
             elif name == self.joint_name_theta:
                 positions.append(theta_value)
+            elif name == self.joint_name_phi:
+                positions.append(phi_value)
             else:
                 positions.append(0.0)
 

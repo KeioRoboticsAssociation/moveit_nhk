@@ -16,6 +16,7 @@ class ActiveTrajectory:
     names: List[str]
     points: List[JointTrajectoryPoint]
     start_ns: int
+    start_positions: Dict[str, float]
 
 
 class JointTrajectoryToJointStates(Node):
@@ -27,7 +28,7 @@ class JointTrajectoryToJointStates(Node):
         self.declare_parameter("publish_rate", 50.0)
         self.declare_parameter(
             "default_joint_names",
-            ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Slider 5"],
+            ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Revolute 5", "Slider 6"],
         )
 
         trajectory_topic = self.get_parameter("trajectory_topic").get_parameter_value().string_value
@@ -73,7 +74,13 @@ class JointTrajectoryToJointStates(Node):
             if stamp_ns > now_ns:
                 start_ns = stamp_ns
 
-        self.active_traj = ActiveTrajectory(names=list(msg.joint_names), points=list(msg.points), start_ns=start_ns)
+        start_positions = {name: self.current_positions.get(name, 0.0) for name in msg.joint_names}
+        self.active_traj = ActiveTrajectory(
+            names=list(msg.joint_names),
+            points=list(msg.points),
+            start_ns=start_ns,
+            start_positions=start_positions,
+        )
 
     def on_timer(self) -> None:
         if self.active_traj is not None:
@@ -90,7 +97,19 @@ class JointTrajectoryToJointStates(Node):
         idx = bisect_right(time_list, elapsed)
 
         if idx <= 0:
-            self._apply_point(traj.names, traj.points[0])
+            first = traj.points[0]
+            t_first = self._point_time(first)
+            # Interpolate from current pose at reception to first point when time_from_start > 0.
+            if t_first > 0.0:
+                ratio = min(1.0, max(0.0, elapsed / t_first))
+                for i, name in enumerate(traj.names):
+                    if i >= len(first.positions):
+                        continue
+                    p0 = traj.start_positions.get(name, 0.0)
+                    p1 = first.positions[i]
+                    self.current_positions[name] = p0 + ratio * (p1 - p0)
+            else:
+                self._apply_point(traj.names, first)
             return
         if idx >= len(traj.points):
             self._apply_point(traj.names, traj.points[-1])

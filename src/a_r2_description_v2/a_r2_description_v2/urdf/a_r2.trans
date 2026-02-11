@@ -45,12 +45,23 @@
   </actuator>
 </transmission>
 
-<transmission name="Slider 5_tran">
+<transmission name="Revolute 5_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Slider 5">
+  <joint name="Revolute 5">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="Slider 5_actr">
+  <actuator name="Revolute 5_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Slider 6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Slider 6">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Slider 6_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

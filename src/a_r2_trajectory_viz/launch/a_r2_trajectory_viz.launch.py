@@ -37,7 +37,7 @@ def generate_launch_description() -> LaunchDescription:
                     "trajectory_topic": LaunchConfiguration("trajectory_topic"),
                     "joint_states_topic": "/joint_states",
                     "publish_rate": 50.0,
-                    "default_joint_names": ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Slider 5"],
+                    "default_joint_names": ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Revolute 5", "Slider 6"],
                 }
             ],
         )
