@@ -2,7 +2,7 @@
   "motors": {
     "Slider 4": {
       "serial": "336B33573333",
-      "axis": 0
+      "axis": 1
     }
   }
 }

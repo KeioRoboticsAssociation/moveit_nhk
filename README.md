@@ -15,7 +15,7 @@ ros2 launch a_r2_trajectory_viz a_r2_trajectory_viz.launch.py
 
 ```bash
 # ターミナル2: /arm_cmd -> JointTrajectory 変換
-ros2 run r2_odrive rtz_to_joint_trajectory
+ros2 run r2_odrive rtz_to_joint_trajectory --ros-args -p duration_sec:=2.0
 ```
 
 ```bash

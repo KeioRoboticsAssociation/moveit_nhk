@@ -47,7 +47,7 @@ class ODriveControllerNode(Node):
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
         # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
-        self.declare_parameter('joint_names', ['Revolute 2', 'Slider 4'])
+        self.declare_parameter('joint_names', ['Slider 4'])
         self.declare_parameter('default_mode', 3)
 
     def _load_parameters(self) -> None:
@@ -100,7 +100,7 @@ class ODriveControllerNode(Node):
 
         # ==== ここから変換式を自由に書き換えてください ==== #
         msg.pos = self._convert_position(joint_name, position)
-        msg.vel = self._convert_velocity(joint_name, velocity)
+        msg.vel = 10.0
         msg.current = self._convert_current(joint_name, effort)
         # ==== ここまで変換式 ==== #
 
@@ -108,6 +108,8 @@ class ODriveControllerNode(Node):
 
     def _convert_position(self, joint_name: str, position: float) -> float:
         """位置 [rad/m] → ODrive の回転数 [turn] への変換を書く場所"""
+        if joint_name in ('Slider4', 'Slider 4'):
+            return -position * 100.0
         return position
 
     def _convert_velocity(self, joint_name: str, velocity: float) -> float:
