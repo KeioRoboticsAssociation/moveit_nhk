@@ -15,15 +15,17 @@ from ament_index_python.packages import PackageNotFoundError, get_package_share_
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
 from rogidrive_msg.msg import RogidriveMessage
+from trajectory_msgs.msg import JointTrajectory
 from rogilink_flex_lib import Publisher
 
 # JointState -> kfs_*_cmd 変換係数
 # 使い方: value_out = value_in * scale + offset
 KFS_CMD_COEFFICIENTS = {
-    'Revolute 2': {'scale': 1.0, 'offset': 0.0},  # kfs_yaw_cmd
+    'Revolute 2': {'scale': 78.995 , 'offset': 0.0},  # kfs_yaw_cmd
     'Revolute 5': {'scale': 1.0, 'offset': 0.0},  # kfs_roll_cmd
     'Slider 6': {'scale': 1.0, 'offset': 0.0},    # kfs_x_cmd
 }
+KFS_CMD_CHANGE_EPSILON = 1.0e-6
 
 
 class ODriveControllerNode(Node):
@@ -36,6 +38,7 @@ class ODriveControllerNode(Node):
         self._load_parameters()
 
         self._missing_joint_log: Dict[str, bool] = {}
+        self._last_kfs_cmd_values: Dict[str, float] = {}
         self.kfs_joint_to_topic, self.kfs_device_id = self._build_kfs_joint_mapping_and_device_id()
 
         self.command_publisher = self.create_publisher(
@@ -53,9 +56,15 @@ class ODriveControllerNode(Node):
             self.joint_state_callback,
             10,
         )
+        self.joint_trajectory_subscription = self.create_subscription(
+            JointTrajectory,
+            self.trajectory_topic,
+            self.joint_trajectory_callback,
+            10,
+        )
 
         self.get_logger().info(
-            f'Listening on {self.joint_state_topic} and publishing to {self.odrive_cmd_topic}'
+            f'Listening on {self.joint_state_topic} and {self.trajectory_topic}, publishing to {self.odrive_cmd_topic}'
         )
         if self.joint_names:
             self.get_logger().info(f'Configured joint order: {self.joint_names}')
@@ -67,21 +76,46 @@ class ODriveControllerNode(Node):
 
     def _declare_parameters(self) -> None:
         self.declare_parameter('joint_state_topic', '/joint_states')
+        self.declare_parameter('trajectory_topic', '/joint_trajectory')
         self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
         # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
         self.declare_parameter('joint_names', ['Slider 4'])
         self.declare_parameter('default_mode', 3)
         self.declare_parameter('config_path', self._default_config_path())
         self.declare_parameter('kfs_device_id', -1)
+        self.declare_parameter(
+            'joint_to_topic_map',
+            [
+                'Revolute 2:ud_mid_r_pos_cmd',
+                'Revolute 5:ud_mid_l_pos_cmd',
+                'Slider 6:ud_back_pos_cmd',
+            ],
+        )
 
     def _load_parameters(self) -> None:
         self.joint_state_topic = self.get_parameter('joint_state_topic').value
+        self.trajectory_topic = self.get_parameter('trajectory_topic').value
         self.odrive_cmd_topic = self.get_parameter('odrive_cmd_topic').value
         raw_joint_names = self.get_parameter('joint_names').value
         self.joint_names: List[str] = [name for name in raw_joint_names if name]
         self.default_mode = int(self.get_parameter('default_mode').value)
         self.config_path = self.get_parameter('config_path').value
         self.kfs_device_id_override = int(self.get_parameter('kfs_device_id').value)
+        raw_joint_to_topic = self.get_parameter('joint_to_topic_map').value
+        self.joint_to_topic_map = self._parse_joint_to_topic_map(raw_joint_to_topic)
+
+    @staticmethod
+    def _parse_joint_to_topic_map(raw_values: List[str]) -> Dict[str, str]:
+        result: Dict[str, str] = {}
+        for item in raw_values:
+            if not isinstance(item, str) or ':' not in item:
+                continue
+            joint_name, topic_name = item.split(':', 1)
+            joint_name = joint_name.strip()
+            topic_name = topic_name.strip()
+            if joint_name and topic_name:
+                result[joint_name] = topic_name
+        return result
 
     @staticmethod
     def _default_config_path() -> str:
@@ -95,27 +129,21 @@ class ODriveControllerNode(Node):
 
     def _build_kfs_joint_mapping_and_device_id(self) -> tuple[Dict[str, str], int]:
         default_mapping = {
-            'Revolute 2': 'kfs_yaw_cmd',
-            'Revolute 5': 'kfs_roll_cmd',
-            'Slider 6': 'kfs_x_cmd',
+            'Revolute 2': 'ud_mid_r_pos_cmd',
+            'Revolute 5': 'ud_mid_l_pos_cmd',
+            'Slider 6': 'ud_back_pos_cmd',
         }
         default_device_id = 0
-        topic_by_key: Dict[str, str] = {}
+        config_topic_names: List[str] = []
         try:
             with open(self.config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)
             config_device_id = int(config.get('device_id', default_device_id))
             for message in config.get('transmission_messages', []):
                 name = message.get('name', '')
-                if not isinstance(name, str) or not name.endswith('_cmd'):
+                if not isinstance(name, str) or not name:
                     continue
-                lowered = name.lower()
-                if 'yaw' in lowered:
-                    topic_by_key['yaw'] = name
-                elif 'roll' in lowered:
-                    topic_by_key['roll'] = name
-                elif '_x_' in lowered or lowered.startswith('x_') or lowered.endswith('_x_cmd'):
-                    topic_by_key['x'] = name
+                config_topic_names.append(name)
         except (OSError, json.JSONDecodeError, TypeError) as e:
             self.get_logger().warn(
                 f'Failed to read config_path={self.config_path}, fallback to default cmd topics: {e}'
@@ -124,18 +152,20 @@ class ODriveControllerNode(Node):
                 return default_mapping, self.kfs_device_id_override
             return default_mapping, default_device_id
 
-        mapping = {
-            'Revolute 2': topic_by_key.get('yaw', default_mapping['Revolute 2']),
-            'Revolute 5': topic_by_key.get('roll', default_mapping['Revolute 5']),
-            'Slider 6': topic_by_key.get('x', default_mapping['Slider 6']),
-        }
+        mapping = dict(default_mapping)
+        mapping.update(self.joint_to_topic_map)
 
-        missing_keys = [k for k in ('yaw', 'roll', 'x') if k not in topic_by_key]
-        if missing_keys:
+        config_topic_set = set(config_topic_names)
+        invalid_pairs = [f'{joint}->{topic}' for joint, topic in mapping.items() if topic not in config_topic_set]
+        if invalid_pairs:
             self.get_logger().warn(
-                'config.json の transmission_messages から一部の cmd topic を特定できなかったため、'
-                f'既定値を併用します: missing={missing_keys}'
+                'joint_to_topic_map の一部が config.json transmission_messages に存在しません: '
+                + ', '.join(invalid_pairs)
             )
+            if config_topic_names:
+                self.get_logger().warn(
+                    'available transmission topic names: ' + ', '.join(config_topic_names)
+                )
         device_id = self.kfs_device_id_override if self.kfs_device_id_override >= 0 else config_device_id
         return mapping, device_id
 
@@ -160,7 +190,17 @@ class ODriveControllerNode(Node):
 
             rogi_msg = self._convert_joint_state(joint_name, position, velocity, effort)
             self.command_publisher.publish(rogi_msg)
-        self._publish_kfs_cmds(msg, name_to_index)
+
+    def joint_trajectory_callback(self, msg: JointTrajectory) -> None:
+        if not msg.joint_names or not msg.points:
+            return
+
+        final_point = msg.points[-1]
+        if not final_point.positions:
+            return
+
+        name_to_index = {name: idx for idx, name in enumerate(msg.joint_names)}
+        self._publish_kfs_cmds(final_point.positions, name_to_index)
 
     @staticmethod
     def _get_value(sequence: List[float], index: int, default: float = 0.0) -> float:
@@ -203,7 +243,7 @@ class ODriveControllerNode(Node):
         """effort → 電流[A] への変換を書く場所"""
         return effort
 
-    def _publish_kfs_cmds(self, msg: JointState, name_to_index: Dict[str, int]) -> None:
+    def _publish_kfs_cmds(self, positions: List[float], name_to_index: Dict[str, int]) -> None:
         for joint_name, topic_name in self.kfs_joint_to_topic.items():
             index = name_to_index.get(joint_name)
             if index is None:
@@ -212,9 +252,11 @@ class ODriveControllerNode(Node):
                     self._missing_joint_log[joint_name] = True
                 continue
 
-            value = self._get_value(msg.position, index)
+            value = self._get_value(positions, index)
             converted_value = self._convert_kfs_cmd_value(joint_name, value)
-            self.kfs_publishers[topic_name].publish(converted_value)
+            if self._should_publish_kfs_cmd(topic_name, converted_value):
+                self.kfs_publishers[topic_name].publish(converted_value)
+                self._last_kfs_cmd_values[topic_name] = converted_value
 
     def _convert_kfs_cmd_value(self, joint_name: str, value: float) -> float:
         """JointState 値 → kfs_*_cmd 変換（係数テーブル編集で調整）"""
@@ -222,6 +264,12 @@ class ODriveControllerNode(Node):
         scale = float(coeffs.get('scale', 1.0))
         offset = float(coeffs.get('offset', 0.0))
         return value * scale + offset
+
+    def _should_publish_kfs_cmd(self, topic_name: str, value: float) -> bool:
+        last = self._last_kfs_cmd_values.get(topic_name)
+        if last is None:
+            return True
+        return abs(value - last) > KFS_CMD_CHANGE_EPSILON
 
 
 def main(args=None):

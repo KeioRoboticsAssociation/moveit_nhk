@@ -11,6 +11,7 @@
   <depend>ament_index_python</depend>
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
+  <depend>trajectory_msgs</depend>
   <depend>rogidrive_msg</depend>
   <depend>rogilink_flex_lib</depend>
 

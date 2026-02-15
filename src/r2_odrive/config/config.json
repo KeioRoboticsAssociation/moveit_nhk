@@ -1,37 +1,54 @@
 {
-  "device_id": 2,
+  "device_id": 1,
   "reception_messages": [
     {
-      "id": 21,
-      "name": "kfs_yaw_state",
+      "id": 1,
+      "name": "ud_mid_r_pos_state",
       "type": "float32"
     },
     {
-      "id": 22,
-      "name": "kfs_x_state",
+      "id": 2,
+      "name": "ud_mid_l_pos_state",
       "type": "float32"
     },
     {
-      "id": 23,
-      "name": "kfs_roll_state",
+      "id": 3,
+      "name": "ud_back_pos_state",
       "type": "float32"
+    },
+    {
+      "id": 4,
+      "name": "ud_is_reached",
+      "type": "uint8"
+    },
+    {
+      "id": 9,
+      "name": "status",
+      "type": "str",
+      "format": "%s"
     }
   ],
   "transmission_messages": [
     {
-      "id": 21,
-      "name": "kfs_yaw_cmd",
+      "id": 1,
+      "name": "ud_mid_r_pos_cmd",
       "type": "float32"
     },
     {
-      "id": 22,
-      "name": "kfs_x_cmd",
+      "id": 2,
+      "name": "ud_mid_l_pos_cmd",
       "type": "float32"
     },
     {
-      "id": 23,
-      "name": "kfs_roll_cmd",
+      "id": 3,
+      "name": "ud_back_pos_cmd",
       "type": "float32"
+    },
+    {
+      "id": 9,
+      "name": "status",
+      "type": "str",
+      "format": "%s"
     }
   ]
 }
