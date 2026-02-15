@@ -238,7 +238,7 @@
     <parent link="link2_1"/>
     <child link="link4_1"/>
     <axis xyz="-0.0 0.005889 0.999983"/>
-    <limit effort="100" lower="-0.6" upper="0.0" velocity="100"/>
+    <limit effort="100" lower="-0.6" upper="0.6" velocity="100"/>
   </joint>
   <joint name="Revolute 5" type="continuous">
     <origin rpy="0 0 0" xyz="0.0428 -0.020134 0.130121"/>
@@ -251,6 +251,6 @@
     <parent link="link5_1"/>
     <child link="link6_1"/>
     <axis xyz="1.0 0.0 0.0"/>
-    <limit effort="100" lower="0.0" upper="0.0" velocity="100"/>
+    <limit effort="100" lower="-0.1" upper="0.1" velocity="100"/>
   </joint>
 </robot>

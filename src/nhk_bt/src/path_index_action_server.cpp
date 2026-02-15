@@ -19,12 +19,12 @@ public:
     path_commands_ = this->declare_parameter<std::vector<double>>(
         "path_commands", std::vector<double>{
                              // [Slider 4, Revolute 2, Revolute 5]
-                             0.0, 1.9545, 1.57,  // index 0
-                             0.0, 1.7505, 0.0,  // index 1
-                             0.0, 1.5303, 0.0,  // index 2
-                             0.0, -1.5303, 0.0, // index 3
-                             0.0, -1.7505, 0.0, // index 4
-                             0.0, -1.9545, 0.0  // index 5
+                             0.0, 1.9545, -0.3838,  // index 0
+                             0.0, 1.7505, -0.1798,  // index 1
+                             0.0, 1.5303, 0.0405,   // index 2
+                             0.0, -1.5303, -0.0405, // index 3
+                             0.0, -1.7505, 0.1798,  // index 4
+                             0.0, -1.9545, 0.3838   // index 5
                          });
 
     arm_cmd_publisher_ =
@@ -62,7 +62,8 @@ private:
       RCLCPP_WARN(get_logger(), "Rejecting goal: path_index must be 0..5");
       return rclcpp_action::GoalResponse::REJECT;
     }
-    if (path_commands_.size() < static_cast<size_t>(kPathCount * kValuesPerPath)) {
+    if (path_commands_.size() <
+        static_cast<size_t>(kPathCount * kValuesPerPath)) {
       RCLCPP_ERROR(get_logger(),
                    "Rejecting goal: path_commands must contain at least %d "
                    "values, got %zu",

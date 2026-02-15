@@ -51,6 +51,11 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(PROGRAMS
+  scripts/path_index_gui
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 # Install config files
 install(DIRECTORY
   config

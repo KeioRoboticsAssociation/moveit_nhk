@@ -193,7 +193,7 @@
   <parent link="link5_1"/>
   <child link="link6_1"/>
   <axis xyz="1.0 0.0 0.0"/>
-  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+  <limit upper="0.1" lower="-0.1" effort="100" velocity="100"/>
 </joint>
 
 </robot>
