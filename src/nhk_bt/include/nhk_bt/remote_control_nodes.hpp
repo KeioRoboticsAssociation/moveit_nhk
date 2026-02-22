@@ -1,7 +1,7 @@
 #ifndef NHK_BT__REMOTE_CONTROL_NODES_HPP_
 #define NHK_BT__REMOTE_CONTROL_NODES_HPP_
 
-#include <behaviortree_cpp/behavior_tree.h>
+#include <behaviortree_cpp_v3/behavior_tree.h>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/joy.hpp>
 #include <memory>
@@ -52,7 +52,7 @@ private:
 class WaitForCircleButton : public BT::ConditionNode
 {
 public:
-  WaitForCircleButton(const std::string& name, const BT::NodeConfig& config)
+  WaitForCircleButton(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config)
   {
   }
@@ -82,7 +82,7 @@ public:
 class IsCrossButtonPressed : public BT::ConditionNode
 {
 public:
-  IsCrossButtonPressed(const std::string& name, const BT::NodeConfig& config)
+  IsCrossButtonPressed(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config)
   {
   }
@@ -111,7 +111,7 @@ public:
 class ResetSequenceState : public BT::SyncActionNode
 {
 public:
-  ResetSequenceState(const std::string& name, const BT::NodeConfig& config)
+  ResetSequenceState(const std::string& name, const BT::NodeConfiguration& config)
     : BT::SyncActionNode(name, config)
   {
   }
@@ -136,7 +136,7 @@ public:
 class SequenceStep : public BT::StatefulActionNode
 {
 public:
-  SequenceStep(const std::string& name, const BT::NodeConfig& config)
+  SequenceStep(const std::string& name, const BT::NodeConfiguration& config)
     : BT::StatefulActionNode(name, config)
   {
   }
@@ -200,7 +200,7 @@ private:
 class IsDpadLeftPressed : public BT::ConditionNode
 {
 public:
-  IsDpadLeftPressed(const std::string& name, const BT::NodeConfig& config)
+  IsDpadLeftPressed(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config) {}
 
   static BT::PortsList providedPorts() { return {}; }
@@ -220,7 +220,7 @@ public:
 class IsDpadUpPressed : public BT::ConditionNode
 {
 public:
-  IsDpadUpPressed(const std::string& name, const BT::NodeConfig& config)
+  IsDpadUpPressed(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config) {}
 
   static BT::PortsList providedPorts() { return {}; }
@@ -240,7 +240,7 @@ public:
 class IsDpadRightPressed : public BT::ConditionNode
 {
 public:
-  IsDpadRightPressed(const std::string& name, const BT::NodeConfig& config)
+  IsDpadRightPressed(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config) {}
 
   static BT::PortsList providedPorts() { return {}; }
@@ -260,7 +260,7 @@ public:
 class IsDpadDownPressed : public BT::ConditionNode
 {
 public:
-  IsDpadDownPressed(const std::string& name, const BT::NodeConfig& config)
+  IsDpadDownPressed(const std::string& name, const BT::NodeConfiguration& config)
     : BT::ConditionNode(name, config) {}
 
   static BT::PortsList providedPorts() { return {}; }
@@ -280,7 +280,7 @@ public:
 class TaskAction : public BT::StatefulActionNode
 {
 public:
-  TaskAction(const std::string& name, const BT::NodeConfig& config)
+  TaskAction(const std::string& name, const BT::NodeConfiguration& config)
     : BT::StatefulActionNode(name, config) {}
 
   static BT::PortsList providedPorts()
@@ -342,7 +342,7 @@ private:
 class AlwaysRunning : public BT::StatefulActionNode
 {
 public:
-  AlwaysRunning(const std::string& name, const BT::NodeConfig& config)
+  AlwaysRunning(const std::string& name, const BT::NodeConfiguration& config)
     : BT::StatefulActionNode(name, config) {}
 
   static BT::PortsList providedPorts() { return {}; }

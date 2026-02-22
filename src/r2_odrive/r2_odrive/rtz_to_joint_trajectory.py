@@ -43,11 +43,11 @@ class RtzToJointTrajectory(Node):
         self.declare_parameter('output_topic', '/joint_trajectory')
         self.declare_parameter(
             'joint_names',
-            ['Slider 1', 'Revolute 2', 'Revolute 3', 'Slider 4', 'Revolute 5', 'Slider 6'],
+            ['Revolute 1_1', 'Slider 1_2', 'Slider 1_3', 'Revolute 1_4', 'Revolute 2_1', 'Revolute 2_2'],
         )
-        self.declare_parameter('joint_name_r', 'Slider 4')
-        self.declare_parameter('joint_name_theta', 'Revolute 2')
-        self.declare_parameter('joint_name_phi', 'Revolute 5')
+        self.declare_parameter('joint_name_r', 'Slider 1_2')
+        self.declare_parameter('joint_name_theta', 'Revolute 1_1')
+        self.declare_parameter('joint_name_phi', 'Revolute 1_4')
         self.declare_parameter('duration_sec', 0.5)
 
     def _load_parameters(self) -> None:
@@ -70,6 +70,7 @@ class RtzToJointTrajectory(Node):
         r_value = float(msg.data[0])
         theta_value = float(msg.data[1])
         phi_value = float(msg.data[2])
+        self.get_logger().info(f'Received /arm_cmd: r={r_value:.4f}, theta={theta_value:.4f}, phi={phi_value:.4f}')
         positions = []
         for name in self.joint_names:
             if name == self.joint_name_r:
@@ -90,6 +91,9 @@ class RtzToJointTrajectory(Node):
         traj.points = [point]
 
         self.publisher.publish(traj)
+        self.get_logger().info(
+            f'Published trajectory to {self.output_topic}'
+        )
 
     @staticmethod
     def _duration_from_seconds(seconds: float) -> Duration:

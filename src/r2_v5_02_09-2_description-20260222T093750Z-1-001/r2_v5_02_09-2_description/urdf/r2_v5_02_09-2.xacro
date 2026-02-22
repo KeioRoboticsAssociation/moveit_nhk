@@ -1,0 +1,199 @@
+<?xml version="1.0" ?>
+<robot name="r2_v5_02_09-2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find r2_v5_02_09-2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find r2_v5_02_09-2_description)/urdf/r2_v5_02_09-2.trans" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.17821515739923513 -0.27777944232931817 0.20571510362801312" rpy="0 0 0"/>
+    <mass value="8.508914574032989"/>
+    <inertia ixx="0.372432" iyy="0.415526" izz="0.437676" ixy="0.003049" iyz="0.000109" ixz="0.107536"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1_1">
+  <inertial>
+    <origin xyz="0.012185962753439583 2.8448442834783094e-07 0.02422822897058774" rpy="0 0 0"/>
+    <mass value="3.17523535317546"/>
+    <inertia ixx="0.032119" iyy="0.028647" izz="0.003843" ixy="0.0" iyz="-0.0" ixz="-0.000796"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.117152 0.276004 -0.310526" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.117152 0.276004 -0.310526" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_2_1">
+  <inertial>
+    <origin xyz="-0.0014692854861454996 0.032239273321738426 0.4836087116067349" rpy="0 0 0"/>
+    <mass value="1.1683319767136675"/>
+    <inertia ixx="0.058995" iyy="0.058205" izz="0.001171" ixy="0.000222" iyz="-0.003994" ixz="0.002025"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.147652 0.291004 -0.150527" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.147652 0.291004 -0.150527" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_3_1">
+  <inertial>
+    <origin xyz="-0.093297394743421 -0.01056676649917393 -0.015654535110686263" rpy="0 0 0"/>
+    <mass value="0.9194061117462774"/>
+    <inertia ixx="0.000436" iyy="0.017898" izz="0.017824" ixy="0.000767" iyz="3.7e-05" ixz="-0.000939"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.115152 0.261004 -0.81616" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.115152 0.261004 -0.81616" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_4_1">
+  <inertial>
+    <origin xyz="-0.011042365294081091 0.0004824807719794322 0.03841014318738489" rpy="0 0 0"/>
+    <mass value="1.0237825642819671"/>
+    <inertia ixx="0.001572" iyy="0.000608" izz="0.001408" ixy="3e-06" iyz="6.6e-05" ixz="0.000134"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.194252 0.276004 -0.81416" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.194252 0.276004 -0.81416" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link1_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1_1">
+  <inertial>
+    <origin xyz="-0.02480616064820229 -0.08248983270773932 -0.001163456975307564" rpy="0 0 0"/>
+    <mass value="2.2117481534402277"/>
+    <inertia ixx="0.08816" iyy="0.087095" izz="0.002325" ixy="0.000113" iyz="0.000591" ixz="-0.001564"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.393652 0.207504 -0.257026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.393652 0.207504 -0.257026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_2_1">
+  <inertial>
+    <origin xyz="-0.009728627621670538 0.023873907836073738 0.04211104873465721" rpy="0 0 0"/>
+    <mass value="0.68930155567869"/>
+    <inertia ixx="0.000492" iyy="0.001262" izz="0.001167" ixy="-5.3e-05" iyz="-8.2e-05" ixz="-3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.382595 0.301557 -0.595601" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque202209238"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.382595 0.301557 -0.595601" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://r2_v5_02_09-2_description/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1_1" type="continuous">
+  <origin xyz="0.117152 -0.276004 0.310526" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Slider 1_2" type="prismatic">
+  <origin xyz="0.0305 -0.015 -0.159999" rpy="0 0 0"/>
+  <parent link="link1_1_1"/>
+  <child link="link1_2_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.6" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Slider 1_3" type="prismatic">
+  <origin xyz="-0.0325 0.03 0.665633" rpy="0 0 0"/>
+  <parent link="link1_2_1"/>
+  <child link="link1_3_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+  <limit upper="0.26" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 1_4" type="revolute">
+  <origin xyz="0.0791 -0.015 -0.002" rpy="0 0 0"/>
+  <parent link="link1_3_1"/>
+  <child link="link1_4_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+  <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 2_1" type="continuous">
+  <origin xyz="0.393652 -0.207504 0.257026" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link2_1_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 2_2" type="revolute">
+  <origin xyz="-0.011057 -0.094053 0.338575" rpy="0 0 0"/>
+  <parent link="link2_1_1"/>
+  <child link="link2_2_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+</robot>

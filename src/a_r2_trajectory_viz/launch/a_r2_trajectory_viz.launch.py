@@ -20,8 +20,8 @@ def generate_launch_description() -> LaunchDescription:
         IncludeLaunchDescription(
             PathJoinSubstitution([FindPackageShare("urdf_launch"), "launch", "description.launch.py"]),
             launch_arguments={
-                "urdf_package": "a_r2_description",
-                "urdf_package_path": "urdf/a_r2.urdf",
+                "urdf_package": "r2_v5_02_09-2_description",
+                "urdf_package_path": "urdf/r2_v5_02_09-2.urdf",
             }.items(),
         )
     )
@@ -37,7 +37,14 @@ def generate_launch_description() -> LaunchDescription:
                     "trajectory_topic": LaunchConfiguration("trajectory_topic"),
                     "joint_states_topic": "/joint_states",
                     "publish_rate": 50.0,
-                    "default_joint_names": ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Revolute 5", "Slider 6"],
+                    "default_joint_names": [
+                        "Revolute 1_1",
+                        "Slider 1_2",
+                        "Slider 1_3",
+                        "Revolute 1_4",
+                        "Revolute 2_1",
+                        "Revolute 2_2",
+                    ],
                 }
             ],
         )

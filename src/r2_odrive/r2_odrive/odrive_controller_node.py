@@ -11,19 +11,22 @@ import os
 from typing import Dict, List
 
 import rclpy
+import struct
 from ament_index_python.packages import PackageNotFoundError, get_package_share_directory
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, QoSHistoryPolicy, QoSReliabilityPolicy
 from sensor_msgs.msg import JointState
 from rogidrive_msg.msg import RogidriveMessage
 from trajectory_msgs.msg import JointTrajectory
+from rogilink_flex_interfaces.msg import Frame
 from rogilink_flex_lib import Publisher
 
 # JointState -> kfs_*_cmd 変換係数
 # 使い方: value_out = value_in * scale + offset
 KFS_CMD_COEFFICIENTS = {
-    'Revolute 2': {'scale': 78.995 , 'offset': 0.0},  # kfs_yaw_cmd
-    'Revolute 5': {'scale': 1.0, 'offset': 0.0},  # kfs_roll_cmd
-    'Slider 6': {'scale': 1.0, 'offset': 0.0},    # kfs_x_cmd
+    'Revolute 1_1': {'scale': 78.995 , 'offset': 0.0},  # kfs_yaw_cmd
+    'Revolute 1_4': {'scale': 1.0, 'offset': 0.0},  # kfs_roll_cmd
+    'Slider 1_3': {'scale': 1.0, 'offset': 0.0},    # kfs_x_cmd
 }
 KFS_CMD_CHANGE_EPSILON = 1.0e-6
 
@@ -39,7 +42,14 @@ class ODriveControllerNode(Node):
 
         self._missing_joint_log: Dict[str, bool] = {}
         self._last_kfs_cmd_values: Dict[str, float] = {}
+        # Stores exact values sent to each topic for resending
+        self._last_sent_frames: Dict[str, float] = {}
         self.kfs_joint_to_topic, self.kfs_device_id = self._build_kfs_joint_mapping_and_device_id()
+
+        # Robust Communication State
+        self.waiting_for_ack = False
+        self.retry_count = 0
+        self.MAX_RETRIES = 3
 
         self.command_publisher = self.create_publisher(
             RogidriveMessage,
@@ -63,6 +73,29 @@ class ODriveControllerNode(Node):
             10,
         )
 
+        if self.kfs_ack_from_pc_topic:
+             self.ack_publisher = self.create_publisher(
+                 Frame,
+                 f'rogilink_transmission/{self.kfs_ack_from_pc_topic}',
+                 10
+             )
+
+        if self.kfs_ack_from_micro_topic:
+            self.create_subscription(
+                Frame,
+                f'rogilink_reception/{self.kfs_ack_from_micro_topic}',
+                self.on_ack_received,
+                10
+            )
+        
+        if self.kfs_reached_from_micro_topic:
+            self.create_subscription(
+                Frame,
+                f'rogilink_reception/{self.kfs_reached_from_micro_topic}',
+                self.on_reached_received,
+                10
+            )
+
         self.get_logger().info(
             f'Listening on {self.joint_state_topic} and {self.trajectory_topic}, publishing to {self.odrive_cmd_topic}'
         )
@@ -73,24 +106,29 @@ class ODriveControllerNode(Node):
             + ', '.join([f'{joint}->{topic}' for joint, topic in self.kfs_joint_to_topic.items()])
         )
         self.get_logger().info(f'Configured kfs device_id: {self.kfs_device_id}')
+        self.get_logger().info(f'Robust Comm: Ack(Micro->PC): {self.kfs_ack_from_micro_topic}, Reached: {self.kfs_reached_from_micro_topic}, Ack(PC->Micro): {self.kfs_ack_from_pc_topic}')
 
     def _declare_parameters(self) -> None:
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('trajectory_topic', '/joint_trajectory')
         self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
         # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
-        self.declare_parameter('joint_names', ['Slider 4'])
+        self.declare_parameter('joint_names', ['Slider 1_2'])
         self.declare_parameter('default_mode', 3)
         self.declare_parameter('config_path', self._default_config_path())
         self.declare_parameter('kfs_device_id', -1)
         self.declare_parameter(
             'joint_to_topic_map',
             [
-                'Revolute 2:ud_mid_r_pos_cmd',
-                'Revolute 5:ud_mid_l_pos_cmd',
-                'Slider 6:ud_back_pos_cmd',
+                'Revolute 1_1:ud_mid_r_pos_cmd',
+                'Revolute 1_4:ud_mid_l_pos_cmd',
+                'Slider 1_3:ud_back_pos_cmd',
             ],
         )
+        self.declare_parameter('rogilink_name_ack_from_micro', 'status')
+        self.declare_parameter('rogilink_name_reached_from_micro', 'ud_is_reached')
+        self.declare_parameter('rogilink_name_ack_from_pc', 'ack_from_pc')
+        self.declare_parameter('rogilink_id_ack_from_pc', 4)
 
     def _load_parameters(self) -> None:
         self.joint_state_topic = self.get_parameter('joint_state_topic').value
@@ -103,6 +141,10 @@ class ODriveControllerNode(Node):
         self.kfs_device_id_override = int(self.get_parameter('kfs_device_id').value)
         raw_joint_to_topic = self.get_parameter('joint_to_topic_map').value
         self.joint_to_topic_map = self._parse_joint_to_topic_map(raw_joint_to_topic)
+        self.kfs_ack_from_micro_topic = self.get_parameter('rogilink_name_ack_from_micro').value
+        self.kfs_reached_from_micro_topic = self.get_parameter('rogilink_name_reached_from_micro').value
+        self.kfs_ack_from_pc_topic = self.get_parameter('rogilink_name_ack_from_pc').value
+        self.kfs_ack_from_pc_id = self.get_parameter('rogilink_id_ack_from_pc').value
 
     @staticmethod
     def _parse_joint_to_topic_map(raw_values: List[str]) -> Dict[str, str]:
@@ -129,9 +171,9 @@ class ODriveControllerNode(Node):
 
     def _build_kfs_joint_mapping_and_device_id(self) -> tuple[Dict[str, str], int]:
         default_mapping = {
-            'Revolute 2': 'ud_mid_r_pos_cmd',
-            'Revolute 5': 'ud_mid_l_pos_cmd',
-            'Slider 6': 'ud_back_pos_cmd',
+            'Revolute 1_1': 'ud_mid_r_pos_cmd',
+            'Revolute 1_4': 'ud_mid_l_pos_cmd',
+            'Slider 1_3': 'ud_back_pos_cmd',
         }
         default_device_id = 0
         config_topic_names: List[str] = []
@@ -200,6 +242,7 @@ class ODriveControllerNode(Node):
             return
 
         name_to_index = {name: idx for idx, name in enumerate(msg.joint_names)}
+        self.get_logger().info(f'Received /joint_trajectory with {len(msg.points)} points. Last point positions: {final_point.positions}')
         self._publish_kfs_cmds(final_point.positions, name_to_index)
 
     @staticmethod
@@ -231,7 +274,7 @@ class ODriveControllerNode(Node):
 
     def _convert_position(self, joint_name: str, position: float) -> float:
         """位置 [rad/m] → ODrive の回転数 [turn] への変換を書く場所"""
-        if joint_name in ('Slider4', 'Slider 4'):
+        if joint_name in ('Slider1_2', 'Slider 1_2'):
             return -position * 100.0
         return position
 
@@ -255,8 +298,19 @@ class ODriveControllerNode(Node):
             value = self._get_value(positions, index)
             converted_value = self._convert_kfs_cmd_value(joint_name, value)
             if self._should_publish_kfs_cmd(topic_name, converted_value):
+                # Only publish if value changed Significantly, OR if we want to ensure robust delivery
+                # For robust delivery (MoveRack style), we might want to send anyway if we haven't received ack?
+                # But here we stick to "change detection" to avoid spamming, relying on resend logic for robustness.
                 self.kfs_publishers[topic_name].publish(converted_value)
+                self.get_logger().info(f'Published to {topic_name}: {converted_value:.4f} (from joint {joint_name})')
                 self._last_kfs_cmd_values[topic_name] = converted_value
+                # Update last sent frame for resending
+                self._last_sent_frames[topic_name] = converted_value
+                self.waiting_for_ack = True
+                self.retry_count = 0
+        
+        # If we sent anything (waiting_for_ack is True), we might want to trigger a check/resend timer?
+        # MoveRackNode relies on nack to trigger resend. We will do the same.
 
     def _convert_kfs_cmd_value(self, joint_name: str, value: float) -> float:
         """JointState 値 → kfs_*_cmd 変換（係数テーブル編集で調整）"""
@@ -270,6 +324,46 @@ class ODriveControllerNode(Node):
         if last is None:
             return True
         return abs(value - last) > KFS_CMD_CHANGE_EPSILON
+
+    def on_ack_received(self, msg: Frame) -> None:
+        """Handle ACK/NACK from Microcontroller"""
+        try:
+            status_str = bytes(msg.data).decode('utf-8').rstrip('\x00')
+        except Exception:
+            return
+
+        if 'ack' in status_str:
+            if self.waiting_for_ack:
+                self.waiting_for_ack = False
+                self.retry_count = 0
+                self.get_logger().debug('ACK received.')
+        elif 'nack' in status_str:
+            if self.retry_count < self.MAX_RETRIES:
+                self.retry_count += 1
+                self.get_logger().warn(f'NACK received. Retrying... ({self.retry_count}/{self.MAX_RETRIES})')
+                self._resend_latest_commands()
+            else:
+                self.get_logger().error('NACK received. Max retries reached.')
+                self.waiting_for_ack = False
+
+    def _resend_latest_commands(self) -> None:
+        """Resend the last sent commands for all mapped joints"""
+        for topic_name, value in self._last_sent_frames.items():
+            if topic_name in self.kfs_publishers:
+                self.kfs_publishers[topic_name].publish(value)
+
+    def on_reached_received(self, msg: Frame) -> None:
+        """Handle reached signal and send handshake ACK"""
+        # If we receive reached signal, send ACK back to PC (Handshake)
+        # MoveRackNode logic: on reached, send "ack" string to rogilink_name_ack_from_pc_
+        if self.ack_publisher:
+            frame = Frame()
+            frame.device_id = self.kfs_device_id_override if self.kfs_device_id_override >= 0 else self.kfs_device_id
+            frame.frame_id = self.kfs_ack_from_pc_id
+            ack_str = b"ack"
+            frame.data = [int(b) for b in ack_str]
+            self.ack_publisher.publish(frame)
+            # self.get_logger().info('Sent Handshake ACK to Micro')
 
 
 def main(args=None):

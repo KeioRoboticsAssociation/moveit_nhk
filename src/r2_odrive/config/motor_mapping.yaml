@@ -16,7 +16,7 @@ rs485_interface2_node:
   ros__parameters:
     # Motor configurations
     motors:
-      Revolute 2:
+      Revolute 1_1:
         id: 32
         encoder_resolution: 2031988
         reverse: false

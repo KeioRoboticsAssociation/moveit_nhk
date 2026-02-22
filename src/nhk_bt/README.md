@@ -67,13 +67,13 @@ ros2 launch nhk_bt remote_control_bt.launch.py \
 ros2 launch nhk_bt path_index_gui.launch.py
 ```
 
-`Push` / `Back` ボタンで `/joint_trajectory` に `Slider 6` の目標位置を送信し、Slider 6 を前後させられます。
+`Push` / `Back` ボタンで `/joint_trajectory` に `Slider 1_3` の目標位置を送信し、Slider 1_3 を前後させられます。
 必要なら launch 引数で調整します。
 
 ```bash
 ros2 launch nhk_bt path_index_gui.launch.py \
   trajectory_topic:=/joint_trajectory \
-  slider6_joint_name:="Slider 6" \
+  slider6_joint_name:="Slider 1_3" \
   push_value:=0.05 \
   back_value:=-0.05 \
   move_duration_sec:=0.2

@@ -6,6 +6,7 @@
 #include "nhk_action_interfaces/action/path_index.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "rogilink_flex_interfaces/msg/frame.hpp"
 #include "std_msgs/msg/float32_multi_array.hpp"
 
 class PathIndexActionServer : public rclcpp::Node {
@@ -18,7 +19,7 @@ public:
         this->declare_parameter<std::string>("arm_cmd_topic", "/arm_cmd");
     path_commands_ = this->declare_parameter<std::vector<double>>(
         "path_commands", std::vector<double>{
-                             // [Slider 4, Revolute 2, Revolute 5]
+                             // [Slider 1_2, Revolute 1_1, Revolute 1_4]
                              0.0, 1.9545, -0.3838,  // index 0
                              0.0, 1.7505, -0.1798,  // index 1
                              0.0, 1.5303, 0.0405,   // index 2
@@ -30,6 +31,13 @@ public:
     arm_cmd_publisher_ =
         this->create_publisher<std_msgs::msg::Float32MultiArray>(arm_cmd_topic_,
                                                                  10);
+
+    // Subscribe to ud_is_reached
+    ud_is_reached_sub_ =
+        this->create_subscription<rogilink_flex_interfaces::msg::Frame>(
+            "/rogilink_reception/ud_is_reached", 10,
+            std::bind(&PathIndexActionServer::on_ud_is_reached, this,
+                      std::placeholders::_1));
 
     using namespace std::placeholders;
     action_server_ = rclcpp_action::create_server<PathIndex>(
@@ -51,8 +59,18 @@ private:
   rclcpp_action::Server<PathIndex>::SharedPtr action_server_;
   rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr
       arm_cmd_publisher_;
+  rclcpp::Subscription<rogilink_flex_interfaces::msg::Frame>::SharedPtr
+      ud_is_reached_sub_;
   std::vector<double> path_commands_;
   std::string arm_cmd_topic_;
+  bool is_reached_ = false;
+
+  void on_ud_is_reached(
+      const rogilink_flex_interfaces::msg::Frame::SharedPtr msg) {
+    if (!msg->data.empty() && msg->data[0] != 0) {
+      is_reached_ = true;
+    }
+  }
 
   rclcpp_action::GoalResponse
   handle_goal(const rclcpp_action::GoalUUID &,
@@ -91,12 +109,7 @@ private:
     auto feedback = std::make_shared<PathIndex::Feedback>();
     auto result = std::make_shared<PathIndex::Result>();
 
-    if (goal_handle->is_canceling()) {
-      result->success = false;
-      goal_handle->canceled(result);
-      RCLCPP_INFO(get_logger(), "Goal canceled before publish");
-      return;
-    }
+    is_reached_ = false; // Reset state
 
     const size_t offset = static_cast<size_t>(path_index) * kValuesPerPath;
     std_msgs::msg::Float32MultiArray arm_cmd_msg;
@@ -110,12 +123,40 @@ private:
                 path_index, arm_cmd_msg.data[0], arm_cmd_msg.data[1],
                 arm_cmd_msg.data[2]);
 
-    feedback->dummy = true;
-    goal_handle->publish_feedback(feedback);
+    rclcpp::Rate loop_rate(10);
+    const auto start_time = this->now();
+    const auto validation_timeout = std::chrono::seconds(10); // Safety timeout
+
+    while (rclcpp::ok()) {
+      if (goal_handle->is_canceling()) {
+        result->success = false;
+        goal_handle->canceled(result);
+        RCLCPP_INFO(get_logger(), "Goal canceled");
+        return;
+      }
+
+      if (is_reached_) {
+        break; // Success
+      }
+
+      if (this->now() - start_time > validation_timeout) {
+        RCLCPP_WARN(get_logger(), "Goal timed out waiting for ud_is_reached");
+        // Optional: result->success = false; goal_handle->aborted(result); return;
+        // For now, we allow timeout to just end the action or maybe retry?
+        // Let's assume timeout = abort for safety.
+        result->success = false;
+        goal_handle->abort(result);
+        return;
+      }
+
+      feedback->dummy = false;
+      goal_handle->publish_feedback(feedback);
+      loop_rate.sleep();
+    }
 
     result->success = true;
     goal_handle->succeed(result);
-    RCLCPP_INFO(get_logger(), "Goal succeeded");
+    RCLCPP_INFO(get_logger(), "Goal succeeded (reached signal received)");
   }
 };
 

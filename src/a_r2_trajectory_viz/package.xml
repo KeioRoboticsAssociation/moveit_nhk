@@ -3,7 +3,7 @@
 <package format="3">
   <name>a_r2_trajectory_viz</name>
   <version>0.0.1</version>
-  <description>Visualize a_r2 URDF in RViz and drive joint_states from JointTrajectory.</description>
+  <description>Visualize r2_v5 URDF in RViz and drive joint_states from JointTrajectory.</description>
   <maintainer email="a@todo.todo">a</maintainer>
   <license>Apache-2.0</license>
 
@@ -17,7 +17,7 @@
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>ament_index_python</exec_depend>
-  <exec_depend>a_r2_description</exec_depend>
+  <exec_depend>r2_v5_02_09-2_description</exec_depend>
   <exec_depend>urdf_launch</exec_depend>
   <exec_depend>xacro</exec_depend>
 

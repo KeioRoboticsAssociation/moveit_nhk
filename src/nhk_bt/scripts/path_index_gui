@@ -15,9 +15,9 @@ class PathIndexGuiNode(Node):
         super().__init__("path_index_gui")
         self._action_name = self.declare_parameter("action_name", "/path_index").value
         self._trajectory_topic = self.declare_parameter("trajectory_topic", "/joint_trajectory").value
-        self._slider6_joint_name = self.declare_parameter("slider6_joint_name", "Slider 6").value
-        self._push_value = float(self.declare_parameter("push_value", 0.05).value)
-        self._back_value = float(self.declare_parameter("back_value", -0.05).value)
+        self._slider6_joint_name = self.declare_parameter("slider6_joint_name", "Slider 1_3").value
+        self._push_value = float(self.declare_parameter("push_value", 1.00).value)
+        self._back_value = float(self.declare_parameter("back_value", -1.00).value)
         self._move_duration = float(self.declare_parameter("move_duration_sec", 0.2).value)
         self._client = ActionClient(self, PathIndex, self._action_name)
         self._trajectory_pub = self.create_publisher(JointTrajectory, self._trajectory_topic, 10)

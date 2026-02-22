@@ -13,27 +13,27 @@ def generate_launch_description():
     trajectory_topic_arg = DeclareLaunchArgument(
         "trajectory_topic",
         default_value="/joint_trajectory",
-        description="JointTrajectory topic for Slider 6 command",
+        description="JointTrajectory topic for linear joint command",
     )
     slider6_joint_name_arg = DeclareLaunchArgument(
         "slider6_joint_name",
-        default_value="Slider 6",
-        description="Slider 6 joint name in JointTrajectory",
+        default_value="Slider 1_3",
+        description="Linear joint name in JointTrajectory",
     )
     push_value_arg = DeclareLaunchArgument(
         "push_value",
-        default_value="0.05",
-        description="Slider 6 push target position",
+        default_value="1.00",
+        description="Linear joint push target position",
     )
     back_value_arg = DeclareLaunchArgument(
         "back_value",
-        default_value="-0.05",
-        description="Slider 6 back target position",
+        default_value="-1.00",
+        description="Linear joint back target position",
     )
     move_duration_arg = DeclareLaunchArgument(
         "move_duration_sec",
         default_value="0.2",
-        description="Slider 6 motion duration in trajectory",
+        description="Linear joint motion duration in trajectory",
     )
 
     gui_node = Node(

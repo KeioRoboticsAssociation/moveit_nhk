@@ -28,7 +28,14 @@ class JointTrajectoryToJointStates(Node):
         self.declare_parameter("publish_rate", 50.0)
         self.declare_parameter(
             "default_joint_names",
-            ["Slider 1", "Revolute 2", "Revolute 3", "Slider 4", "Revolute 5", "Slider 6"],
+            [
+                "Revolute 1_1",
+                "Slider 1_2",
+                "Slider 1_3",
+                "Revolute 1_4",
+                "Revolute 2_1",
+                "Revolute 2_2",
+            ],
         )
 
         trajectory_topic = self.get_parameter("trajectory_topic").get_parameter_value().string_value
