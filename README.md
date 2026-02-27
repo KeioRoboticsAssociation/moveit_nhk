@@ -1,36 +1,34 @@
-# R2 arm 立ち上げ手順（Action通信）
+# NHK ロボット起動手順（`nhk_launch`）
 
-このワークスペースでは、`PathIndex` Action を使って `path_index` を送ると、
-`nhk_bt/path_index_action_server` が `/arm_cmd` を publish し、
-`r2_odrive/rtz_to_joint_trajectory` が `JointTrajectory` に変換します。
+このワークスペースは、`nhk_launch` パッケージの launch 1本で必要ノードを一括起動できます。
 
-## クイックスタート
-
-各コマンドは別ターミナルで実行してください。
+## 起動
 
 ```bash
-# ターミナル1: デモ
-ros2 launch a_r2_trajectory_viz a_r2_trajectory_viz.launch.py
+cd /home/a/ws_nhk
+source /opt/ros/humble/setup.bash
+source /home/a/ws_nhk/install/setup.bash
+ros2 launch nhk_launch nhk.launch.py
 ```
 
-```bash
-# ターミナル2: /arm_cmd -> JointTrajectory 変換
-ros2 run r2_odrive rtz_to_joint_trajectory --ros-args -p duration_sec:=2.0
-```
+上記で次を同時起動します。
+
+- `ros2 launch a_r2_trajectory_viz a_r2_trajectory_viz.launch.py`
+- `ros2 run r2_odrive rtz_to_joint_trajectory --ros-args -p duration_sec:=2.0`
+- `ros2 run r2_odrive odrive_controller_node`
+- `ros2 run rogidrive rogidrive --ros-args -p config_path:=/home/a/ws_nhk/src/r2_odrive/config/odrive_config.json`
+- `ros2 launch rogilink_flex_gui gui.launch.py config_path:=/home/a/ws_nhk/src/r2_odrive/config/config.json`
+- `ros2 run nhk_bt path_index_action_server`
+- `ros2 launch nhk_bt path_index_gui.launch.py`
+
+## launch引数
+
+`config_path`（rogilink_flex_gui用）と`rogidrive_config_path`（rogidrive用）を上書きできます。
 
 ```bash
-# ターミナル3: JointState -> RogidriveMessage
-ros2 run r2_odrive odrive_controller_node
-```
-
-```bash
-# ターミナル4: ODrive ドライバ（JSON 設定が必須）
-ros2 run rogidrive rogidrive --ros-args -p config_path:='/home/a/ws_nhk/src/r2_odrive/config/odrive_config.json'
-```
-
-```bash
-# ターミナル5: PathIndex Action Server
-ros2 run nhk_bt path_index_action_server
+ros2 launch nhk_launch nhk.launch.py \
+  config_path:=/path/to/gui_config.json \
+  rogidrive_config_path:=/path/to/odrive_config.json
 ```
 
 ## Action通信の試験
@@ -38,18 +36,26 @@ ros2 run nhk_bt path_index_action_server
 `path_index` は `0..5` を受け付けます。
 
 ```bash
-# 例: path_index=3 を送信
 ros2 action send_goal --feedback /path_index nhk_action_interfaces/action/PathIndex "{path_index: 3}"
 ```
 
 ## path_index と /arm_cmd の対応
 
-デフォルトは `nhk_bt/path_index_action_server` 内で次の対応です。`[Slider 4, Revolute 2, Revolute 5]`
+`nhk_bt/path_index_action_server` のデフォルト対応（`[Slider 4, Revolute 2, Revolute 5]`）:
 
-- `0 -> [0.0, 1.9545, 0.0] 右下` 
-- `1 -> [0.0, 1.7505, 0.0] 右中央`
-- `2 -> [0.0, 1.5303, 0.0] 右上`
-- `3 -> [0.0, -1.5303, 0.0] 左上`
-- `4 -> [0.0, -1.7505, 0.0] 左中央`
-- `5 -> [0.0, -1.9545, 0.0] 左下`
+- `0 -> [0.0, 1.9545, 0.0]` 右下
+- `1 -> [0.0, 1.7505, 0.0]` 右中央
+- `2 -> [0.0, 1.5303, 0.0]` 右上
+- `3 -> [0.0, -1.5303, 0.0]` 左上
+- `4 -> [0.0, -1.7505, 0.0]` 左中央
+- `5 -> [0.0, -1.9545, 0.0]` 左下
 
+## 停止時の注意
+
+`Ctrl+C` 後にトピックが残って見える場合は daemon キャッシュの可能性があります。
+
+```bash
+ros2 topic list --no-daemon
+ros2 daemon stop
+ros2 daemon start
+```
