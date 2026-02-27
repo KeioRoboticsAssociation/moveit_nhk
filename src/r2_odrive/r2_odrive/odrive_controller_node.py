@@ -120,14 +120,14 @@ class ODriveControllerNode(Node):
         self.declare_parameter(
             'joint_to_topic_map',
             [
-                'Revolute 1_1:ud_mid_r_pos_cmd',
-                'Revolute 1_4:ud_mid_l_pos_cmd',
-                'Slider 1_3:ud_back_pos_cmd',
+                'Revolute 1_1:kfs_yaw_cmd',
+                'Revolute 1_4:kfs_roll_cmd',
+                'Slider 1_3:kfs_x_cmd',
             ],
         )
-        self.declare_parameter('rogilink_name_ack_from_micro', 'status')
-        self.declare_parameter('rogilink_name_reached_from_micro', 'ud_is_reached')
-        self.declare_parameter('rogilink_name_ack_from_pc', 'ack_from_pc')
+        self.declare_parameter('rogilink_name_ack_from_micro', 'kfs_status')
+        self.declare_parameter('rogilink_name_reached_from_micro', 'kfs_is_reached')
+        self.declare_parameter('rogilink_name_ack_from_pc', 'kfs_ack_from_pc')
         self.declare_parameter('rogilink_id_ack_from_pc', 4)
 
     def _load_parameters(self) -> None:
@@ -171,9 +171,9 @@ class ODriveControllerNode(Node):
 
     def _build_kfs_joint_mapping_and_device_id(self) -> tuple[Dict[str, str], int]:
         default_mapping = {
-            'Revolute 1_1': 'ud_mid_r_pos_cmd',
-            'Revolute 1_4': 'ud_mid_l_pos_cmd',
-            'Slider 1_3': 'ud_back_pos_cmd',
+            'Revolute 1_1': 'kfs_yaw_cmd',
+            'Revolute 1_4': 'kfs_roll_cmd',
+            'Slider 1_3': 'kfs_x_cmd',
         }
         default_device_id = 0
         config_topic_names: List[str] = []

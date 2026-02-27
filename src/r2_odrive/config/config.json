@@ -2,51 +2,51 @@
   "device_id": 1,
   "reception_messages": [
     {
-      "id": 1,
-      "name": "ud_mid_r_pos_state",
+      "id": 21,
+      "name": "kfs_yaw_state",
       "type": "float32"
     },
     {
-      "id": 2,
-      "name": "ud_mid_l_pos_state",
+      "id": 22,
+      "name": "kfs_roll_state",
       "type": "float32"
     },
     {
-      "id": 3,
-      "name": "ud_back_pos_state",
+      "id": 23,
+      "name": "kfs_x_state",
       "type": "float32"
     },
     {
-      "id": 4,
-      "name": "ud_is_reached",
+      "id": 24,
+      "name": "kfs_is_reached",
       "type": "uint8"
     },
     {
-      "id": 9,
-      "name": "status",
+      "id": 29,
+      "name": "kfs_status",
       "type": "str",
       "format": "%s"
     }
   ],
   "transmission_messages": [
     {
-      "id": 1,
-      "name": "ud_mid_r_pos_cmd",
+      "id": 21,
+      "name": "kfs_yaw_cmd",
       "type": "float32"
     },
     {
-      "id": 2,
-      "name": "ud_mid_l_pos_cmd",
+      "id": 22,
+      "name": "kfs_roll_cmd",
       "type": "float32"
     },
     {
-      "id": 3,
-      "name": "ud_back_pos_cmd",
+      "id": 23,
+      "name": "kfs_x_cmd",
       "type": "float32"
     },
     {
-      "id": 9,
-      "name": "status",
+      "id": 29,
+      "name": "kfs_status",
       "type": "str",
       "format": "%s"
     }
