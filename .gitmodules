@@ -10,3 +10,7 @@
 [submodule "src/rogidrive"]
         path = src/rogidrive
         url = git@github.com:KeioRoboticsAssociation/rogidrive.git
+[submodule "src/rogilinkFlex-ros2"]
+        path = src/rogilinkFlex-ros2
+        url = git@github.com:KeioRoboticsAssociation/rogilinkFlex-ros2.git
+        branch = ilias2026
