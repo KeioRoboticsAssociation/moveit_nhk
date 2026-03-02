@@ -7,3 +7,6 @@
 [submodule "src/rosparam_shortcuts"]
         path = src/rosparam_shortcuts
         url = git@github.com:PickNikRobotics/rosparam_shortcuts.git
+[submodule "src/rogidrive"]
+        path = src/rogidrive
+        url = git@github.com:KeioRoboticsAssociation/rogidrive.git
