@@ -1,7 +1,4 @@
 build/
 install/
 log/
-src/MAVLink_ros2
-src/rogidrive
-src/launch_param_builder/
 
