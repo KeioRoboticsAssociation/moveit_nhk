@@ -75,10 +75,28 @@ def generate_launch_description() -> LaunchDescription:
         )
     )
 
+    stm32_full_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare("stm32_mavlink_udp"), "launch", "stm32_full.launch.py"]
+            )
+        )
+    )
+
+    rs485_interface2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
+            )
+        )
+    )
+
     return LaunchDescription(
         [
             config_path_arg,
             rogidrive_config_path_arg,
+            stm32_full_launch,
+            rs485_interface2_launch,
             trajectory_viz_launch,
             rtz_to_joint_trajectory_node,
             odrive_controller_node,

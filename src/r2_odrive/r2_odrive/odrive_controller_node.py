@@ -56,6 +56,11 @@ class ODriveControllerNode(Node):
             self.odrive_cmd_topic,
             10,
         )
+        self.rogidrive_cmd_publisher = self.create_publisher(
+            RogidriveMessage,
+            self.rogidrive_cmd_topic,
+            10,
+        )
         self.kfs_publishers = {
             topic_name: Publisher(self, topic_name, 'float32', device_id=self.kfs_device_id)
             for topic_name in self.kfs_joint_to_topic.values()
@@ -112,6 +117,7 @@ class ODriveControllerNode(Node):
         self.declare_parameter('joint_state_topic', '/joint_states')
         self.declare_parameter('trajectory_topic', '/joint_trajectory')
         self.declare_parameter('odrive_cmd_topic', '/odrive_cmd')
+        self.declare_parameter('rogidrive_cmd_topic', '/rogidrive_cmd')
         # Default to Slider 1 -> index 0, Slider 3 -> index 1 ordering.
         self.declare_parameter('joint_names', ['Slider 1_2'])
         self.declare_parameter('default_mode', 3)
@@ -134,6 +140,7 @@ class ODriveControllerNode(Node):
         self.joint_state_topic = self.get_parameter('joint_state_topic').value
         self.trajectory_topic = self.get_parameter('trajectory_topic').value
         self.odrive_cmd_topic = self.get_parameter('odrive_cmd_topic').value
+        self.rogidrive_cmd_topic = self.get_parameter('rogidrive_cmd_topic').value
         raw_joint_names = self.get_parameter('joint_names').value
         self.joint_names: List[str] = [name for name in raw_joint_names if name]
         self.default_mode = int(self.get_parameter('default_mode').value)
@@ -308,6 +315,19 @@ class ODriveControllerNode(Node):
                 self._last_sent_frames[topic_name] = converted_value
                 self.waiting_for_ack = True
                 self.retry_count = 0
+
+                # /rogidrive_cmd にも同じ目標値をパブリッシュ
+                # name フィールドに kfs トピック名（kfs_yaw_cmd 等）を使用
+                rogi_msg = RogidriveMessage()
+                rogi_msg.name = topic_name
+                rogi_msg.mode = 3  # POSITION_CONTROL
+                rogi_msg.vel = 0.0
+                rogi_msg.pos = converted_value
+                rogi_msg.current = 0.0
+                self.rogidrive_cmd_publisher.publish(rogi_msg)
+                self.get_logger().info(
+                    f'Published to {self.rogidrive_cmd_topic}: name={topic_name}, pos={converted_value:.4f}'
+                )
         
         # If we sent anything (waiting_for_ack is True), we might want to trigger a check/resend timer?
         # MoveRackNode relies on nack to trigger resend. We will do the same.
