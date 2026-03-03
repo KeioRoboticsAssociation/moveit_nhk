@@ -1,8 +1,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/joy.hpp>
-#include <behaviortree_cpp/behavior_tree.h>
-#include <behaviortree_cpp/bt_factory.h>
-#include <behaviortree_cpp/loggers/bt_cout_logger.h>
+#include <behaviortree_cpp_v3/behavior_tree.h>
+#include <behaviortree_cpp_v3/bt_factory.h>
+#include <behaviortree_cpp_v3/loggers/bt_cout_logger.h>
 #include "nhk_bt/remote_control_nodes.hpp"
 
 class RemoteControlBTNode : public rclcpp::Node
@@ -164,7 +164,7 @@ private:
 
     // BehaviorTreeを1ティック実行
     try {
-      BT::NodeStatus status = tree_.tickOnce();
+      BT::NodeStatus status = tree_.tickRoot();
 
       // 状態が変化した場合のみログ出力
       if (status != prev_bt_status_) {

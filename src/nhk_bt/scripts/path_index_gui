@@ -1,0 +1,171 @@
+#!/usr/bin/env python3
+
+import tkinter as tk
+
+import rclpy
+from rclpy.action import ActionClient
+from rclpy.node import Node
+
+from nhk_action_interfaces.action import PathIndex
+from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
+
+
+class PathIndexGuiNode(Node):
+    def __init__(self) -> None:
+        super().__init__("path_index_gui")
+        self._action_name = self.declare_parameter("action_name", "/path_index").value
+        self._trajectory_topic = self.declare_parameter("trajectory_topic", "/joint_trajectory").value
+        self._slider6_joint_name = self.declare_parameter("slider6_joint_name", "Slider 1_3").value
+        self._push_value = float(self.declare_parameter("push_value", 1.00).value)
+        self._back_value = float(self.declare_parameter("back_value", -1.00).value)
+        self._move_duration = float(self.declare_parameter("move_duration_sec", 0.2).value)
+        self._client = ActionClient(self, PathIndex, self._action_name)
+        self._trajectory_pub = self.create_publisher(JointTrajectory, self._trajectory_topic, 10)
+        self._status_callback = None
+
+    def set_status_callback(self, callback) -> None:
+        self._status_callback = callback
+
+    def _set_status(self, text: str) -> None:
+        if self._status_callback is not None:
+            self._status_callback(text)
+        else:
+            self.get_logger().info(text)
+
+    def send_index(self, index: int) -> None:
+        if not self._client.wait_for_server(timeout_sec=0.2):
+            self._set_status("Action server が見つかりません")
+            self.get_logger().warn("PathIndex action server is not available")
+            return
+
+        goal_msg = PathIndex.Goal()
+        goal_msg.path_index = index
+        self._set_status(f"送信中: index={index}")
+        future = self._client.send_goal_async(goal_msg)
+        future.add_done_callback(lambda f: self._goal_response_callback(f, index))
+
+    def _goal_response_callback(self, future, index: int) -> None:
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self._set_status(f"拒否: index={index}")
+            return
+        self._set_status(f"受理: index={index}")
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(lambda f: self._result_callback(f, index))
+
+    def _result_callback(self, future, index: int) -> None:
+        result = future.result().result
+        if result.success:
+            self._set_status(f"成功: index={index}")
+        else:
+            self._set_status(f"失敗: index={index}")
+
+    def send_push(self) -> None:
+        self._publish_slider6_trajectory(self._push_value)
+        self._set_status(f"Push送信: {self._push_value:.4f}")
+
+    def send_back(self) -> None:
+        self._publish_slider6_trajectory(self._back_value)
+        self._set_status(f"Back送信: {self._back_value:.4f}")
+
+    def _publish_slider6_trajectory(self, position: float) -> None:
+        point = JointTrajectoryPoint()
+        point.positions = [position]
+        sec = max(0.0, self._move_duration)
+        point.time_from_start.sec = int(sec)
+        point.time_from_start.nanosec = int((sec - int(sec)) * 1_000_000_000)
+
+        traj = JointTrajectory()
+        traj.joint_names = [self._slider6_joint_name]
+        traj.points = [point]
+        self._trajectory_pub.publish(traj)
+
+    def spin_once(self) -> None:
+        if rclpy.ok():
+            rclpy.spin_once(self, timeout_sec=0.0)
+
+
+def build_gui(node: PathIndexGuiNode) -> tk.Tk:
+    root = tk.Tk()
+    root.title("Path Index GUI")
+    root.geometry("420x420")
+    root.resizable(False, False)
+
+    frame = tk.Frame(root, padx=12, pady=12)
+    frame.pack(fill=tk.BOTH, expand=True)
+    status_var = tk.StringVar(value=f"Action server: {node._action_name}")
+    node.set_status_callback(status_var.set)
+
+    title = tk.Label(frame, text="PathIndex 送信 (3x2)", font=("Helvetica", 14, "bold"))
+    title.grid(row=0, column=0, columnspan=2, pady=(0, 10))
+
+    # 指定配置:
+    # 0: 左下, 1: 左中, 2: 左上, 3: 右上, 4: 右中, 5: 右下
+    buttons = [
+        (2, "左上\nindex=2", 1, 0),
+        (3, "右上\nindex=3", 1, 1),
+        (1, "左真ん中\nindex=1", 2, 0),
+        (4, "右真ん中\nindex=4", 2, 1),
+        (0, "左下\nindex=0", 3, 0),
+        (5, "右下\nindex=5", 3, 1),
+    ]
+
+    for index, text, row, col in buttons:
+        btn = tk.Button(
+            frame,
+            text=text,
+            width=16,
+            height=3,
+            font=("Helvetica", 11),
+            command=lambda i=index: node.send_index(i),
+        )
+        btn.grid(row=row, column=col, padx=8, pady=8, sticky="nsew")
+
+    for col in range(2):
+        frame.grid_columnconfigure(col, weight=1)
+
+    status = tk.Label(frame, textvariable=status_var, anchor="w", font=("Helvetica", 10))
+    status.grid(row=4, column=0, columnspan=2, sticky="ew", pady=(12, 8))
+
+    push_button = tk.Button(
+        frame,
+        text="Push",
+        width=16,
+        height=2,
+        font=("Helvetica", 12, "bold"),
+        command=node.send_push,
+    )
+    push_button.grid(row=5, column=0, padx=8, pady=6, sticky="nsew")
+
+    back_button = tk.Button(
+        frame,
+        text="Back",
+        width=16,
+        height=2,
+        font=("Helvetica", 12, "bold"),
+        command=node.send_back,
+    )
+    back_button.grid(row=5, column=1, padx=8, pady=6, sticky="nsew")
+
+    def poll_ros() -> None:
+        node.spin_once()
+        root.after(20, poll_ros)
+
+    root.after(20, poll_ros)
+    return root
+
+
+def main() -> None:
+    rclpy.init()
+    node = PathIndexGuiNode()
+    root = build_gui(node)
+    try:
+        root.mainloop()
+    finally:
+        node.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()

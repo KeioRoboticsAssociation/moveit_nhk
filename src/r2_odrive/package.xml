@@ -8,9 +8,12 @@
   <license>Apache-2.0</license>
 
   <depend>rclpy</depend>
+  <depend>ament_index_python</depend>
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
+  <depend>trajectory_msgs</depend>
   <depend>rogidrive_msg</depend>
+  <depend>rogilink_flex_lib</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

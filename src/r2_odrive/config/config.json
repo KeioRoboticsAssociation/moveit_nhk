@@ -1,0 +1,43 @@
+{
+  "device_id": 2,
+  "reception_messages": [
+    {
+      "id": 21,
+      "name": "kfs_yaw_state",
+      "type": "float32, float32"
+    },
+    {
+      "id": 22,
+      "name": "kfs_x_state",
+      "type": "float32"
+    },
+    {
+      "id": 23,
+      "name": "kfs_roll_state",
+      "type": "float32"
+    },
+    {
+      "id": 29,
+      "name": "status",
+      "type": "str",
+      "format": "%s"
+    }
+  ],
+  "transmission_messages": [
+    {
+      "id": 21,
+      "name": "kfs_yaw_cmd",
+      "type": "float32"
+    },
+    {
+      "id": 22,
+      "name": "kfs_x_cmd",
+      "type": "float32"
+    },
+    {
+      "id": 23,
+      "name": "kfs_roll_cmd",
+      "type": "float32"
+    }
+  ]
+}

@@ -15,8 +15,9 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(behaviortree_cpp REQUIRED)
+find_package(behaviortree_cpp_v3 REQUIRED)
 find_package(nhk_action_interfaces REQUIRED)
+find_package(rogilink_flex_interfaces REQUIRED)
 
 # Include directories
 include_directories(include)
@@ -29,7 +30,7 @@ add_executable(remote_control_bt_node
 ament_target_dependencies(remote_control_bt_node
   rclcpp
   sensor_msgs
-  behaviortree_cpp
+  behaviortree_cpp_v3
 )
 
 # PathIndex Action Server
@@ -42,12 +43,18 @@ ament_target_dependencies(path_index_action_server
   rclcpp_action
   std_msgs
   nhk_action_interfaces
+  rogilink_flex_interfaces
 )
 
 # Install executables
 install(TARGETS
   remote_control_bt_node
   path_index_action_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  scripts/path_index_gui
   DESTINATION lib/${PROJECT_NAME}
 )
 

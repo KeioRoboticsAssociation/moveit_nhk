@@ -8,10 +8,10 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
 
-
     robot_description_content = Command(
         [
-            PathJoinSubstitution([FindExecutable(name="xacro")]),
+            # 修正箇所: FindExecutableを直接記述します
+            FindExecutable(name="xacro"),
             " ",
             PathJoinSubstitution(
                 [
@@ -20,7 +20,6 @@ def generate_launch_description():
                     "a_r2.xacro",
                 ]
             ),
-
         ]
     )
     robot_description = {"robot_description": robot_description_content}
