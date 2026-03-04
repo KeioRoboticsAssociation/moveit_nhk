@@ -24,7 +24,7 @@ from rogilink_flex_lib import Publisher
 # JointState -> kfs_*_cmd 変換係数
 # 使い方: value_out = value_in * scale + offset
 KFS_CMD_COEFFICIENTS = {
-    'Revolute 1_1': {'scale': 78.995 , 'offset': 0.0},  # kfs_yaw_cmd
+    'Revolute 1_1': {'scale': 0.159235 , 'offset': 0.0},  # kfs_yaw_cmd
     'Revolute 1_4': {'scale': 1.0, 'offset': 0.0},  # kfs_roll_cmd
     'Slider 1_3': {'scale': 1.0, 'offset': 0.0},    # kfs_x_cmd
 }

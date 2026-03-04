@@ -52,14 +52,14 @@ def generate_launch_description() -> LaunchDescription:
         parameters=[{"config_path": LaunchConfiguration("rogidrive_config_path")}],
     )
 
-    rogilink_flex_gui_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("rogilink_flex_gui"), "gui.launch.py"]
-            )
-        ),
-        launch_arguments={"config_path": LaunchConfiguration("config_path")}.items(),
-    )
+    # rogilink_flex_gui_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("rogilink_flex_gui"), "gui.launch.py"]
+    #         )
+    #     ),
+    #     launch_arguments={"config_path": LaunchConfiguration("config_path")}.items(),
+    # )
 
     path_index_action_server_node = Node(
         package="nhk_bt",
@@ -75,33 +75,33 @@ def generate_launch_description() -> LaunchDescription:
         )
     )
 
-    stm32_full_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("stm32_mavlink_udp"), "launch", "stm32_full.launch.py"]
-            )
-        )
-    )
+    # stm32_full_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("stm32_mavlink_udp"), "launch", "stm32_full.launch.py"]
+    #         )
+    #     )
+    # )
 
-    rs485_interface2_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
-            )
-        )
-    )
+    # rs485_interface2_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
+    #         )
+    #     )
+    # )
 
     return LaunchDescription(
         [
             config_path_arg,
             rogidrive_config_path_arg,
-            stm32_full_launch,
-            rs485_interface2_launch,
+            # stm32_full_launch,
+            # rs485_interface2_launch,
             trajectory_viz_launch,
             rtz_to_joint_trajectory_node,
             odrive_controller_node,
             rogidrive_node,
-            rogilink_flex_gui_launch,
+            # rogilink_flex_gui_launch,
             path_index_action_server_node,
             path_index_gui_launch,
         ]
