@@ -1,31 +1,136 @@
+# # RS485 Interface2 Motor Mapping Configuration
+# # Maps motor name strings to RS485 device ID and motor index with per-motor settings
+# #
+# # Format:
+# #   motor_name:
+# #     rs485_id: RS485 device ID (DIP switch, 1-15)
+# #     motor_index: Motor index within device (0, 1, 2...)
+# #     encoder_resolution: counts_per_revolution (optional, default: 8192)
+# #     reverse: true/false (optional, default: false)
+# #     position_tolerance: position tolerance in counts (optional, default: 0=disabled)
+# #
+# # When reverse is true, vel/pos/current values are multiplied by -1
+
+# rs485_interface2_node:
+#   ros__parameters:
+#     motors:
+#       left:
+#         rs485_id: 2
+#         motor_index: 1
+#         encoder_resolution: 8192
+#         reverse: false
+#         position_tolerance: 2000
+#         velocity_pid:
+#           kp: 0.11
+#           ki: 0.0
+#           kd: 0.0
+#         position_pid:
+#           kp: 5.0
+#           ki: 0.0
+#           kd: 0.1
+#       right:
+#         rs485_id: 2
+#         motor_index: 0
+#         encoder_resolution: 8192
+#         reverse: false
+#         position_tolerance: 2000
+#         velocity_pid:
+#           kp: 0.11
+#           ki: 0.0
+#           kd: 0.0
+#         position_pid:
+#           kp: 5.0
+#           ki: 0.0
+#           kd: 0.1
+#       back:
+#         rs485_id: 2
+#         motor_index: 2
+#         encoder_resolution: 8192
+#         reverse: false
+#         position_tolerance: 2000
+#         velocity_pid:
+#           kp: 0.11
+#           ki: 0.0
+#           kd: 0.0
+#         position_pid:
+#           kp: 5.0
+#           ki: 0.0
+#           kd: 0.1
+#       # theta:
+#       #   rs485_id: 1
+#       #   motor_index: 0
+#       #   encoder_resolution: 8192
+#       #   reverse: false
+#       #   position_tolerance: 2000
+#       #   velocity_pid:
+#       #     kp: 0.11
+#       #     ki: 0.0
+#       #     kd: 0.0
+#       #   position_pid:
+#       #     kp: 5.0
+#       #     ki: 0.0
+#       #     kd: 0.1
 # RS485 Interface2 Motor Mapping Configuration
-# Maps motor name strings to MAVLink motor IDs (30-49) with per-motor settings
+# Maps motor name strings to RS485 device ID and motor index with per-motor settings
 #
 # Format:
 #   motor_name:
-#     id: mavlink_motor_id (required, 30-49)
+#     rs485_id: RS485 device ID (DIP switch, 1-15)
+#     motor_index: Motor index within device (0, 1, 2...)
 #     encoder_resolution: counts_per_revolution (optional, default: 8192)
 #     reverse: true/false (optional, default: false)
+#     initial_config:
+#       VEL_PID_KP: velocity P gain
+#       VEL_PID_KI: velocity I gain
+#       VEL_PID_KD: velocity D gain
+#       POS_PID_KP: position P gain
+#       POS_PID_KI: position I gain
+#       POS_PID_KD: position D gain
+#       POSITION_TOLERANCE: position tolerance in counts (0=disabled)
 #
 # When reverse is true, vel/pos/current values are multiplied by -1
-#
-# Example motor names for omni-directional robot:
-#   wheel_fr, wheel_fl, wheel_rl, wheel_rr (wheel motors)
 
 rs485_interface2_node:
   ros__parameters:
-    # Motor configurations
     motors:
-      Revolute 1_1:
-        id: 32
-        encoder_resolution: 2031988
-        reverse: false
-        velocity_pid:
-          kp: 0.2
-          ki: 0.01
-          kd: 0.0
-        position_pid:
-          kp: 5.0
-          ki: 1.0
-          kd: 0.0
-      
+      kfs_yaw_cmd:
+        rs485_id: 2
+        motor_index: 0
+        encoder_resolution: 417792
+        reverse: true
+        initial_config:
+          VEL_PID_KP: 0.01
+          VEL_PID_KI: 0.1
+          VEL_PID_KD: 0.0
+          POS_PID_KP: 5.0
+          POS_PID_KI: 0.0
+          POS_PID_KD: 0.1
+          POSITION_TOLERANCE: 2000.0
+      kfs_x_cmd:
+        rs485_id: 2
+        motor_index: 1
+        encoder_resolution: 819200
+        reverse: true
+        initial_config:
+          VEL_PID_KP: -0.11
+          VEL_PID_KI: -0.01
+          VEL_PID_KD: 0.0
+          POS_PID_KP: 5.0
+          POS_PID_KI: 0.0
+          POS_PID_KD: 0.1
+          POSITION_TOLERANCE: 2000.0
+      kfs_roll_cmd:
+        rs485_id: 2
+        motor_index: 2
+        encoder_resolution: 819200
+        reverse: true
+        initial_config:
+          VEL_PID_KP: -0.11
+          VEL_PID_KI: -0.01
+          VEL_PID_KD: 0.0
+          POS_PID_KP: 5.0
+          POS_PID_KI: 0.0
+          POS_PID_KD: 0.1
+          POSITION_TOLERANCE: 2000.0
+#kfs_yaw_cmd:1:51 (51*8192 = 417792)
+#kfs_x_cmd,kfs_roll_cmd:1:100
