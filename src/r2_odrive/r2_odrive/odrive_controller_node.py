@@ -25,8 +25,8 @@ from rogilink_flex_lib import Publisher
 # 使い方: value_out = value_in * scale + offset
 KFS_CMD_COEFFICIENTS = {
     'Revolute 1_1': {'scale': 0.159235 , 'offset': 0.0},  # kfs_yaw_cmd
-    'Revolute 1_4': {'scale': 1.0, 'offset': 0.0},  # kfs_roll_cmd
-    'Slider 1_3': {'scale': 1.0, 'offset': 0.0},    # kfs_x_cmd
+    'Revolute 1_4': {'scale': 0.159235, 'offset': 0.0},  # kfs_roll_cmd
+    'Slider 1_3': {'scale': 0.159235, 'offset': 0.0},    # kfs_x_cmd
 }
 KFS_CMD_CHANGE_EPSILON = 1.0e-6
 
