@@ -1,12 +1,6 @@
 [submodule "src/MAVLink_ros2"]
 	path = src/MAVLink_ros2
 	url = git@github.com:KeioRoboticsAssociation/MAVLink_ros2.git
-[submodule "src/launch_param_builder"]
-        path = src/launch_param_builder
-        url = git@github.com:PickNikRobotics/launch_param_builder.git
-[submodule "src/rosparam_shortcuts"]
-        path = src/rosparam_shortcuts
-        url = git@github.com:PickNikRobotics/rosparam_shortcuts.git
 [submodule "src/rogidrive"]
         path = src/rogidrive
         url = git@github.com:KeioRoboticsAssociation/rogidrive.git
