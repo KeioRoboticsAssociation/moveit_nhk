@@ -9,15 +9,26 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description() -> LaunchDescription:
-    config_path_arg = DeclareLaunchArgument(
-        "config_path",
-        default_value="/home/a/ws_nhk/src/r2_odrive/config/config.json",
-        description="Path to rogilink_flex_gui config json",
-    )
+    # config_path_arg = DeclareLaunchArgument(
+    #     "config_path",
+    #     default_value=PathJoinSubstitution(
+    #         [FindPackageShare("r2_odrive"), "config", "config.json"]
+    #     ),
+    #     description="Path to rogilink_flex_gui config json",
+    # )
     rogidrive_config_path_arg = DeclareLaunchArgument(
         "rogidrive_config_path",
-        default_value="/home/a/ws_nhk/src/r2_odrive/config/odrive_config.json",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("r2_odrive"), "config", "odrive_config.json"]
+        ),
         description="Path to rogidrive config json",
+    )
+    rs485_config_file_path_arg = DeclareLaunchArgument(
+        "rs485_config_file_path",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("r2_odrive"), "config", "motor_mapping.yaml"]
+        ),
+        description="Path to rs485_interface2 motor mapping yaml",
     )
 
     trajectory_viz_launch = IncludeLaunchDescription(
@@ -88,13 +99,17 @@ def generate_launch_description() -> LaunchDescription:
     #         PathJoinSubstitution(
     #             [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
     #         )
-    #     )
+    #     ),
+    #     launch_arguments={
+    #         "config_file_path": LaunchConfiguration("rs485_config_file_path")
+    #     }.items(),
     # )
 
     return LaunchDescription(
         [
-            config_path_arg,
+            # config_path_arg,
             rogidrive_config_path_arg,
+            rs485_config_file_path_arg,
             # stm32_full_launch,
             # rs485_interface2_launch,
             trajectory_viz_launch,
