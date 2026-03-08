@@ -9,15 +9,26 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description() -> LaunchDescription:
-    config_path_arg = DeclareLaunchArgument(
-        "config_path",
-        default_value="/home/a/ws_nhk/src/r2_odrive/config/config.json",
-        description="Path to rogilink_flex_gui config json",
-    )
+    # config_path_arg = DeclareLaunchArgument(
+    #     "config_path",
+    #     default_value=PathJoinSubstitution(
+    #         [FindPackageShare("r2_odrive"), "config", "config.json"]
+    #     ),
+    #     description="Path to rogilink_flex_gui config json",
+    # )
     rogidrive_config_path_arg = DeclareLaunchArgument(
         "rogidrive_config_path",
-        default_value="/home/a/ws_nhk/src/r2_odrive/config/odrive_config.json",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("r2_odrive"), "config", "odrive_config.json"]
+        ),
         description="Path to rogidrive config json",
+    )
+    rs485_config_file_path_arg = DeclareLaunchArgument(
+        "rs485_config_file_path",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("r2_odrive"), "config", "motor_mapping.yaml"]
+        ),
+        description="Path to rs485_interface2 motor mapping yaml",
     )
 
     trajectory_viz_launch = IncludeLaunchDescription(
@@ -52,14 +63,14 @@ def generate_launch_description() -> LaunchDescription:
         parameters=[{"config_path": LaunchConfiguration("rogidrive_config_path")}],
     )
 
-    rogilink_flex_gui_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("rogilink_flex_gui"), "gui.launch.py"]
-            )
-        ),
-        launch_arguments={"config_path": LaunchConfiguration("config_path")}.items(),
-    )
+    # rogilink_flex_gui_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("rogilink_flex_gui"), "gui.launch.py"]
+    #         )
+    #     ),
+    #     launch_arguments={"config_path": LaunchConfiguration("config_path")}.items(),
+    # )
 
     path_index_action_server_node = Node(
         package="nhk_bt",
@@ -75,33 +86,37 @@ def generate_launch_description() -> LaunchDescription:
         )
     )
 
-    stm32_full_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("stm32_mavlink_udp"), "launch", "stm32_full.launch.py"]
-            )
-        )
-    )
+    # stm32_full_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("stm32_mavlink_udp"), "launch", "stm32_full.launch.py"]
+    #         )
+    #     )
+    # )
 
-    rs485_interface2_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
-            )
-        )
-    )
+    # rs485_interface2_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         PathJoinSubstitution(
+    #             [FindPackageShare("rs485_interface2"), "launch", "rs485_interface2.launch.py"]
+    #         )
+    #     ),
+    #     launch_arguments={
+    #         "config_file_path": LaunchConfiguration("rs485_config_file_path")
+    #     }.items(),
+    # )
 
     return LaunchDescription(
         [
-            config_path_arg,
+            # config_path_arg,
             rogidrive_config_path_arg,
-            stm32_full_launch,
-            rs485_interface2_launch,
+            rs485_config_file_path_arg,
+            # stm32_full_launch,
+            # rs485_interface2_launch,
             trajectory_viz_launch,
             rtz_to_joint_trajectory_node,
             odrive_controller_node,
             rogidrive_node,
-            rogilink_flex_gui_launch,
+            # rogilink_flex_gui_launch,
             path_index_action_server_node,
             path_index_gui_launch,
         ]
