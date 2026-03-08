@@ -20,7 +20,7 @@ public:
     path_commands_ = this->declare_parameter<std::vector<double>>(
         "path_commands", std::vector<double>{
                              // [Slider 1_2, Revolute 1_1, Revolute 1_4]
-                             0.0, 1.9545, -0.3838,  // index 0
+                             1.0, 1.9545, -0.3838,  // index 0
                              0.0, 1.7505, -0.1798,  // index 1
                              0.0, 1.5303, 0.0405,   // index 2
                              0.0, -1.5303, -0.0405, // index 3

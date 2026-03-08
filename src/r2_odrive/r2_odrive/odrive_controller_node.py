@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-JointState → Rogidrive converter node.
+JointTrajectory / JointState bridge node.
 
-`/joint_states` の position 情報を受け取り，ODrive 側で利用しやすい
-`RogidriveMessage` に変換して `/odrive_cmd` に流す。
+`/joint_trajectory` の最終目標値を使って `RogidriveMessage` を生成し、
+`/odrive_cmd` と `/rogidrive_cmd` に流す。
 """
 
 import json
@@ -41,6 +41,7 @@ class ODriveControllerNode(Node):
         self._load_parameters()
 
         self._missing_joint_log: Dict[str, bool] = {}
+        self._last_odrive_cmd_values: Dict[str, float] = {}
         self._last_kfs_cmd_values: Dict[str, float] = {}
         # Stores exact values sent to each topic for resending
         self._last_sent_frames: Dict[str, float] = {}
@@ -219,26 +220,9 @@ class ODriveControllerNode(Node):
         return mapping, device_id
 
     def joint_state_callback(self, msg: JointState) -> None:
-        if not msg.name:
-            self.get_logger().warn('JointState に name が含まれていません')
-            return
-
-        name_to_index = {name: idx for idx, name in enumerate(msg.name)}
-        target_names = self.joint_names if self.joint_names else list(msg.name)
-        for joint_name in target_names:
-            index = name_to_index.get(joint_name)
-            if index is None:
-                if not self._missing_joint_log.get(joint_name):
-                    self.get_logger().warn(f'JointState に {joint_name} が見つかりません')
-                    self._missing_joint_log[joint_name] = True
-                continue
-
-            position = self._get_value(msg.position, index)
-            velocity = self._get_value(msg.velocity, index)
-            effort = self._get_value(msg.effort, index)
-
-            rogi_msg = self._convert_joint_state(joint_name, position, velocity, effort)
-            self.command_publisher.publish(rogi_msg)
+        # /odrive_cmd は /joint_trajectory の最終目標値のみで生成する。
+        # そのため、JointState はここでは利用しない。
+        del msg
 
     def joint_trajectory_callback(self, msg: JointTrajectory) -> None:
         if not msg.joint_names or not msg.points:
@@ -250,6 +234,7 @@ class ODriveControllerNode(Node):
 
         name_to_index = {name: idx for idx, name in enumerate(msg.joint_names)}
         self.get_logger().info(f'Received /joint_trajectory with {len(msg.points)} points. Last point positions: {final_point.positions}')
+        self._publish_odrive_cmds(final_point.positions, name_to_index)
         self._publish_kfs_cmds(final_point.positions, name_to_index)
 
     @staticmethod
@@ -258,40 +243,38 @@ class ODriveControllerNode(Node):
             return sequence[index]
         return default
 
-    def _convert_joint_state(
-        self,
-        joint_name: str,
-        position: float,
-        velocity: float,
-        effort: float,
-    ) -> RogidriveMessage:
-        """変換式を書き換える想定のメソッド"""
+    def _publish_odrive_cmds(self, positions: List[float], name_to_index: Dict[str, int]) -> None:
+        target_names = self.joint_names if self.joint_names else list(name_to_index.keys())
+        for joint_name in target_names:
+            index = name_to_index.get(joint_name)
+            if index is None:
+                if not self._missing_joint_log.get(joint_name):
+                    self.get_logger().warn(f'JointTrajectory に {joint_name} が見つかりません')
+                    self._missing_joint_log[joint_name] = True
+                continue
 
-        msg = RogidriveMessage()
-        msg.name = joint_name
-        msg.mode = self.default_mode
+            position = self._get_value(positions, index)
+            converted_position = self._convert_position(joint_name, position)
+            if not self._should_publish_odrive_cmd(joint_name, converted_position):
+                continue
 
-        # ==== ここから変換式を自由に書き換えてください ==== #
-        msg.pos = self._convert_position(joint_name, position)
-        msg.vel = 10.0
-        msg.current = self._convert_current(joint_name, effort)
-        # ==== ここまで変換式 ==== #
-
-        return msg
+            msg = RogidriveMessage()
+            msg.name = joint_name
+            msg.mode = self.default_mode
+            msg.pos = converted_position
+            msg.vel = 10.0
+            msg.current = 0.0
+            self.command_publisher.publish(msg)
+            self._last_odrive_cmd_values[joint_name] = converted_position
+            self.get_logger().info(
+                f'Published to {self.odrive_cmd_topic}: name={joint_name}, pos={converted_position:.4f}'
+            )
 
     def _convert_position(self, joint_name: str, position: float) -> float:
         """位置 [rad/m] → ODrive の回転数 [turn] への変換を書く場所"""
         if joint_name in ('Slider1_2', 'Slider 1_2'):
             return -position * 100.0
         return position
-
-    def _convert_velocity(self, joint_name: str, velocity: float) -> float:
-        """速度 [rad/s] → ODrive の回転速度 [turn/s] への変換を書く場所"""
-        return velocity
-
-    def _convert_current(self, joint_name: str, effort: float) -> float:
-        """effort → 電流[A] への変換を書く場所"""
-        return effort
 
     def _publish_kfs_cmds(self, positions: List[float], name_to_index: Dict[str, int]) -> None:
         for joint_name, topic_name in self.kfs_joint_to_topic.items():
@@ -341,6 +324,12 @@ class ODriveControllerNode(Node):
 
     def _should_publish_kfs_cmd(self, topic_name: str, value: float) -> bool:
         last = self._last_kfs_cmd_values.get(topic_name)
+        if last is None:
+            return True
+        return abs(value - last) > KFS_CMD_CHANGE_EPSILON
+
+    def _should_publish_odrive_cmd(self, joint_name: str, value: float) -> bool:
+        last = self._last_odrive_cmd_values.get(joint_name)
         if last is None:
             return True
         return abs(value - last) > KFS_CMD_CHANGE_EPSILON
